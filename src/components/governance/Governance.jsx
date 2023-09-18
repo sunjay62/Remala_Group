@@ -5,23 +5,15 @@ import ManajemenMutu from './menu/manajemenmutu/ManajemenMutu';
 import KodeEtik from './menu/kodeetik/KodeEtik';
 
 const Governance = () => {
-  const [renderContent, setRenderContent] = useState(<PrinsipStruktur />);
-  const prinsipButtonRef = useRef(null);
+  const [activeButton, setActiveButton] = useState('PrinsipStruktur');
+  const components = {
+    PrinsipStruktur: <PrinsipStruktur />,
+    KodeEtik: <KodeEtik />,
+    ManajemenMutu: <ManajemenMutu />,
+  };
 
-  useEffect(() => {
-    prinsipButtonRef.current.classList.add('clicked');
-  }, []);
-
-  const handleButtonClick = (component) => {
-    setRenderContent(component);
-
-    // Hapus kelas 'clicked' dari semua tombol
-    const buttons = document.querySelectorAll('.btnMenu');
-    buttons.forEach((button) => button.classList.remove('clicked'));
-
-    // Tambahkan kelas 'clicked' ke tombol yang diklik
-    const clickedButton = document.querySelector(`button[data-component="${component.type.name}"]`);
-    clickedButton.classList.add('clicked');
+  const handleButtonClick = (componentName) => {
+    setActiveButton(componentName);
   };
 
   return (
@@ -34,17 +26,17 @@ const Governance = () => {
       </div>
       <div className="buttons">
         <div className="containerGovernance">
-          <button className="btnMenu" onClick={() => handleButtonClick(<PrinsipStruktur />)} data-component="PrinsipStruktur" ref={prinsipButtonRef}>
+          <button className={`btnMenu ${activeButton === 'PrinsipStruktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('PrinsipStruktur')}>
             Prinsip & Struktur
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<KodeEtik />)} data-component="KodeEtik">
+          <button className={`btnMenu ${activeButton === 'KodeEtik' ? 'clicked' : ''}`} onClick={() => handleButtonClick('KodeEtik')}>
             Kode Etik
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<ManajemenMutu />)} data-component="ManajemenMutu">
+          <button className={`btnMenu ${activeButton === 'ManajemenMutu' ? 'clicked' : ''}`} onClick={() => handleButtonClick('ManajemenMutu')}>
             Manajemen Mutu
           </button>
         </div>
-        <div className="isi-content-governance">{renderContent}</div>
+        <div className="isi-content-governance">{components[activeButton]}</div>
       </div>
     </div>
   );

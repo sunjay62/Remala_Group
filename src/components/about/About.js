@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './about.css';
 import Profile from './menu/profile/Profile';
 import StrukturOrganisasi from './menu/strukturorganisasi/StukturOrganisasi';
@@ -7,23 +7,17 @@ import AnggaranDasar from './menu/anggarandasar/AnggaranDasar';
 import Penghargaan from './menu/penghargaan/Penghargaan';
 
 const About = () => {
-  const [renderContent, setRenderContent] = useState(<Profile />);
-  const profileButtonRef = useRef(null);
+  const [activeButton, setActiveButton] = useState('Profile');
+  const components = {
+    Profile: <Profile />,
+    StrukturOrganisasi: <StrukturOrganisasi />,
+    StrukturGroup: <StrukturGroup />,
+    AnggaranDasar: <AnggaranDasar />,
+    Penghargaan: <Penghargaan />,
+  };
 
-  useEffect(() => {
-    profileButtonRef.current.className.add('clicked');
-  }, []);
-
-  const handleButtonClick = (component) => {
-    setRenderContent(component);
-
-    // Hapus kelas 'clicked' dari semua tombol
-    const buttons = document.querySelectorAll('.btnMenu');
-    buttons.forEach((button) => button.className.remove('clicked'));
-
-    // Tambahkan kelas 'clicked' ke tombol yang diklik
-    const clickedButton = document.querySelector(`button[data-component="${component.type.name}"]`);
-    clickedButton.className.add('clicked');
+  const handleButtonClick = (componentName) => {
+    setActiveButton(componentName);
   };
 
   return (
@@ -36,23 +30,23 @@ const About = () => {
       </div>
       <div className="buttons">
         <div className="containerAbout">
-          <button className="btnMenu" onClick={() => handleButtonClick(<Profile />)} data-component="Profile" ref={profileButtonRef}>
+          <button className={`btnMenu ${activeButton === 'Profile' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Profile')}>
             Profile
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<StrukturOrganisasi />)} data-component="StrukturOrganisasi">
+          <button className={`btnMenu ${activeButton === 'StrukturOrganisasi' ? 'clicked' : ''}`} onClick={() => handleButtonClick('StrukturOrganisasi')}>
             Struktur Organisasi
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<StrukturGroup />)} data-component="StrukturGroup">
+          <button className={`btnMenu ${activeButton === 'StrukturGroup' ? 'clicked' : ''}`} onClick={() => handleButtonClick('StrukturGroup')}>
             Struktur Group
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<AnggaranDasar />)} data-component="AnggaranDasar">
+          <button className={`btnMenu ${activeButton === 'AnggaranDasar' ? 'clicked' : ''}`} onClick={() => handleButtonClick('AnggaranDasar')}>
             Anggaran Dasar
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<Penghargaan />)} data-component="Penghargaan">
+          <button className={`btnMenu ${activeButton === 'Penghargaan' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Penghargaan')}>
             Penghargaan
           </button>
         </div>
-        <div className="isi-content-about">{renderContent}</div>
+        <div className="isi-content-about">{components[activeButton]}</div>
       </div>
     </div>
   );

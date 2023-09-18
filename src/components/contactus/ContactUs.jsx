@@ -5,18 +5,15 @@ import Faq from './menu/faq/Faq';
 import MenuRegulasi from './menu/menuregulasi/MenuRegulasi';
 
 const ContactUs = () => {
-  const [renderContent, setRenderContent] = useState(<Contact />);
+  const [activeButton, setActiveButton] = useState('Contact');
+  const components = {
+    Contact: <Contact />,
+    Faq: <Faq />,
+    MenuRegulasi: <MenuRegulasi />,
+  };
 
-  const handleButtonClick = (component) => {
-    setRenderContent(component);
-
-    // Hapus kelas 'clicked' dari semua tombol
-    const buttons = document.querySelectorAll('.btnMenu');
-    buttons.forEach((button) => button.classList.remove('clicked'));
-
-    // Tambahkan kelas 'clicked' ke tombol yang diklik
-    const clickedButton = document.querySelector(`button[data-component="${component.type.name}"]`);
-    clickedButton.classList.add('clicked');
+  const handleButtonClick = (componentName) => {
+    setActiveButton(componentName);
   };
 
   return (
@@ -29,14 +26,14 @@ const ContactUs = () => {
       </div>
       <div className="buttons">
         <div className="containerAbout">
-          <button className="btnMenu" onClick={() => handleButtonClick(<MenuRegulasi />)} data-component="MenuRegulasi">
+          <button className={`btnMenu ${activeButton === 'MenuRegulasi' ? 'clicked' : ''}`} onClick={() => handleButtonClick('MenuRegulasi')}>
             Regulasi
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<Faq />)} data-component="Faq">
+          <button className={`btnMenu ${activeButton === 'Faq' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Faq')}>
             FAQ
           </button>
         </div>
-        <div className="isi-content-contactUs">{renderContent}</div>
+        <div className="isi-content-contactUs">{components[activeButton]}</div>
       </div>
     </div>
   );

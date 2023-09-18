@@ -5,23 +5,15 @@ import Berita from './menu/berita/Berita';
 import Laporan from './menu/laporan/Laporan';
 
 const Investor = () => {
-  const [renderContent, setRenderContent] = useState(<Laporan />);
-  const laporanButtonRef = useRef(null);
+  const [activeButton, setActiveButton] = useState('Laporan');
+  const components = {
+    Saham: <Saham />,
+    Berita: <Berita />,
+    Laporan: <Laporan />,
+  };
 
-  useEffect(() => {
-    laporanButtonRef.current.classList.add('clicked');
-  }, []);
-
-  const handleButtonClick = (component) => {
-    setRenderContent(component);
-
-    // Hapus kelas 'clicked' dari semua tombol
-    const buttons = document.querySelectorAll('.btnMenu');
-    buttons.forEach((button) => button.classList.remove('clicked'));
-
-    // Tambahkan kelas 'clicked' ke tombol yang diklik
-    const clickedButton = document.querySelector(`button[data-component="${component.type.name}"]`);
-    clickedButton.classList.add('clicked');
+  const handleButtonClick = (componentName) => {
+    setActiveButton(componentName);
   };
 
   return (
@@ -34,17 +26,17 @@ const Investor = () => {
       </div>
       <div className="buttons">
         <div className="containerAbout">
-          <button className="btnMenu" onClick={() => handleButtonClick(<Laporan />)} data-component="Laporan" ref={laporanButtonRef}>
+          <button className={`btnMenu ${activeButton === 'Laporan' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Laporan')}>
             Laporan-Laporan
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<Saham />)} data-component="Saham">
+          <button className={`btnMenu ${activeButton === 'Saham' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Saham')}>
             Informasi Saham
           </button>
-          <button className="btnMenu" onClick={() => handleButtonClick(<Berita />)} data-component="Berita">
+          <button className={`btnMenu ${activeButton === 'Berita' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Berita')}>
             Berita & Kegiatan
           </button>
         </div>
-        <div className="isi-content-investor">{renderContent}</div>
+        <div className="isi-content-investor">{components[activeButton]}</div>
       </div>
     </div>
   );
