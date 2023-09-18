@@ -3,8 +3,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Governance from './components/governance/Governance';
 import Investor from './components/investor/Investor';
-
-import { Outlet, BrowserRouter, Switch, Routes, Route, Link, redirect, useNavigate } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ContactUs from './components/contactus/ContactUs';
 function App() {
   return (
@@ -12,11 +11,11 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route Component={Home} path="/" />
-          <Route Component={About} path="/tentang" />
-          <Route Component={Governance} path="/tatakelola" />
-          <Route Component={ContactUs} path="/hubungikami" />
-          <Route Component={Investor} path="/hubunganinvestor" />
+          <Route element={<Home />} path="/" />
+          <Route element={<About />} path="/tentang" />
+          <Route element={<Governance />} path="/tatakelola" />
+          <Route element={<ContactUs />} path="/hubungikami" />
+          <Route element={<Investor />} path="/hubunganinvestor" />
         </Routes>
       </BrowserRouter>
     </>

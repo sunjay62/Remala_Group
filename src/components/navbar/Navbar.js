@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import menuItems from './MenuItems';
 import './navbar.css';
 import logoremala from '../../assets/navbar/logoremala.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -41,9 +42,9 @@ const Navbar = () => {
         {menuItems.map((item, index) => {
           return (
             <li key={index}>
-              <a href={item.url} className={item.cName}>
+              <Link to={item.url} className={item.cName}>
                 {item.title}
-              </a>
+              </Link>
             </li>
           );
         })}
