@@ -1,0 +1,41 @@
+.containerKeberlanjutan {
+  border-left: 2px solid gray;
+}
+
+.react-pdf__Page__textContent {
+  display: none;
+}
+
+.pdfContainer {
+  height: 750px;
+  overflow: hidden;
+}
+
+.pdfContainer p {
+  font-size: 14px;
+  color: #333;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnPdf {
+  display: flex;
+  gap: 5px;
+}
+
+.btnContainer button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.btnContainer button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

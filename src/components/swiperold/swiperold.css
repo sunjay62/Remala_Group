@@ -1,0 +1,72 @@
+.slide-item:hover img {
+  cursor: pointer; /* Mengubah tipe kursor menjadi zoom-in */
+  border-color: black; /* Menampilkan border pada hover */
+  transform: scale(1.1); /* Mengubah ukuran gambar saat hover */
+}
+
+.texttopswiper {
+  color: rgb(128, 128, 128);
+}
+
+.outsl {
+  display: flex;
+  height: 1vh;
+}
+
+.boxswiper {
+  margin-top: 20%;
+  height: 50vh;
+}
+
+.sl {
+  display: flex;
+  width: 1100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-item img {
+  transition: transform 0.3s, border-color 0.3s, cursor 0.3s; /* Efek transisi */
+  padding-top: 7%;
+  transition: 1s;
+  width: 17vw;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+@media (max-width: 1288px) {
+  .boxswiper h2 {
+    font-size: 10px;
+  }
+
+  .boxswiper {
+    height: 10vh;
+  }
+
+  .sl {
+    width: 85vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .outsl {
+    height: 15vh;
+  }
+
+  .sl {
+    margin-top: 90px;
+    width: 250px;
+  }
+
+  .slide-item img {
+    padding-top: 30%;
+    width: 250px;
+  }
+
+  .boxswiper {
+    height: 53vh;
+  }
+}

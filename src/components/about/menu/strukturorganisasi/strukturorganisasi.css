@@ -1,0 +1,71 @@
+.mainContainerOrganisasi {
+  padding: 0 15px 0 15px;
+}
+
+.menuStruktur {
+  position: sticky;
+  top: 150px;
+  display: flex;
+  color: white;
+  margin-left: 50px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-size: 16px;
+  background-color: #0a5493;
+  border-radius: 22px;
+  height: 430px;
+  width: 40vh;
+  padding: 15px;
+}
+
+.menuStruktur div:hover {
+  background-color: #4081b9;
+  cursor: pointer;
+}
+
+.menuStruktur div {
+  padding-right: 3%;
+  height: auto;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.menuStruktur div p {
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.content-byMenu {
+  height: max-content;
+  margin-left: 60px;
+}
+
+.choose {
+  background-color: #4081b9;
+  border-radius: 10px;
+}
+
+.profile-box {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 160px;
+  height: 160px;
+  background-color: rgb(208, 208, 208);
+}
+
+.footer {
+  margin-top: 50px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 860px) {
+  .mainContainerOrganisasi {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainContainerOrganisasi .menuStruktur {
+    position: relative;
+    width: 50%;
+  }
+}

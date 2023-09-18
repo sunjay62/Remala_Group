@@ -1,0 +1,176 @@
+.mainFooter {
+  background-color: #0a5493;
+  color: #ececec;
+}
+
+.mainFooter hr {
+  height: 3px;
+}
+
+.footerTop {
+  height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px 0 25px;
+}
+
+.footerBottom {
+  padding-bottom: 5px;
+  text-align: center;
+  color: #3f3f3f;
+  font-weight: 500;
+}
+
+.footerBottom p {
+  color: #ececec;
+}
+
+.footerLeft {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* css footer midle */
+
+.footerMidle {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerMidle .midleTop {
+  background-color: #fff;
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.footerMidle .logoFooter {
+  width: 42%;
+}
+
+.footerMidle .midleBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15;
+  flex: 0.6;
+}
+
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  background: #364a62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+.socials a {
+  border-radius: 50%;
+  color: #328fdb;
+  padding: 7px;
+  font-size: 20px;
+  background-color: white;
+  transition: all ease-in-out 0.2s;
+}
+
+.socials a .icon {
+  font-size: 30px;
+}
+
+.socials a:hover {
+  color: white;
+  background-color: #328fdb;
+}
+
+/* css footer right */
+
+.footerRight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1.5;
+  font-size: 85%;
+}
+
+.footerRight a {
+  margin-top: 5px;
+  text-decoration: none;
+  color: #ececec;
+  transition: all ease-in-out 0.2s;
+}
+
+.footerRight .tautan {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerRight .pengumuman {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerRight .laporan {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerRight .tautan a:hover,
+.footerRight .pengumuman a:hover,
+.footerRight .laporan a:hover {
+  color: #328fdb;
+}
+
+.box p {
+  margin-bottom: 3px;
+  font-size: 90%;
+}
+
+.box h5 {
+  margin-top: 25px;
+}
+
+/* Responsive */
+
+@media (max-width: 860px) {
+  .footerTop {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+  }
+
+  .footerBottom {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footerLeft {
+    order: 2;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footerMidle {
+    order: 1;
+  }
+
+  .footerRight {
+    order: 3;
+    text-align: center;
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 25px;
+  }
+}

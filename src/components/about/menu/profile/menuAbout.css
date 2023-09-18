@@ -1,0 +1,47 @@
+.containerProfile {
+  padding: 0 65px 0 65px;
+}
+
+.company-profile-text {
+  color: white;
+  background-color: #0a5493;
+  border-radius: 22px;
+  padding: 25px 50px 25px 50px;
+}
+
+.company-profile-text .text-center {
+  margin-bottom: 25px;
+}
+
+.content-key-features {
+  border-top: 1px solid black;
+  text-align: center;
+  padding: 2%;
+  border-bottom: 1px solid black;
+}
+
+.key-features {
+  margin-top: 50px;
+}
+
+.milestoneContainer {
+  margin-top: 50px;
+  height: 30vh;
+}
+
+.visi {
+  border-right: 1px solid black;
+  padding: 3%;
+  text-align: center;
+}
+
+.misi {
+  text-align: center;
+  padding: 3%;
+}
+
+.content-visi-misi {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid black;
+}

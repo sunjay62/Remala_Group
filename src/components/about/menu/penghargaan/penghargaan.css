@@ -1,0 +1,18 @@
+.containerPenghargaan {
+  padding: 0 70px 0 70px;
+  height: max-content;
+}
+
+.containerAwards {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+}
+
+.penghargaan-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #0a5493;
+}
