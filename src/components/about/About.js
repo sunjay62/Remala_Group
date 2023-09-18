@@ -11,7 +11,7 @@ const About = () => {
   const profileButtonRef = useRef(null);
 
   useEffect(() => {
-    profileButtonRef.current.classList.add('clicked');
+    profileButtonRef.current.className.add('clicked');
   }, []);
 
   const handleButtonClick = (component) => {
@@ -19,11 +19,11 @@ const About = () => {
 
     // Hapus kelas 'clicked' dari semua tombol
     const buttons = document.querySelectorAll('.btnMenu');
-    buttons.forEach((button) => button.classList.remove('clicked'));
+    buttons.forEach((button) => button.className.remove('clicked'));
 
     // Tambahkan kelas 'clicked' ke tombol yang diklik
     const clickedButton = document.querySelector(`button[data-component="${component.type.name}"]`);
-    clickedButton.classList.add('clicked');
+    clickedButton.className.add('clicked');
   };
 
   return (

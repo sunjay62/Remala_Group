@@ -24,7 +24,7 @@ const Footer = () => {
               <p>Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan,</p>
               <p>Daerah Khusus Ibukota Jakarta 12870</p>
               <p>Telepon : (021) 83709269</p>
-              <p>Email : noc@tachyon.net.id</p>
+              <p>Email : corporatesecretary@remala.id</p>
               {/* <p>
                 <h5>Visit Our Office :</h5>
               </p>
