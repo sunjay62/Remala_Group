@@ -1,9 +1,11 @@
+import React, { useRef, useState, useEffect } from 'react';
 import './menuregulasi.scss';
 import Footer from '../../../footer/Footer';
-import React, { useRef, useState } from 'react';
 import Highlighter from 'react-highlight-words';
 import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
   {
@@ -42,6 +44,13 @@ const MenuRegulasi = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
     confirm();
     setSearchText(selectedKeys[0]);
@@ -183,11 +192,11 @@ const MenuRegulasi = () => {
   return (
     <>
       <div className="containerRegulasi">
-        <div className="containerTop">
+        <div className="containerTop" data-aos="fade-right">
           <h2>Regulasi</h2>
         </div>
         <hr />
-        <div className="containerBottom">
+        <div className="containerBottom" data-aos="fade-up">
           <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
         </div>
       </div>

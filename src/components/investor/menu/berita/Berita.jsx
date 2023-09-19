@@ -5,6 +5,8 @@ import PaparanPublik from '../menuberita/paparanpublik/PaparanPublik';
 import KalenderInvestor from '../menuberita/kalenderinvestor/KalenderInvestor';
 import PengumumanEmiten from '../menuberita/pengumumanemiten/PengumumanEmiten';
 import Footer from '../../../footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Berita = () => {
   const [content, setContent] = useState(<Rups />);
@@ -12,6 +14,12 @@ const Berita = () => {
 
   useEffect(() => {
     handleClick(0, <Rups />);
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
   }, []);
 
   const handleClick = (boxIndex, pageRender) => {
@@ -22,7 +30,7 @@ const Berita = () => {
   return (
     <>
       <div className="d-flex mainContainerBerita">
-        <div className="menuStruktur">
+        <div className="menuStruktur" data-aos="fade-right">
           <div className={isTap === 0 ? 'choose' : ' '} onClick={() => handleClick(0, <Rups />)}>
             <p>RUPS</p>
           </div>

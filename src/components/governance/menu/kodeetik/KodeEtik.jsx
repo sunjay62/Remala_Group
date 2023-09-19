@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './kodeetik.scss';
 import Footer from '../../../footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const KodeEtik = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   return (
     <>
-      <div className="containerKodeEtik">
+      <div className="containerKodeEtik" data-aos="fade-up">
         <div className="contentKodeEtik">
           <h5>KODE ETIK</h5>
           <p>

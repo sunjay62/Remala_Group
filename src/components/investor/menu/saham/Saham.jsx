@@ -5,6 +5,8 @@ import Prospektus from '../menusaham/prospektus/Prospektus';
 import Pencatatan from '../menusaham/pencatatan/Pencatatan';
 import Komposisi from '../menusaham/komposisi/Komposisi';
 import Footer from '../../../footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Saham = () => {
   const [content, setContent] = useState(<Volume />);
@@ -12,6 +14,12 @@ const Saham = () => {
 
   useEffect(() => {
     handleClick(0, <Volume />);
+  }, []);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
   }, []);
 
   const handleClick = (boxIndex, pageRender) => {
@@ -22,7 +30,7 @@ const Saham = () => {
   return (
     <>
       <div className="d-flex mainContainerSaham">
-        <div className="menuStruktur">
+        <div className="menuStruktur" data-aos="fade-right">
           <div className={isTap === 0 ? 'choose' : ' '} onClick={() => handleClick(0, <Volume />)}>
             <p>Harga & Volume Saham</p>
           </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './home.css';
 import tachyon from '../../assets/home/logotachyonnew.png';
 import nethome from '../../assets/home/logonethomee.png';
@@ -14,16 +14,25 @@ import imgFinancial from '../../assets/home/item/financial.png';
 import imgIdx from '../../assets/home/item/idx.png';
 import imgPress from '../../assets/home/item/press.png';
 import imgOwnership from '../../assets/home/item/ownership.png';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   return (
     <div className="homeMainContainer">
-      <div className="content-title-home d-flex justify-content-center align-items-center">
+      <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
         <div className="container">
-          <p className="">MEMBERIKAN KONEKTIVITAS TERBAIK DENGAN INFRASFRUKTUR TERPERCAYA</p>
+          <p data-aos="fade-left">MEMBERIKAN KONEKTIVITAS TERBAIK </p>
+          <p data-aos="fade-right">DENGAN INFRASFRUKTUR TERPERCAYA</p>
         </div>
       </div>
-      <div className="front-content">
+      <div className="front-content" data-aos="fade-up">
         <div className="all-item-home">
           <div className="item-home">
             <div className="col-md-1 col-5">
@@ -91,19 +100,19 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="content-home-products">
+        <div className="content-home-products" data-aos="fade-up">
           <h3>Temukan Konektivitas Untuk Kebutuhan Anda</h3>
           <p>Memberikan Solusi Kebutuhan Digital</p>
           <div className="m-auto d-block ">
             <div className="d-flex justify-content-center mainImgContainer">
-              <div className="tachyon col-5 d-flex align-items-center">
+              <div className="tachyon col-5 d-flex align-items-center" data-aos="fade-right">
                 <div className="col-6 secondImgContainer1">
                   <div className="col-12 imgContainer">
                     <img src={nethome} className="img-fluid" />
                   </div>
                 </div>
               </div>
-              <div className="tachyon2 col-5 d-flex align-items-center">
+              <div className="tachyon2 col-5 d-flex align-items-center" data-aos="fade-left">
                 <div className="col-4 secondImgContainer2">
                   <div className="col-12 imgContainer2">
                     <img src={tachyon} className="img-fluid" />
@@ -113,12 +122,12 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <div className="container">
+        <div className="container" data-aos="fade-up">
           <div className="company-milestone">
             <h3>Temukan Konektivitas Untuk Kebutuhan Anda</h3>
             <p>Memberikan Solusi Kebutuhan Digital Anda</p>
             <div className="d-flex justify-content-around flex-wrap flex-md-nowrap">
-              <div className="boxmile col-md-4 col-11 mt-md-0 mt-3">
+              <div className="boxmile col-md-4 col-11 mt-md-0 mt-3" data-aos="fade-right">
                 <div>
                   <h2>
                     <span className="amount">8500</span> KM
@@ -126,7 +135,7 @@ const Home = () => {
                   <h4>Jaringan Yang Sudah Tersebar</h4>
                 </div>
               </div>
-              <div className="boxmile col-md-4 col-11 mt-md-0 mt-3 mx-md-2">
+              <div className="boxmile col-md-4 col-11 mt-md-0 mt-3 mx-md-2" data-aos="fade-up">
                 <div>
                   <h2>
                     <span className="amountyear">20</span>Th
@@ -134,7 +143,7 @@ const Home = () => {
                   <h4 className="year">YEARS</h4>
                 </div>
               </div>
-              <div className="boxmile col-md-4 col-11 mt-md-0 mt-3">
+              <div className="boxmile col-md-4 col-11 mt-md-0 mt-3" data-aos="fade-left">
                 <div>
                   <h1>
                     <span className="amount">150+</span>
@@ -146,7 +155,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className="containerSwipper">
+        <div className="containerSwipper" data-aos="fade-up">
           <div className="slideShow">
             <h3>Seputar Remala Abadi</h3>
             <p>Aktivitas Perusahaan</p>
@@ -155,28 +164,32 @@ const Home = () => {
         </div>
 
         <div className="partner">
-          <h3 className="text-center">Our Partner</h3>
-          <div className="line m-auto d-block"></div>
+          <h3 className="text-center" data-aos="fade-up">
+            Our Partner
+          </h3>
+          <div className="line m-auto d-block" data-aos="fade-up"></div>
           <div className="boxpartner m-auto d-block">
             <div className="d-flex justify-content-evenly">
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
+              <div className="item-partner" data-aos="fade-right"></div>
+              <div className="item-partner" data-aos="fade-right"></div>
+              <div className="item-partner" data-aos="fade-right"></div>
+              <div className="item-partner" data-aos="fade-left"></div>
+              <div className="item-partner" data-aos="fade-left"></div>
+              <div className="item-partner" data-aos="fade-left"></div>
             </div>
           </div>
-          <h3 className="text-center mt-5">Our Client</h3>
-          <div className="line m-auto d-block"></div>
+          <h3 className="text-center mt-5" data-aos="fade-up">
+            Our Client
+          </h3>
+          <div className="line m-auto d-block" data-aos="fade-up"></div>
           <div className="boxpartner m-auto d-block">
             <div className="d-flex justify-content-evenly">
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
-              <div className="item-partner"></div>
+              <div className="item-partner" data-aos="fade-right"></div>
+              <div className="item-partner" data-aos="fade-right"></div>
+              <div className="item-partner" data-aos="fade-right"></div>
+              <div className="item-partner" data-aos="fade-left"></div>
+              <div className="item-partner" data-aos="fade-left"></div>
+              <div className="item-partner" data-aos="fade-left"></div>
             </div>
           </div>
         </div>

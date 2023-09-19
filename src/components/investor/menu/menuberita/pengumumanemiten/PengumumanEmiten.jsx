@@ -1,8 +1,10 @@
+import React, { useRef, useState, useEffect } from 'react';
 import './pengumumanemiten.scss';
-import React, { useRef, useState } from 'react';
 import Highlighter from 'react-highlight-words';
 import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
   {
@@ -41,6 +43,12 @@ const PengumumanEmitan = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
     confirm();
     setSearchText(selectedKeys[0]);
@@ -182,11 +190,11 @@ const PengumumanEmitan = () => {
   return (
     <>
       <div className="containerPengumumanEmiten">
-        <div className="containerTop">
+        <div className="containerTop" data-aos="fade-down">
           <h2>Informasi Kepada Investor</h2>
         </div>
         <hr />
-        <div className="containerBottom">
+        <div className="containerBottom" data-aos="fade-left">
           <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
         </div>
       </div>

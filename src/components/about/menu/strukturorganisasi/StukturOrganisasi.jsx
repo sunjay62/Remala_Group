@@ -7,10 +7,18 @@ import KomiteAudit from '../menu-struktur-organisasi/KomiteAudit';
 import KomiteNominasi from '../menu-struktur-organisasi/KomiteNominasi';
 import KomiteEvaluasi from '../menu-struktur-organisasi/KomiteEvaluasi';
 import Footer from '../../../footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const StrukturOrganisasi = () => {
   const [content, setContent] = useState(<DewanKomisaris />);
   const [isTap, setIsTap] = useState(0);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
 
   useEffect(() => {
     handleClick(0, <DewanKomisaris />);
@@ -24,7 +32,7 @@ const StrukturOrganisasi = () => {
   return (
     <>
       <div className="d-flex mainContainerOrganisasi">
-        <div className="menuStruktur">
+        <div className="menuStruktur" data-aos="fade-right">
           <div className={isTap === 0 ? 'choose' : ' '} onClick={() => handleClick(0, <DewanKomisaris />)}>
             <p>Dewan Komaris</p>
           </div>

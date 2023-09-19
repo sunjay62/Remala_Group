@@ -1,16 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './faq.scss';
 import Footer from '../../../footer/Footer';
 import Accordion from 'react-bootstrap/Accordion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Faq = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   return (
     <>
       <div className="containerFaq">
-        <div className="containerTop">
+        <div className="containerTop" data-aos="fade-right">
           <h1>Frequently Asked Question</h1>
         </div>
-        <div className="containerAccordion">
+        <div className="containerAccordion" data-aos="fade-up">
           <Accordion defaultActiveKey="0">
             <Accordion.Item eventKey="0">
               <Accordion.Header>Q: Siapa yang dapat mengajukan permohonan informasi publik? </Accordion.Header>

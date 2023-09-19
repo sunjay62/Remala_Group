@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './prinsipstruktur.scss';
 import StrukturTatakelola from '../../../../assets/home/strukturtatakelola.png';
 import Footer from '../../../footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PrinsipStruktur = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   return (
     <>
-      <div className="containerPrinsip">
+      <div className="containerPrinsip" data-aos="fade-up">
         <div className="contentPrinsip">
           <h5>Prinsip Tata Kelola Perusahaan</h5>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque nesciunt voluptas optio aperiam quibusdam quae id provident autem, illo fugiat, ipsa veniam est consequuntur recusandae?</p>

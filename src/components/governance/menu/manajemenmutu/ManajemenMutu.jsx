@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './manajemenmutu.scss';
 import Footer from '../../../footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const ManajemenMutu = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   return (
     <>
-      <div className="containerManajemen">
+      <div className="containerManajemen" data-aos="fade-up">
         <div className="contentManajemen">
           <h5>Kebijakan Manajemen Risiko</h5>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste praesentium atque ducimus ipsam! Modi aut sed distinctio optio cupiditate? Laudantium ratione reiciendis, ullam accusamus omnis non? Sapiente, neque laboriosam quos
             cupiditate provident a inventore. A, provident. Eos pariatur error nisi quia architecto blanditiis ad vero corrupti sapiente possimus. Expedita, accusamus?
           </p>
-
           <br />
           <h5>Pokok-pokok Kode Etik Telkom antara lain mengatur mengenai :</h5>
           <p>

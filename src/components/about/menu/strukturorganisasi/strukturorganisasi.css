@@ -47,13 +47,24 @@
 .profile-box {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
   width: 160px;
   height: 160px;
-  background-color: rgb(208, 208, 208);
+  background-color: rgb(221, 221, 221);
+}
+
+.profile-box img {
+  width: 85%;
 }
 
 .footer {
   margin-top: 50px;
+}
+
+.mx-4 h6 {
+  font-weight: 600;
 }
 
 /* Responsive */

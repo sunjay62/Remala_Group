@@ -1,5 +1,5 @@
 /* eslint-disable import/first */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
 import './tahunan.scss';
 import LaporanTahunan from '../../../../../assets/pdf/pdftest.pdf';
@@ -7,10 +7,17 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 import IconButton from '@mui/material/IconButton';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Tahunan = () => {
   const [numPages, setNumPages] = useState(null);
   const [pageNumber, setPageNumber] = useState(1);
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
 
   const onDocumentLoadSuccess = ({ numPages }) => {
     setNumPages(numPages);
@@ -30,7 +37,7 @@ const Tahunan = () => {
 
   return (
     <>
-      <div className="containerTahunan">
+      <div className="containerTahunan" data-aos="fade-left">
         <div className="pdfContainer">
           <Document file={LaporanTahunan} onLoadSuccess={onDocumentLoadSuccess}>
             <Page pageNumber={pageNumber} />

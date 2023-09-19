@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './menuAbout.css';
 import Footer from '../../../footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Profile = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   return (
     <>
       <div className="containerProfile">
-        <div className="company-profile-text">
+        <div className="company-profile-text" data-aos="fade-up">
           <h4 className="text-center">Company Profile</h4>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT. Remala Abadi Adalah salah satu Internet Service Provider yang mana telah berdiri sejak tahun 2007 dibawah manajemen PT. Remala Abadi. Kami melayanai kebutuhan Akses Internet, Network & IT
@@ -19,16 +27,15 @@ const Profile = () => {
           </p>
           <p>Adapun group perusahaan kami saat ini meliputi beberapa perusahaan : </p>
           <ol>
-            <li>Tachyon Network Indonesia</li>
-            <li>Fiber Media Indonesia</li>
-            <li>Nethome Indonesia</li>
-            <li>PC24 Cyber Indonesia</li>
-            <li>SaaS</li>
-            <li>Accel Works Indonesia</li>
+            <li>PT. Remala Abadi</li>
+            <li>PT. PC 24 Cyber Indonesia </li>
+            <li>PT. Solusi Aplikasi Andalan Semesta </li>
+            <li>PT. Jaringan Fiber Indonesia </li>
+            <li>PT. Accel Works Indonesia </li>
           </ol>
         </div>
 
-        <div className="key-features">
+        <div className="key-features" data-aos="fade-up">
           <div className="content-key-features col-7 m-auto d-block">
             <h2 className="fw-bold">Key Features</h2>
             <p>

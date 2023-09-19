@@ -1,9 +1,10 @@
+import React, { useRef, useState, useEffect } from 'react';
 import './paparanpublik.scss';
-import React, { useRef, useState } from 'react';
 import Highlighter from 'react-highlight-words';
 import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const data = [
   {
     key: '1',
@@ -182,11 +183,11 @@ const PaparanPublik = () => {
   return (
     <>
       <div className="containerPaparanPublik">
-        <div className="containerTop">
+        <div className="containerTop" data-aos="fade-down">
           <h2>Informasi Paparan Publik</h2>
         </div>
         <hr />
-        <div className="containerBottom">
+        <div className="containerBottom" data-aos="fade-left">
           <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
         </div>
       </div>

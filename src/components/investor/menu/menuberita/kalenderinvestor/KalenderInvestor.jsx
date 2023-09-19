@@ -1,8 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Highlighter from 'react-highlight-words';
 import { Button, Input, Space, Table } from 'antd';
-import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
+import { SearchOutlined } from '@ant-design/icons';
 import './kalenderinvestor.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
   {
@@ -176,11 +178,11 @@ const KalenderInvestor = () => {
   return (
     <>
       <div className="mainContainerKalender">
-        <div className="kalenderTop">
+        <div className="kalenderTop" data-aos="fade-down">
           <h2>Kalender Investor</h2>
         </div>
         <hr />
-        <div className="kalenderBottom">
+        <div className="kalenderBottom" data-aos="fade-left">
           <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
         </div>
       </div>

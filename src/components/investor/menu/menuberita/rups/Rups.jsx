@@ -1,8 +1,10 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Highlighter from 'react-highlight-words';
 import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
 import './rups.scss';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const data = [
   {
@@ -71,6 +73,12 @@ const Rups = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
     confirm();
     setSearchText(selectedKeys[0]);
@@ -212,13 +220,13 @@ const Rups = () => {
   return (
     <>
       <div className="mainContainerRups">
-        <div className="rupsTop">
+        <div className="rupsTop" data-aos="fade-down">
           <h4>Perseroan telah melakukan pengumuman terkait Rapat Umum Pemegang Saham (RUPS) setiap tahunnya sebagai berikut: </h4>
           <br />
           <h2>RUPST</h2>
         </div>
         <hr />
-        <div className="rupsBottom">
+        <div className="rupsBottom" data-aos="fade-left">
           <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
         </div>
       </div>
