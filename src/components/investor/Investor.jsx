@@ -1,19 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './investor.scss';
-import Saham from './menu/saham/Saham';
-import Berita from './menu/berita/Berita';
-import Laporan from './menu/laporan/Laporan';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 
 const Investor = () => {
-  const [activeButton, setActiveButton] = useState('Laporan');
-  const components = {
-    Saham: <Saham />,
-    Berita: <Berita />,
-    Laporan: <Laporan />,
-  };
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const currentPath = location.pathname.split('/').pop();
+  const [activeButton, setActiveButton] = useState(currentPath);
 
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
+    navigate(`/investor-relation/${componentName.toLowerCase()}`);
   };
 
   return (
@@ -26,17 +24,19 @@ const Investor = () => {
       </div>
       <div className="buttons">
         <div className="containerAbout">
-          <button className={`btnMenu ${activeButton === 'Laporan' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Laporan')}>
-            Laporan-Laporan
+          <button className={`btnMenu ${activeButton === 'report/sec-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('report/sec-report')}>
+            Laporan - Laporan
           </button>
-          <button className={`btnMenu ${activeButton === 'Saham' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Saham')}>
+          <button className={`btnMenu ${activeButton === 'stock-information/stock-volume' ? 'clicked' : ''}`} onClick={() => handleButtonClick('stock-information/stock-volume')}>
             Informasi Saham
           </button>
-          <button className={`btnMenu ${activeButton === 'Berita' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Berita')}>
+          <button className={`btnMenu ${activeButton === 'news/rups' ? 'clicked' : ''}`} onClick={() => handleButtonClick('news/rups')}>
             Berita & Kegiatan
           </button>
         </div>
-        <div className="isi-content-investor">{components[activeButton]}</div>
+        <div className="isi-content-investor">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

@@ -1,18 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './strukturorganisasi.css';
-import DewanKomisaris from '../menu-struktur-organisasi/DewanKomisaris';
-import JajaranDireksi from '../menu-struktur-organisasi/JajaranDireksi';
-import SekretarisPerusahaan from '../menu-struktur-organisasi/SekretarisPerusahaan';
-import KomiteAudit from '../menu-struktur-organisasi/KomiteAudit';
-import KomiteNominasi from '../menu-struktur-organisasi/KomiteNominasi';
-import KomiteEvaluasi from '../menu-struktur-organisasi/KomiteEvaluasi';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const StrukturOrganisasi = () => {
-  const [content, setContent] = useState(<DewanKomisaris />);
-  const [isTap, setIsTap] = useState(0);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const currentPath = location.pathname.split('/').pop();
+  const [activeButton, setActiveButton] = useState(currentPath);
+
+  const handleButtonClick = (componentName) => {
+    setActiveButton(componentName);
+    navigate(`/aboutus/organitation-strucktur/${componentName.toLowerCase()}`);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -20,39 +23,32 @@ const StrukturOrganisasi = () => {
     });
   }, []);
 
-  useEffect(() => {
-    handleClick(0, <DewanKomisaris />);
-  }, []);
-
-  const handleClick = (boxIndex, pageRender) => {
-    setContent(pageRender);
-    setIsTap(boxIndex);
-  };
-
   return (
     <>
       <div className="d-flex mainContainerOrganisasi">
         <div className="menuStruktur" data-aos="fade-right">
-          <div className={isTap === 0 ? 'choose' : ' '} onClick={() => handleClick(0, <DewanKomisaris />)}>
+          <div className={`btnOrganisasi ${activeButton === 'board-of-commissioners' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-commissioners')}>
             <p>Dewan Komaris</p>
           </div>
-          <div className={isTap === 1 ? 'choose' : ' '} onClick={() => handleClick(1, <JajaranDireksi />)}>
+          <div className={`btnOrganisasi ${activeButton === 'board-of-director' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-director')}>
             <p>Jajaran Direksi</p>
           </div>
-          <div className={isTap === 2 ? 'choose' : ' '} onClick={() => handleClick(2, <SekretarisPerusahaan />)}>
+          <div className={`btnOrganisasi ${activeButton === 'corporate-secretary' ? 'clicked' : ''}`} onClick={() => handleButtonClick('corporate-secretary')}>
             <p>Sekretaris Perusahaan</p>
           </div>
-          <div className={isTap === 3 ? 'choose' : ' '} onClick={() => handleClick(3, <KomiteAudit />)}>
+          <div className={`btnOrganisasi ${activeButton === 'audit-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('audit-committee')}>
             <p>Komite Audit</p>
           </div>
-          <div className={isTap === 4 ? 'choose' : ' '} onClick={() => handleClick(4, <KomiteNominasi />)}>
+          <div className={`btnOrganisasi ${activeButton === 'nomination-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('nomination-committee')}>
             <p>Komite Nominasi dan Remunerasi</p>
           </div>
-          <div className={isTap === 5 ? 'choose' : ' '} onClick={() => handleClick(5, <KomiteEvaluasi />)}>
+          <div className={`btnOrganisasi ${activeButton === 'evaluation-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('evaluation-committee')}>
             <p>Komite Evaluasi, Monitoring Perencanaan dan Resiko</p>
           </div>
         </div>
-        <div className="content-byMenu col-7">{content}</div>
+        <div className="content-byMenu col-7">
+          <Outlet />
+        </div>
       </div>
       <div className="footer">{<Footer />}</div>
     </>

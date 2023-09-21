@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './berita.scss';
-import Rups from '../menuberita/rups/Rups';
-import PaparanPublik from '../menuberita/paparanpublik/PaparanPublik';
-import KalenderInvestor from '../menuberita/kalenderinvestor/KalenderInvestor';
-import PengumumanEmiten from '../menuberita/pengumumanemiten/PengumumanEmiten';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Berita = () => {
-  const [content, setContent] = useState(<Rups />);
-  const [isTap, setIsTap] = useState(0);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  useEffect(() => {
-    handleClick(0, <Rups />);
-  }, []);
+  const currentPath = location.pathname.split('/').pop();
+  const [activeButton, setActiveButton] = useState(currentPath);
+
+  const handleButtonClick = (componentName) => {
+    setActiveButton(componentName);
+    navigate(`/investor-relation/news/${componentName.toLowerCase()}`);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -22,29 +23,26 @@ const Berita = () => {
     });
   }, []);
 
-  const handleClick = (boxIndex, pageRender) => {
-    setContent(pageRender);
-    setIsTap(boxIndex);
-  };
-
   return (
     <>
       <div className="d-flex mainContainerBerita">
         <div className="menuStruktur" data-aos="fade-right">
-          <div className={isTap === 0 ? 'choose' : ' '} onClick={() => handleClick(0, <Rups />)}>
+          <div className={`btnNews ${activeButton === 'rups' ? 'clicked' : ''}`} onClick={() => handleButtonClick('rups')}>
             <p>RUPS</p>
           </div>
-          <div className={isTap === 1 ? 'choose' : ' '} onClick={() => handleClick(1, <KalenderInvestor />)}>
+          <div className={`btnNews ${activeButton === 'investor-calender' ? 'clicked' : ''}`} onClick={() => handleButtonClick('investor-calender')}>
             <p>Kalender Investor</p>
           </div>
-          <div className={isTap === 2 ? 'choose' : ' '} onClick={() => handleClick(2, <PengumumanEmiten />)}>
+          <div className={`btnNews ${activeButton === 'issuer-announcement' ? 'clicked' : ''}`} onClick={() => handleButtonClick('issuer-announcement')}>
             <p>Pengumuman Emiten</p>
           </div>
-          <div className={isTap === 3 ? 'choose' : ' '} onClick={() => handleClick(3, <PaparanPublik />)}>
+          <div className={`btnNews ${activeButton === 'public-exposure' ? 'clicked' : ''}`} onClick={() => handleButtonClick('public-exposure')}>
             <p>Pengumuman Paparan Publik</p>
           </div>
         </div>
-        <div className="content-byMenu col-7">{content}</div>
+        <div className="content-byMenu col-7">
+          <Outlet />
+        </div>
       </div>
       <div className="footer">{<Footer />}</div>
     </>

@@ -43,6 +43,12 @@ const KalenderInvestor = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
+
   const handleSearch = (selectedKeys, confirm, dataIndex) => {
     confirm();
     setSearchText(selectedKeys[0]);

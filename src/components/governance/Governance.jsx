@@ -1,19 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './governance.scss';
-import PrinsipStruktur from './menu/prinsipstruktur/PrinsipStruktur';
-import ManajemenMutu from './menu/manajemenmutu/ManajemenMutu';
-import KodeEtik from './menu/kodeetik/KodeEtik';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 
 const Governance = () => {
-  const [activeButton, setActiveButton] = useState('PrinsipStruktur');
-  const components = {
-    PrinsipStruktur: <PrinsipStruktur />,
-    KodeEtik: <KodeEtik />,
-    ManajemenMutu: <ManajemenMutu />,
-  };
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const currentPath = location.pathname.split('/').pop();
+  const [activeButton, setActiveButton] = useState(currentPath);
 
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
+    navigate(`/governance-corporate/${componentName.toLowerCase()}`);
   };
 
   return (
@@ -26,17 +24,19 @@ const Governance = () => {
       </div>
       <div className="buttons">
         <div className="containerGovernance">
-          <button className={`btnMenu ${activeButton === 'PrinsipStruktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('PrinsipStruktur')}>
+          <button className={`btnMenu ${activeButton === 'principle-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('principle-strucktur')}>
             Prinsip & Struktur
           </button>
-          <button className={`btnMenu ${activeButton === 'KodeEtik' ? 'clicked' : ''}`} onClick={() => handleButtonClick('KodeEtik')}>
+          <button className={`btnMenu ${activeButton === 'code-ethics' ? 'clicked' : ''}`} onClick={() => handleButtonClick('code-ethics')}>
             Kode Etik
           </button>
-          <button className={`btnMenu ${activeButton === 'ManajemenMutu' ? 'clicked' : ''}`} onClick={() => handleButtonClick('ManajemenMutu')}>
+          <button className={`btnMenu ${activeButton === 'quality-management' ? 'clicked' : ''}`} onClick={() => handleButtonClick('quality-management')}>
             Manajemen Mutu
           </button>
         </div>
-        <div className="isi-content-governance">{components[activeButton]}</div>
+        <div className="isi-content-governance">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

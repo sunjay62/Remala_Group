@@ -1,19 +1,17 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './contactus.scss';
-import Contact from './menu/contact/Contact';
-import Faq from './menu/faq/Faq';
-import MenuRegulasi from './menu/menuregulasi/MenuRegulasi';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 
 const ContactUs = () => {
-  const [activeButton, setActiveButton] = useState('Contact');
-  const components = {
-    Contact: <Contact />,
-    Faq: <Faq />,
-    MenuRegulasi: <MenuRegulasi />,
-  };
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const currentPath = location.pathname.split('/').pop();
+  const [activeButton, setActiveButton] = useState(currentPath);
 
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
+    navigate(`/contactus/${componentName.toLowerCase()}`);
   };
 
   return (
@@ -26,14 +24,16 @@ const ContactUs = () => {
       </div>
       <div className="buttons">
         <div className="containerAbout">
-          <button className={`btnMenu ${activeButton === 'MenuRegulasi' ? 'clicked' : ''}`} onClick={() => handleButtonClick('MenuRegulasi')}>
+          <button className={`btnMenu ${activeButton === 'regulations-menu' ? 'clicked' : ''}`} onClick={() => handleButtonClick('regulations-menu')}>
             Regulasi
           </button>
-          <button className={`btnMenu ${activeButton === 'Faq' ? 'clicked' : ''}`} onClick={() => handleButtonClick('Faq')}>
+          <button className={`btnMenu ${activeButton === 'faq' ? 'clicked' : ''}`} onClick={() => handleButtonClick('faq')}>
             FAQ
           </button>
         </div>
-        <div className="isi-content-contactUs">{components[activeButton]}</div>
+        <div className="isi-content-contactUs">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

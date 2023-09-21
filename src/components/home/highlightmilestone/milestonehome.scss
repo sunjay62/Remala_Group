@@ -1,0 +1,32 @@
+.company-milestone {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.company-milestone h3 {
+  font-weight: bold;
+  color: #0a5493;
+}
+
+.amount {
+  font-size: 80px;
+}
+
+.amountyear {
+  font-size: 130px;
+}
+
+.year {
+  font-size: 60px;
+}
+
+.boxmile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  color: white;
+  background-image: url('../../../assets/home/boxmile.webp');
+  background-size: cover;
+  background-position: center;
+}

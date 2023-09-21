@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import './saham.scss';
-import Volume from '../menusaham/volume/Volume';
-import Prospektus from '../menusaham/prospektus/Prospektus';
-import Pencatatan from '../menusaham/pencatatan/Pencatatan';
-import Komposisi from '../menusaham/komposisi/Komposisi';
+import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Saham = () => {
-  const [content, setContent] = useState(<Volume />);
-  const [isTap, setIsTap] = useState(0);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  useEffect(() => {
-    handleClick(0, <Volume />);
-  }, []);
+  const currentPath = location.pathname.split('/').pop();
+  const [activeButton, setActiveButton] = useState(currentPath);
+
+  const handleButtonClick = (componentName) => {
+    setActiveButton(componentName);
+    navigate(`/investor-relation/stock-information/${componentName.toLowerCase()}`);
+  };
 
   useEffect(() => {
     AOS.init({
@@ -22,29 +23,26 @@ const Saham = () => {
     });
   }, []);
 
-  const handleClick = (boxIndex, pageRender) => {
-    setContent(pageRender);
-    setIsTap(boxIndex);
-  };
-
   return (
     <>
       <div className="d-flex mainContainerSaham">
         <div className="menuStruktur" data-aos="fade-right">
-          <div className={isTap === 0 ? 'choose' : ' '} onClick={() => handleClick(0, <Volume />)}>
+          <div className={`btnStock ${activeButton === 'stock-volume' ? 'clicked' : ''}`} onClick={() => handleButtonClick('stock-volume')}>
             <p>Harga & Volume Saham</p>
           </div>
-          <div className={isTap === 1 ? 'choose' : ' '} onClick={() => handleClick(1, <Pencatatan />)}>
+          <div className={`btnStock ${activeButton === 'stock-record' ? 'clicked' : ''}`} onClick={() => handleButtonClick('stock-record')}>
             <p>Kronologis Pencatatan Saham</p>
           </div>
-          <div className={isTap === 2 ? 'choose' : ' '} onClick={() => handleClick(2, <Prospektus />)}>
+          <div className={`btnStock ${activeButton === 'public-prospectus' ? 'clicked' : ''}`} onClick={() => handleButtonClick('public-prospectus')}>
             <p>Prospektus Penawaran Umum</p>
           </div>
-          <div className={isTap === 3 ? 'choose' : ' '} onClick={() => handleClick(3, <Komposisi />)}>
+          <div className={`btnStock ${activeButton === 'shareholder-composition' ? 'clicked' : ''}`} onClick={() => handleButtonClick('shareholder-composition')}>
             <p>Komposisi Pemegang Saham</p>
           </div>
         </div>
-        <div className="content-byMenu col-7">{content}</div>
+        <div className="content-byMenu col-7">
+          <Outlet />
+        </div>
       </div>
       <div className="footer">{<Footer />}</div>
     </>

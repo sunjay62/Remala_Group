@@ -4,12 +4,12 @@ const menuItems = [
   },
   {
     title: 'Hubungi Kami',
-    url: '/hubungikami',
+    url: '/contactus',
     cName: 'nav-links',
   },
   {
     title: 'Berita & Kegiatan',
-    url: '#',
+    url: '/investor-relation/news/rups',
     cName: 'nav-links',
   },
   {
@@ -19,17 +19,17 @@ const menuItems = [
   },
   {
     title: 'Tentang Kami',
-    url: '/tentang ',
+    url: '/aboutus/profile',
     cName: 'nav-links',
   },
   {
     title: 'Tata Kelola',
-    url: '/tatakelola',
+    url: '/governance-corporate/principle-strucktur',
     cName: 'nav-links',
   },
   {
     title: 'Hubungan Investor',
-    url: '/hubunganinvestor',
+    url: '/investor-relation/report/sec-report',
     cName: 'nav-links',
   },
   {

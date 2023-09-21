@@ -16,16 +16,16 @@ const Contact = () => {
 
   return (
     <>
-      <div className="containerContact">
-        <div className="location" data-aos="fade-right">
+      <div className="containerContact" data-aos="fade-up">
+        <div className="location">
           <LocationOnIcon className="icon" />
           <p>Location</p>
         </div>
-        <div className="phone" data-aos="fade-up">
+        <div className="phone">
           <PhoneInTalkIcon className="icon" />
           <p>Phone</p>
         </div>
-        <div className="email" data-aos="fade-left">
+        <div className="email">
           <AttachEmailIcon className="icon" />
           <p>E-Mail</p>
         </div>
