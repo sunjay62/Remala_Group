@@ -23,7 +23,7 @@ const Footer = () => {
               <p>Jl. Gatot Subroto No 74-75, RT 02/ RW 01.</p>
               <p>Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan,</p>
               <p>Daerah Khusus Ibukota Jakarta 12870</p>
-              <p>Telepon : (021) 83709269</p>
+              <p>Telepon : (021) 83708889</p>
               <p>Email : corporatesecretary@remala.id</p>
               {/* <p>
                 <h5>Visit Our Office :</h5>

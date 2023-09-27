@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Alamsyah from '../../../../assets/fotoprofile/alamsyah.png';
+import Verah from '../../../../assets/fotoprofile/verah-wahyudi.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,7 +14,9 @@ const DewanKomisaris = () => {
   return (
     <>
       <div className="col-profile d-flex" data-aos="fade-left">
-        <div className="col-6 profile-box "></div>
+        <div className="col-6 profile-box">
+          <img src={Verah} alt="Verah Wahyudi Singgih Wong" />
+        </div>
         <div className="mx-4">
           <h6>Verah Wahyudi Singgih Wong</h6>
           <p>Komisaris Utama</p>

@@ -24,11 +24,11 @@ const Home = () => {
           <p data-aos="fade-right">DENGAN INFRASFRUKTUR TERPERCAYA</p>
         </div>
       </div>
-      <div className="perseroanHome">
+      {/* <div className="perseroanHome">
         <div className="isiContent">
           <h1>Leading National Internet Business Group in Indonesia</h1>
         </div>
-      </div>
+      </div> */}
       <div className="front-content" data-aos="fade-up">
         <div className="menuItemHome">
           <Menuitem />

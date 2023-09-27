@@ -38,7 +38,7 @@ const Milestonehome = () => {
                 <h1>
                   <span className="amount">150+</span>
                 </h1>
-                <h4>Base Transceiver Station</h4>
+                <h4>Point of Presence</h4>
               </div>
             </div>
           </div>

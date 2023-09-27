@@ -50,8 +50,9 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  width: 160px;
-  height: 160px;
+  width: 30%;
+  height: max-content;
+  padding-top: 25px;
   background-color: rgb(221, 221, 221);
 }
 
