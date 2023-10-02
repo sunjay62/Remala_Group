@@ -20,8 +20,9 @@ const StrukturGroup = () => {
           <h3>REMALA ABADI GRUP</h3>
         </div>
         <div className="containerBottom">
-          <img src={StrukturTelkom} alt="" className="imgStrukturOne" data-aos="fade-up" />
+          {/* <img src={StrukturTelkom} alt="" className="imgStrukturOne" data-aos="fade-up" />
           <img src={StrukturLinknet} alt="" className="imgStrukturTwo" data-aos="fade-up" />
+        */}
         </div>
       </div>
       <div className="Footer">{<Footer />}</div>

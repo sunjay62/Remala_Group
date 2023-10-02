@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import menuItems from './MenuItems';
-import './navbar.css';
+import './navbar.scss';
 import logoremala from '../../assets/navbar/logoremala.png';
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState('en');
+
+  const handleLanguageChange = (language) => {
+    setSelectedLanguage(language);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -49,6 +54,16 @@ const Navbar = () => {
           );
         })}
       </ul>
+      <div className="language">
+        <div className="language">
+          <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
+            ID
+          </button>
+          <button className={`language-button ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
+            EN
+          </button>
+        </div>
+      </div>
     </nav>
   );
 };
