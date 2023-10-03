@@ -1,13 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './governance.scss';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Governance = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
   const currentPath = location.pathname.split('/').pop();
   const [activeButton, setActiveButton] = useState(currentPath);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1300,
+    });
+  }, []);
 
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
@@ -15,11 +22,15 @@ const Governance = () => {
   };
 
   return (
-    <div className="contentGovernance">
+    <div className="contentGovernance" data-aos="fade-down">
       <div className="prinsip-content d-flex align-items-center justify-content-center">
         <div className="content-text">
-          <h2 className="textHero">MENJUNJUNG TINGGI INTEGRITAS</h2>
-          <h2 className="textHero">DAN KOMITMEN DALAM BEKERJA</h2>
+          <h2 className="textHero" data-aos="fade-left">
+            MENJUNJUNG TINGGI INTEGRITAS
+          </h2>
+          <h2 className="textHero" data-aos="fade-right">
+            DAN KOMITMEN DALAM BEKERJA
+          </h2>
         </div>
       </div>
       <div className="buttons">
