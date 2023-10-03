@@ -1,0 +1,15 @@
+.backTopContainer {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  background-color: #3c9affd7;
+  border-radius: 30%;
+
+  &:hover {
+    background-color: #1988ffd7;
+  }
+}
+
+.arrowBackTop {
+  color: #fff;
+}

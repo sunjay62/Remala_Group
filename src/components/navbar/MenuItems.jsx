@@ -1,6 +1,13 @@
 const menuItems = [
   {
-    title: '',
+    title: 'Beranda',
+    url: '/',
+    cName: 'nav-links',
+  },
+  {
+    title: 'Hubungan Investor',
+    url: '/investor-relation/report/sec-report',
+    cName: 'nav-links',
   },
   {
     title: 'Hubungi Kami',
@@ -8,12 +15,7 @@ const menuItems = [
     cName: 'nav-links',
   },
   {
-    title: 'Berita & Kegiatan',
-    url: '/investor-relation/news/rups',
-    cName: 'nav-links',
-  },
-  {
-    title: 'Karir',
+    title: 'Bisnis',
     url: '#',
     cName: 'nav-links',
   },
@@ -28,12 +30,12 @@ const menuItems = [
     cName: 'nav-links',
   },
   {
-    title: 'Hubungan Investor',
-    url: '/investor-relation/report/sec-report',
+    title: 'Berita & Kegiatan',
+    url: '/investor-relation/news/rups',
     cName: 'nav-links',
   },
   {
-    title: 'Bisnis',
+    title: 'Karir',
     url: '#',
     cName: 'nav-links',
   },

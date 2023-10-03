@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import './strukturgrup.scss';
-import StrukturTelkom from '../../../../assets/home/strukturtelkom.png';
-import StrukturLinknet from '../../../../assets/home/strukturlinknet.png';
+// import StrukturTelkom from '../../../../assets/home/strukturtelkom.png';
+// import StrukturLinknet from '../../../../assets/home/strukturlinknet.png';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

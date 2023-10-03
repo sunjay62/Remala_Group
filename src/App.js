@@ -38,6 +38,7 @@ import Sec from './components/investor/menu/menulaporan/sec/Sec';
 import Keuangan from './components/investor/menu/menulaporan/keuangan/Keuangan';
 import Tahunan from './components/investor/menu/menulaporan/tahunan/Tahunan';
 import Keberlanjutan from './components/investor/menu/menulaporan/keberlanjutan/Keberlanjutan';
+import BackTop from './components/backtop/BackTop';
 
 function App() {
   return (
@@ -91,6 +92,7 @@ function App() {
             </Route>
           </Route>
         </Routes>
+        <BackTop />
       </BrowserRouter>
     </>
   );
