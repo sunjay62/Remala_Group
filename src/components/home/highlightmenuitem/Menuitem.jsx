@@ -24,7 +24,7 @@ const Menuitem = () => {
   return (
     <>
       <div className="containerMenuItem">
-        <div className="item-home">
+        <div className="item-home" data-aos="fade-right">
           <div className="col-md-1 col-5">
             <Link to="/aboutus/organitation-strucktur/board-of-commissioners">
               <div className="boxitem-home col-12">
@@ -62,7 +62,7 @@ const Menuitem = () => {
             <p className="text-center">Annual Reports</p>
           </div>
         </div>
-        <div className="item-home">
+        <div className="item-home" data-aos="fade-left">
           <div className="col-md-1 col-5">
             <Link to="/investor-relation/report/financial-statements">
               <div className="boxitem-home col-12">

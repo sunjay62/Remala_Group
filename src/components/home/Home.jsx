@@ -29,12 +29,14 @@ const Home = () => {
           <h1>Leading National Internet Business Group in Indonesia</h1>
         </div>
       </div> */}
-      <div className="front-content" data-aos="fade-up">
-        <div className="menuItemHome">
-          <Menuitem />
-        </div>
-        <div className="produkHome">
-          <Produk />
+      <div className="front-content">
+        <div className="containerMenuProduct">
+          <div className="menuItemHome">
+            <Menuitem />
+          </div>
+          <div className="produkHome">
+            <Produk />
+          </div>
         </div>
         <div className="milestoneHome" data-aos="fade-up">
           <HighlightMilestone />

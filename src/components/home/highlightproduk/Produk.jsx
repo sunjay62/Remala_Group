@@ -14,10 +14,10 @@ const Produk = () => {
 
   return (
     <>
-      <div className="containerProduk" data-aos="fade-up">
-        <h3>Temukan Konektivitas Untuk Kebutuhan Anda</h3>
-        <p>Memberikan Solusi Kebutuhan Digital</p>
-        <div className="m-auto d-block ">
+      <div className="containerProduk">
+        <h3 data-aos="fade-up">Temukan Konektivitas Untuk Kebutuhan Anda</h3>
+        <p data-aos="fade-up">Memberikan Solusi Kebutuhan Digital</p>
+        <div className="m-auto d-block " data-aos="fade-up">
           <div className="d-flex justify-content-center mainImgContainer">
             <div className="tachyon col-5 d-flex align-items-center" data-aos="fade-right">
               <div className="col-6 secondImgContainer1">
