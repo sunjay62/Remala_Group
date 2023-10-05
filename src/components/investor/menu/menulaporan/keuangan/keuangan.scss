@@ -1,7 +1,3 @@
-.containerKeuangan {
-  border-left: 2px solid gray;
-}
-
 .react-pdf__Page__textContent {
   display: none;
 }
@@ -38,4 +34,15 @@
 .btnContainer button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+@media screen and (max-width: 860px) {
+  .containerKeuangan {
+    border-left: none;
+    height: 120vh;
+  }
+
+  .btnContainer button {
+    padding: 0;
+  }
 }

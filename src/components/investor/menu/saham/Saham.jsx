@@ -25,22 +25,22 @@ const Saham = () => {
 
   return (
     <>
-      <div className="d-flex mainContainerSaham">
-        <div className="menuStruktur" data-aos="fade-right">
+      <div className="mainContainerSaham">
+        <div className="menuStrukturSaham" data-aos="fade-right">
           <div className={`btnStock ${activeButton === 'stock-volume' ? 'clicked' : ''}`} onClick={() => handleButtonClick('stock-volume')}>
-            <p>Harga & Volume Saham</p>
+            Harga & Volume Saham
           </div>
           <div className={`btnStock ${activeButton === 'stock-record' ? 'clicked' : ''}`} onClick={() => handleButtonClick('stock-record')}>
-            <p>Kronologis Pencatatan Saham</p>
+            Kronologis Pencatatan Saham
           </div>
           <div className={`btnStock ${activeButton === 'public-prospectus' ? 'clicked' : ''}`} onClick={() => handleButtonClick('public-prospectus')}>
-            <p>Prospektus Penawaran Umum</p>
+            Prospektus Penawaran Umum
           </div>
           <div className={`btnStock ${activeButton === 'shareholder-composition' ? 'clicked' : ''}`} onClick={() => handleButtonClick('shareholder-composition')}>
-            <p>Komposisi Pemegang Saham</p>
+            Komposisi Pemegang Saham
           </div>
         </div>
-        <div className="content-byMenu col-7">
+        <div className="content-byMenu">
           <Outlet />
         </div>
       </div>

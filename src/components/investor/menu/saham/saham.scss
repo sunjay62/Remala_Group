@@ -1,8 +1,9 @@
 .mainContainerSaham {
   padding: 0 15px 0 15px;
+  display: flex;
 }
 
-.menuStruktur {
+.menuStrukturSaham {
   position: sticky;
   top: 150px;
   display: flex;
@@ -18,28 +19,33 @@
   padding: 15px;
 }
 
-.menuStruktur div:hover {
+.menuStrukturSaham div:hover {
   background-color: #4081b9;
   cursor: pointer;
 }
 
-.menuStruktur div {
+.menuStrukturSaham div {
   padding-right: 3%;
   height: auto;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
-.menuStruktur div p {
+.menuStrukturSaham div p {
   margin-left: 25px;
   margin-top: 10px;
 }
 .content-byMenu {
   height: max-content;
   margin-left: 60px;
+  width: 50%;
 }
 
-.clicked {
+.btnStock {
+  padding: 15px;
+}
+
+.choose {
   background-color: #4081b9;
   border-radius: 10px;
 }
@@ -51,13 +57,35 @@
 /* Responsive */
 
 @media screen and (max-width: 860px) {
-  .mainContainerOrganisasi {
+  .mainContainerSaham {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    gap: 25px;
   }
 
-  .mainContainerOrganisasi .menuStruktur {
-    position: relative;
-    width: 50%;
+  .menuStrukturSaham {
+    flex-direction: row;
+    top: 0;
+    border-radius: 15px;
+    height: max-content;
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .btnStock {
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
+
+  .content-byMenu {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
   }
 }

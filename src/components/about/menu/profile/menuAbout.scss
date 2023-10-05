@@ -45,3 +45,24 @@
   padding-bottom: 2%;
   border-bottom: 1px solid black;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 860px) {
+  .containerProfile {
+    padding: 10px;
+  }
+
+  .company-profile-text {
+    width: 100%;
+  }
+
+  .key-features {
+    width: 100%;
+  }
+
+  .content-key-features,
+  .content-visi-misi {
+    width: 100%;
+  }
+}

@@ -25,22 +25,22 @@ const Laporan = () => {
 
   return (
     <>
-      <div className="d-flex mainContainerLaporan">
-        <div className="menuStruktur" data-aos="fade-right">
-          <div className={`btnNews ${activeButton === 'sec-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('sec-report')}>
-            <p>Laporan SEC</p>
+      <div className="mainContainerLaporan">
+        <div className="menuStrukturLaporan" data-aos="fade-right">
+          <div className={`btnLaporan ${activeButton === 'sec-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('sec-report')}>
+            Laporan SEC
           </div>
-          <div className={`btnNews ${activeButton === 'financial-statements' ? 'clicked' : ''}`} onClick={() => handleButtonClick('financial-statements')}>
-            <p>Laporan Keuangan</p>
+          <div className={`btnLaporan ${activeButton === 'financial-statements' ? 'clicked' : ''}`} onClick={() => handleButtonClick('financial-statements')}>
+            Laporan Keuangan
           </div>
-          <div className={`btnNews ${activeButton === 'annual-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('annual-report')}>
-            <p>Laporan Tahunan</p>
+          <div className={`btnLaporan ${activeButton === 'annual-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('annual-report')}>
+            Laporan Tahunan
           </div>
-          <div className={`btnNews ${activeButton === 'sustainability-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('sustainability-report')}>
-            <p>Laporan Keberlanjutan</p>
+          <div className={`btnLaporan ${activeButton === 'sustainability-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('sustainability-report')}>
+            Laporan Keberlanjutan
           </div>
         </div>
-        <div className="content-byMenu col-7">
+        <div className="content-byMenu">
           <Outlet />
         </div>
       </div>

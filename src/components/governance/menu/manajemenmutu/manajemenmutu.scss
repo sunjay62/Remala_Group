@@ -23,3 +23,13 @@
     align-self: flex-start;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .containerManajemen {
+    padding: 15px;
+  }
+
+  .contentManajemen {
+    border-radius: 25px;
+  }
+}

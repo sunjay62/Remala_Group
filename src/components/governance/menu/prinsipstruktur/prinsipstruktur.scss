@@ -23,3 +23,17 @@
     align-self: flex-start;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .containerPrinsip {
+    padding: 15px;
+  }
+
+  .contentPrinsip {
+    border-radius: 25px;
+  }
+
+  .imgTatakelola {
+    width: 100%;
+  }
+}

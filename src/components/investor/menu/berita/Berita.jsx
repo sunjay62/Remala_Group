@@ -25,19 +25,19 @@ const Berita = () => {
 
   return (
     <>
-      <div className="d-flex mainContainerBerita">
-        <div className="menuStruktur" data-aos="fade-right">
+      <div className="mainContainerBerita">
+        <div className="menuStrukturBerita" data-aos="fade-right">
           <div className={`btnNews ${activeButton === 'rups' ? 'clicked' : ''}`} onClick={() => handleButtonClick('rups')}>
-            <p>RUPS</p>
+            RUPS
           </div>
           <div className={`btnNews ${activeButton === 'investor-calender' ? 'clicked' : ''}`} onClick={() => handleButtonClick('investor-calender')}>
-            <p>Kalender Investor</p>
+            Kalender Investor
           </div>
           <div className={`btnNews ${activeButton === 'issuer-announcement' ? 'clicked' : ''}`} onClick={() => handleButtonClick('issuer-announcement')}>
-            <p>Pengumuman Emiten</p>
+            Pengumuman Emiten
           </div>
           <div className={`btnNews ${activeButton === 'public-exposure' ? 'clicked' : ''}`} onClick={() => handleButtonClick('public-exposure')}>
-            <p>Pengumuman Paparan Publik</p>
+            Paparan Publik
           </div>
         </div>
         <div className="content-byMenu col-7">

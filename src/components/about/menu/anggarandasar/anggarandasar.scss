@@ -7,3 +7,10 @@
   font-weight: 600;
   color: #114f8c;
 }
+
+@media screen and (max-width: 860px) {
+  .containerAnggaran {
+    width: 100%;
+    padding: 25px;
+  }
+}

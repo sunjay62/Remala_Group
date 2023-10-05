@@ -42,9 +42,14 @@ const Navbar = () => {
     });
   };
 
+  const handleMenuItemClick = () => {
+    // Set active to false when a menu item is clicked
+    setActive(false);
+  };
+
   return (
     <>
-      <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
+      <nav className={`navbar  ${scrolled ? 'scrolled' : ''}`}>
         <h1 className="navbar-logo">
           <img
             src={logoremala}
@@ -64,7 +69,14 @@ const Navbar = () => {
           {menuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link to={item.url} className={item.cName} onClick={scrollToTop}>
+                <Link
+                  to={item.url}
+                  className={item.cName}
+                  onClick={() => {
+                    scrollToTop();
+                    handleMenuItemClick(); // Set active to false when a menu item is clicked
+                  }}
+                >
                   {item.title}
                 </Link>
               </li>

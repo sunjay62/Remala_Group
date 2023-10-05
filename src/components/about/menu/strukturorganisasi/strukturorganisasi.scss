@@ -1,8 +1,9 @@
 .mainContainerOrganisasi {
   padding: 0 15px 0 15px;
+  display: flex;
 }
 
-.menuStruktur {
+.menuStrukturOrganisasi {
   position: sticky;
   top: 150px;
   display: flex;
@@ -18,19 +19,19 @@
   padding: 15px;
 }
 
-.menuStruktur div:hover {
+.menuStrukturOrganisasi div:hover {
   background-color: #4081b9;
   cursor: pointer;
 }
 
-.menuStruktur div {
+.menuStrukturOrganisasi div {
   padding-right: 3%;
   height: auto;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 
-.menuStruktur div p {
+.menuStrukturOrganisasi div p {
   margin-left: 25px;
   margin-top: 10px;
 }
@@ -68,16 +69,45 @@
   font-weight: 600;
 }
 
+.btnOrganisasi {
+  padding: 15px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 860px) {
   .mainContainerOrganisasi {
     display: flex;
     flex-direction: column;
+    padding: 10px;
+    gap: 25px;
+    overflow-x: hidden;
   }
 
-  .mainContainerOrganisasi .menuStruktur {
+  .menuStrukturOrganisasi {
+    flex-direction: column;
+    top: 0;
+    border-radius: 15px;
+    height: max-content;
+    padding: 15px;
+    width: 100%;
+    margin: 0;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
     position: relative;
-    width: 50%;
+
+    .btnOrganisasi {
+      padding: 10px;
+      font-size: 15px;
+    }
+  }
+
+  .content-byMenu {
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
   }
 }

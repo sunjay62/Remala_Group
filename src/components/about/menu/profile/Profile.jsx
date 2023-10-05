@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './menuAbout.css';
+import './menuAbout.scss';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';

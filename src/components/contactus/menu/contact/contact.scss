@@ -79,3 +79,18 @@
 .email:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 860px) {
+  .containerContact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .location,
+  .phone,
+  .email {
+    width: 70%;
+  }
+}

@@ -23,3 +23,13 @@
     align-self: flex-start;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .containerKodeEtik {
+    padding: 15px;
+  }
+
+  .contentKodeEtik {
+    border-radius: 25px;
+  }
+}

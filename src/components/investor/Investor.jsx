@@ -33,7 +33,7 @@ const Investor = () => {
           </h2>
         </div>
       </div>
-      <div className="buttons">
+      <div className="buttonsInvestor">
         <div className="containerAbout">
           <button className={`btnMenu ${activeButton === 'report/sec-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('report/sec-report')}>
             Laporan - Laporan
