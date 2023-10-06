@@ -121,13 +121,13 @@
 
 .language {
   border-radius: 3px;
-  border: 2px solid rgb(129, 129, 129);
+  border: 1px solid rgb(160, 160, 160);
 }
 
 .language-button {
   cursor: pointer;
   border: none;
-  background-color: #a8a8a8;
+  background-color: #fcfcfc00;
   font-size: 15px;
   border-radius: 2px;
 
@@ -137,7 +137,7 @@
 }
 
 .language-button.active {
-  background-color: #292929;
+  background-color: #979797;
   color: white;
   border: none;
   transition: all 0.2s ease-in-out;

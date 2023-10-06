@@ -5,6 +5,7 @@ import logoremala from '../../assets/navbar/logoremala.png';
 import { Link } from 'react-router-dom';
 import Indonesia from '../../assets/navbar/indonesia.png';
 import Uk from '../../assets/navbar/uk.png';
+import Tooltip from '@mui/material/Tooltip';
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -17,7 +18,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 75) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -43,7 +44,6 @@ const Navbar = () => {
   };
 
   const handleMenuItemClick = () => {
-    // Set active to false when a menu item is clicked
     setActive(false);
   };
 
@@ -74,7 +74,7 @@ const Navbar = () => {
                   className={item.cName}
                   onClick={() => {
                     scrollToTop();
-                    handleMenuItemClick(); // Set active to false when a menu item is clicked
+                    handleMenuItemClick();
                   }}
                 >
                   {item.title}
@@ -85,12 +85,16 @@ const Navbar = () => {
         </ul>
         <p></p>
         <div className="language">
-          <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
-            <img width="15" height="15" src={Indonesia} />
-          </button>
-          <button className={`language-button ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
-            <img width="15" height="15" src={Uk} />
-          </button>
+          <Tooltip title="ID">
+            <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
+              <img width="15" height="15" src={Indonesia} />
+            </button>
+          </Tooltip>
+          <Tooltip title="EN">
+            <button className={`language-button ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
+              <img width="15" height="15" src={Uk} />
+            </button>
+          </Tooltip>
         </div>
       </nav>
     </>
