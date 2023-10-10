@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './menuAbout.scss';
+import './profile.scss';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,41 +17,48 @@ const Profile = () => {
         <div className="company-profile-text" data-aos="fade-up">
           <h4 className="text-center">Company Profile</h4>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT. Remala Abadi Adalah salah satu Internet Service Provider yang mana telah berdiri sejak tahun 2007 dibawah manajemen PT. Remala Abadi. Kami melayanai kebutuhan Akses Internet, Network & IT
-            Solution yang menjadikan sebuah layanan Managed Services yang didukung dengan sumber daya manuasia yang profesional dan dukungan infrastruktur jaringan yang handal yang berupa jaringan Fiber Optic maupun Wireless yang
-            menggunakan teknologi terbaru. Dengan selalu berfikir kreatif dan inovatif serta yakin dan optimis untuk dapat memberikan layanan serta solusi yang tepat, handal dan tentunya efektif dan efisien.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT Remala Abadi telah berdiri sejak tahun 2004 yang bergerak dibidang perdagangan dan jasa, dan kami telah mendirikan dua anak perusahaan andalan yaitu Tachyon Network Indonesia dan Nethome
+            Indonesia yang merupakan perusahaan dibidang penyedia akses internet, layanan telekomunikasi dan multimedia, yang berkomitmen untuk mengembangan infrastruktur yang handal supaya memberikan layanan serta solusi terbaik,
+            menerapkan prinsip berfikir dan bekerja secara kreatif dan inovatif serta penuh tanggung jawab.
           </p>
           <p>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kami telah mempunyai infrastruktur fiber optic dan telah mengoperasikannya sebagai backbone jaringan sekaligus sebagai media layanan dengan sangat baik, bersama dengan perusahaan Remala Abadi
-            Group yang sebelumnya telah di dirikan untuk fokus sebagai perusahaan layanan dibidang infrastruktur dan solusi jaringan fiber optic, yaitu Fiber Media Indonesia (FMI)
+            group yang sebelumnya telah didirikan untuk fokus sebagai perusahaan layanan dibidang infrastruktur dan solusi jaringan fiber optic, yaitu Fiber Media Indonesia (FMI).
+          </p>
+          <p>
+            Topologi Remala mencakup JABODETABEK ( Jakarta, Bogor, Depok, Tangerang and Bekasi ) yang merupakan fokus utama dan akan mulai berkembang ke pulau jawa dan area sekitarnya. Hingga sekarang Remala Abadi sudah terhubung lebih dari
+            70% Datacenter di JABODETABEK dan terhubung lebih dari 25.000 perusahaan dan perumahaan.
+          </p>
+          <p>
+            Segmentasi pelanggan kami antara ISP sebagai partner, Perusahaan, SMEs, SOHOs, Pemerintahan dan Perumahan, untuk memperluas penawaran kami kepada pelanggan kami memiliki produk lainnya seperti Cloud, Virtual Private Network,
+            IoT, CCTV, IP Domain, IP Public, Email Splution and Managed Services, etc
           </p>
           <p>Adapun group perusahaan kami saat ini meliputi beberapa perusahaan : </p>
           <ol>
-            <li>PT. Remala Abadi</li>
-            <li>PT. PC 24 Cyber Indonesia </li>
-            <li>PT. Solusi Aplikasi Andalan Semesta </li>
-            <li>PT. Jaringan Fiber Indonesia </li>
-            <li>PT. Accel Works Indonesia </li>
+            <li>Fiber Media Indonesia</li>
+            <li>PC 24 Cyber Indonesia </li>
+            <li>Solusi Aplikasi Andalan Semesta </li>
+            <li>Akselerasi Informasi Indonesia</li>
           </ol>
         </div>
 
         <div className="key-features" data-aos="fade-up">
-          <div className="content-key-features col-7 m-auto d-block">
+          <div className="content-key-features col-8 m-auto d-block">
             <h2 className="fw-bold">Key Features</h2>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-              type specimen book. It has survived not only five centuries,.
+              Dengan kemampuan kami, serta dukungan yang maksimal dari seluruh mitra-kerja kami, maka kami yakin bahwa PT Remala Abadi akan mampu memberikan pelayanan yang maksimal dengan biaya yang jauh lebih kompetitif. PT. Remala Abadi
+              berniat untuk tumbuh bersama dengan mitra-kerja, pelanggan, dan karyawan
             </p>
           </div>
           <div className="d-flex justify-content-center">
-            <div className="content-visi-misi col-7 d-flex">
+            <div className="content-visi-misi col-8 d-flex">
               <div className="visi col-6">
                 <h2 className="fw-bold">Visi</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                <p>Menjadi Penyedia Layanan Internet & Solusi yang utama di Indonesia (Ultimate Internet Solution)</p>
               </div>
               <div className="misi col-6">
                 <h2 className="fw-bold">Misi</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                <p>Memberikan layanan dan solusi yang tepat dan handal kepada semua pelanggan dengan selalu menjaga komitmen serta selalu berfikir dan bekerja secara kreatif dan inovatif</p>
               </div>
             </div>
           </div>

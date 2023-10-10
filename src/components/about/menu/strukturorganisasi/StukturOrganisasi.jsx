@@ -42,9 +42,9 @@ const StrukturOrganisasi = () => {
           <div className={`btnOrganisasi ${activeButton === 'nomination-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('nomination-committee')}>
             Komite Nominasi dan Remunerasi
           </div>
-          <div className={`btnOrganisasi ${activeButton === 'evaluation-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('evaluation-committee')}>
+          {/* <div className={`btnOrganisasi ${activeButton === 'evaluation-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('evaluation-committee')}>
             Komite Evaluasi, Monitoring Perencanaan dan Resiko
-          </div>
+          </div> */}
         </div>
         <div className="content-byMenu col-7">
           <Outlet />

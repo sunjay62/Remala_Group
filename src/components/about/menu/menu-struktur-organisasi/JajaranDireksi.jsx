@@ -25,8 +25,8 @@ const JajaranDireksi = () => {
       <div className="col-profile d-flex mt-5" data-aos="fade-left">
         <div className="col-6 profile-box"></div>
         <div className="mx-4">
-          <h6>Nama Lengkap</h6>
-          <p>Direktur Keuangan dan Manajemen Risiko</p>
+          <h6>Samuel Adi Mulia</h6>
+          <p>Direktur Keuangan</p>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget imperdiet turpis. Nulla placerat arcu ligula, nec elementum massa accumsan nec. In maximus ornare lectus eu rutrum. Pellentesque eget elit eros. Phasellus
             maximus lacinia dolor et gravida. Ut mollis scelerisque ipsum eu sollicitudin. Integer bibendum metus nec orci eleifend, .
