@@ -22,3 +22,10 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: 14in) {
+  .containerPenghargaan {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

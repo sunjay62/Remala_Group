@@ -28,3 +28,10 @@
   height: 2px;
   background-color: #095591;
 }
+
+@media (min-width: 14in) {
+  .item-partner {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

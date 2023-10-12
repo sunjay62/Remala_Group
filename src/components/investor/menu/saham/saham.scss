@@ -89,3 +89,10 @@
     padding: 0;
   }
 }
+
+@media (min-width: 14in) {
+  .mainContainerSaham {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

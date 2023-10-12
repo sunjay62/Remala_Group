@@ -123,3 +123,10 @@
     margin-left: 25%;
   }
 }
+
+@media (min-width: 14in) {
+  .containerProduk {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

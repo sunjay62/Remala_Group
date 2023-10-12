@@ -85,12 +85,12 @@ const Navbar = () => {
         </ul>
         <p></p>
         <div className="language">
-          <Tooltip title="ID" className="tooltipContainer">
+          <Tooltip title="Indonesia" className="tooltipContainer">
             <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
               <img width="15" height="15" src={Indonesia} />
             </button>
           </Tooltip>
-          <Tooltip title="EN" className="tooltipContainer">
+          <Tooltip title="English" className="tooltipContainer">
             <button className={`language-button ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
               <img width="15" height="15" src={Uk} />
             </button>

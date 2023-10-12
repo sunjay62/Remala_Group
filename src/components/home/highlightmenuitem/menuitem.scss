@@ -49,3 +49,10 @@
     transition: all ease-in-out 0.2s;
   }
 }
+
+@media (min-width: 14in) {
+  .containerMenuItem {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

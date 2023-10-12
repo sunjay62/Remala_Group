@@ -14,3 +14,10 @@
     padding: 25px;
   }
 }
+
+@media (min-width: 14in) {
+  .containerAnggaran {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

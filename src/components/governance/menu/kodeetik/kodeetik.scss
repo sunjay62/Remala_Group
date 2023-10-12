@@ -36,3 +36,10 @@
     border-radius: 25px;
   }
 }
+
+@media (min-width: 14in) {
+  .containerKodeEtik {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

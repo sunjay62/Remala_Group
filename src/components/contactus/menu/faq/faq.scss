@@ -1,5 +1,5 @@
 .containerFaq {
-  height: 100vh;
+  height: max-content;
   padding: 0 100px 0 100px;
 
   .containerTop {
@@ -17,5 +17,12 @@
   .containerFaq {
     height: 100vh;
     padding: 15px;
+  }
+}
+
+@media (min-width: 14in) {
+  .containerFaq {
+    margin: 0 auto;
+    max-width: 14in;
   }
 }

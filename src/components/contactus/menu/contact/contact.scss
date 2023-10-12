@@ -3,6 +3,8 @@
   justify-content: center;
   text-align: center;
   gap: 25px;
+  height: max-content;
+  padding: 0 100px 0 100px;
 }
 
 .location {
@@ -92,5 +94,12 @@
   .phone,
   .email {
     width: 70%;
+  }
+}
+
+@media (min-width: 14in) {
+  .containerContact {
+    margin: 0 auto;
+    max-width: 14in;
   }
 }

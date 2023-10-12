@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.css';
+import './footer.scss';
 import logo from '../../assets/navbar/logoremala.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
@@ -20,9 +20,12 @@ const Footer = () => {
                 <strong>PT. Remala Abadi</strong>
               </h7>
               <p>Graha Mustika Ratu</p>
-              <p>Jl. Gatot Subroto No 74-75, RT 02/ RW 01.</p>
-              <p>Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan,</p>
-              <p>Daerah Khusus Ibukota Jakarta 12870</p>
+              <p>
+                Jl. Gatot Subroto No 74-75, RT 02/ RW 01. <br />
+                Menteng Dalam, Kec. Tebet, Kota Jakarta Selatan, <br />
+                Daerah Khusus Ibukota Jakarta 12870
+              </p>
+              <br />
               <p>Telepon : (021) 83708889</p>
               <p>Email : corporatesecretary@remala.id</p>
               {/* <p>

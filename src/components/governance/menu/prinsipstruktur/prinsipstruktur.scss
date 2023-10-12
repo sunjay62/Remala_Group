@@ -148,3 +148,10 @@
     width: 100%;
   }
 }
+
+@media (min-width: 14in) {
+  .containerPrinsip {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}

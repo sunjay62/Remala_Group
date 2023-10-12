@@ -111,3 +111,10 @@
     padding: 0;
   }
 }
+
+@media (min-width: 14in) {
+  .mainContainerOrganisasi {
+    margin: 0 auto;
+    max-width: 14in;
+  }
+}
