@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import menuItems from './MenuItems';
 import './navbar.scss';
 import logoremala from '../../assets/navbar/logoremala.png';
@@ -16,6 +16,34 @@ const Navbar = () => {
     setSelectedLanguage(language);
   };
 
+  const handleMenuItemClick = () => {
+    setActive(false);
+  };
+
+  const navbarRef = useRef(null);
+
+  const handleClickOutside = (e) => {
+    if (navbarRef.current && !navbarRef.current.contains(e.target)) {
+      setActive(false);
+    }
+  };
+
+  const handleScroll = () => {
+    if (active) {
+      setActive(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    document.addEventListener('click', handleClickOutside);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, [active]);
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 75) {
@@ -27,8 +55,11 @@ const Navbar = () => {
 
     window.addEventListener('scroll', handleScroll);
 
+    document.addEventListener('click', handleClickOutside);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('click', handleClickOutside);
     };
   }, []);
 
@@ -43,13 +74,9 @@ const Navbar = () => {
     });
   };
 
-  const handleMenuItemClick = () => {
-    setActive(false);
-  };
-
   return (
     <>
-      <nav className={`navbar  ${scrolled ? 'scrolled' : ''}`}>
+      <nav ref={navbarRef} className={`navbar  ${scrolled ? 'scrolled' : ''}`}>
         <h1 className="navbar-logo">
           <img
             src={logoremala}
@@ -83,7 +110,7 @@ const Navbar = () => {
             );
           })}
         </ul>
-        <p></p>
+        <span></span>
         <div className="language">
           <Tooltip title="Indonesia" className="tooltipContainer">
             <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>

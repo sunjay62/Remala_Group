@@ -9,7 +9,7 @@
 }
 
 .item-home p {
-  color: #0a5493;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -24,6 +24,10 @@
   margin-bottom: 20px;
   cursor: pointer;
   transition: all ease-in-out 0.2s;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.842);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.842);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.842);
+  border-radius: 16px;
 }
 
 .boxitem-home img:hover {

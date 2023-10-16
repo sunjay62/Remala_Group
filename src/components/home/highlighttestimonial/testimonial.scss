@@ -1,0 +1,128 @@
+.containerTestimoni {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  padding: 50px;
+}
+
+.mySwiper2 {
+  width: 50%;
+  margin-right: -100px;
+  border-radius: 15px;
+}
+
+.testimonialHeaders {
+  background-color: rgba(90, 159, 250, 0.548);
+  height: 70vh;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  padding: 0 50px 0 125px;
+  border-bottom-left-radius: 30%;
+  border-top-left-radius: 30%;
+  color: #444444;
+
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.sliderCard {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #1b66a8;
+  border-radius: 15px;
+
+  .topCard {
+    color: #fff;
+    display: flex;
+    gap: 20px;
+
+    img {
+      background-color: #fff;
+      width: 20%;
+      border-radius: 50%;
+    }
+
+    .identity {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h5 {
+        font-weight: 600;
+      }
+
+      p {
+        font-style: italic;
+      }
+    }
+  }
+
+  .bottomCard {
+    color: #fff;
+
+    p {
+      font-style: italic;
+    }
+  }
+}
+
+@media (min-width: 14in) {
+  .containerTestimoni {
+    margin: 0 auto;
+    max-width: 14in;
+    max-height: 14in;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .containerTestimoni {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  .mySwiper2 {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -100px;
+    order: 1;
+    height: 60vh;
+  }
+
+  .testimonialHeaders {
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    justify-content: start;
+    order: 0;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 0;
+    padding: 50px 25px;
+  }
+
+  .sliderCard {
+    padding: 25px;
+
+    .topCard {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      img {
+        width: 35%;
+      }
+    }
+  }
+
+  .bottomCard {
+    text-align: center;
+  }
+}

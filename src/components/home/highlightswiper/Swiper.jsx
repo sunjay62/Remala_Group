@@ -26,9 +26,9 @@ const SimpleSlider = () => {
             delay: 2000,
             disableOnInteraction: false,
           }}
-          pagination={{
-            clickable: true,
-          }}
+          // pagination={{
+          //   clickable: true,
+          // }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
           className="mySwiper"

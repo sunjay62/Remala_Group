@@ -8,6 +8,7 @@ import HighlightMilestone from './highlightmilestone/Milestonehome';
 import Partner from './highlightpartner/Partner';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Testimonial from './highlighttestimonial/Testimonial';
 
 const Home = () => {
   useEffect(() => {
@@ -46,6 +47,9 @@ const Home = () => {
         </div>
         <div className="partnerHome">
           <Partner />
+        </div>
+        <div className="testimonialHome">
+          <Testimonial />
         </div>
       </div>
       <div className="containerFooter">

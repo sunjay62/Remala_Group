@@ -1,12 +1,13 @@
 .homeMainContainer {
   overflow-x: hidden;
+  background-color: #f4f9fc;
 }
 
 .containerMenuProduct {
-  background-image: url('../../assets/home/bgtop.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #1b66a8ea;
+  border-top-right-radius: 15rem;
+  border-bottom-left-radius: 15rem;
+  padding: 50px 0 50px 0;
 }
 
 .content-title-home {

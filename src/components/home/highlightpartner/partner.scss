@@ -1,14 +1,11 @@
 .containerPartner {
   padding: 50px;
-  background-color: #e9e9e9;
 }
 
 .item-partner {
-  width: 120px;
-  border-radius: 50%;
-  height: 120px;
-  background-color: white;
-  border: 1px solid black;
+  img {
+    width: 100%;
+  }
 }
 
 .containerPartner h3 {
@@ -19,7 +16,6 @@
 .boxpartner {
   display: flex;
   justify-content: center;
-  width: 70vw;
   padding-top: 30px;
 }
 
@@ -30,8 +26,16 @@
 }
 
 @media (min-width: 14in) {
-  .item-partner {
+  .containerPartner {
     margin: 0 auto;
     max-width: 14in;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .item-partner {
+    img {
+      width: 115%;
+    }
   }
 }
