@@ -52,7 +52,7 @@ const Partner = () => {
             <Swiper
               grabCursor={true}
               slidesPerView={slidesPerView}
-              spaceBetween={30}
+              spaceBetween={25}
               autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
@@ -122,7 +122,7 @@ const Partner = () => {
           <Swiper
             grabCursor={true}
             slidesPerView={slidesPerView}
-            spaceBetween={30}
+            spaceBetween={25}
             autoplay={{
               delay: 3000,
               disableOnInteraction: false,
