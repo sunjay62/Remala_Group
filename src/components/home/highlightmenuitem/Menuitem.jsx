@@ -13,8 +13,11 @@ import imgOwnership from '../../../assets/home/item/ownership.png';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Menuitem = () => {
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -31,7 +34,7 @@ const Menuitem = () => {
                 <img src={imgBoc} alt="BOC" />
               </div>
             </Link>
-            <p className="text-center">Board of Commisioners</p>
+            <p className="text-center">{t('translation.menu-item.boc')}</p>
           </div>
           <div className=" col-md-1 col-5">
             <Link to="/aboutus/organitation-strucktur/board-of-director">
@@ -39,19 +42,19 @@ const Menuitem = () => {
                 <img src={imgBod} alt="BOD" />
               </div>
             </Link>
-            <p className="text-center">Board of Director</p>
+            <p className="text-center">{t('translation.menu-item.bod')}</p>
           </div>
           <div className="col-md-1 col-5">
             <div className="boxitem-home col-12">
               <img src={imgOwnership} alt="Ownership" />
             </div>
-            <p className="text-center">Ownership Groups</p>
+            <p className="text-center">{t('translation.menu-item.ownership')}</p>
           </div>
           <div className="col-md-1 col-5">
             <div className="boxitem-home col-12">
               <img src={imgCompany} alt="Company" />
             </div>
-            <p className="text-center">Company Profile</p>
+            <p className="text-center">{t('translation.menu-item.company')}</p>
           </div>
           <div className="col-md-1 col-5">
             <Link to="/investor-relation/report/annual-report">
@@ -59,7 +62,7 @@ const Menuitem = () => {
                 <img src={imgAnnual} alt="Annual" />
               </div>
             </Link>
-            <p className="text-center">Annual Reports</p>
+            <p className="text-center">{t('translation.menu-item.annual')}</p>
           </div>
         </div>
         <div className="item-home" data-aos="fade-left">
@@ -69,25 +72,25 @@ const Menuitem = () => {
                 <img src={imgFinancial} alt="Financial" />
               </div>
             </Link>
-            <p className="text-center">Financial Statements</p>
+            <p className="text-center">{t('translation.menu-item.financial')}</p>
           </div>
           <div className="col-md-1 col-5">
             <div className="boxitem-home col-12">
               <img src={imgPress} alt="Press" />
             </div>
-            <p className="text-center">Press Relase</p>
+            <p className="text-center">{t('translation.menu-item.press')}</p>
           </div>
           <div className="col-md-1 col-5">
             <div className="boxitem-home col-12">
               <img src={imgIdx} alt="IDX" />
             </div>
-            <p className="text-center">IDX Announcements</p>
+            <p className="text-center">{t('translation.menu-item.idx')}</p>
           </div>
           <div className="col-md-1 col-5">
             <div className="boxitem-home col-12">
               <img src={imgEarning} alt="Earnings" />
             </div>
-            <p className="text-center">Earnings Webinars</p>
+            <p className="text-center">{t('translation.menu-item.earnings')}</p>
           </div>
           <div className="col-md-1 col-5">
             <Link to="/contactus">
@@ -95,7 +98,7 @@ const Menuitem = () => {
                 <img src={imgContact} alt="ContatUs" />
               </div>
             </Link>
-            <p className="text-center">Contact Us</p>
+            <p className="text-center">{t('translation.menu-item.contact')}</p>
           </div>
         </div>
       </div>

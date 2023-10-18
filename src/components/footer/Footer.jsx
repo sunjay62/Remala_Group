@@ -5,8 +5,11 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const [t] = useTranslation('global');
+
   return (
     <>
       <div className="mainFooter stickyFooter">
@@ -38,22 +41,22 @@ const Footer = () => {
           <span className="borderLine"></span>
           <div className="footerMidle">
             <div className="tautan">
-              <h6>Tautan Penting</h6>
-              <a href="#">Tentang</a>
-              <a href="#">Hubungan Investor</a>
-              <a href="#">Manajemen</a>
+              <h6>{t('translation.text-footer.title1')}</h6>
+              <a href="#">{t('translation.text-footer.about')}</a>
+              <a href="#">{t('translation.text-footer.relations')}</a>
+              <a href="#">{t('translation.text-footer.management')}</a>
             </div>
             <div className="pengumuman">
-              <h6>Pengumuman</h6>
-              <a href="#">Pengumuman RUPS</a>
-              <a href="#">Pengumuman Paparan Publik</a>
-              <a href="#">Pengumuman Emiten</a>
+              <h6>{t('translation.text-footer.title2')}</h6>
+              <a href="#">{t('translation.text-footer.rups')}</a>
+              <a href="#">{t('translation.text-footer.exposure')}</a>
+              <a href="#">{t('translation.text-footer.emiten')}</a>
             </div>
             <div className="laporan">
-              <h6>Laporan</h6>
-              <a href="#">Laporan Keuangan</a>
-              <a href="#">Laporan Berkelanjutan</a>
-              <a href="#">Laporan Tahunan</a>
+              <h6>{t('translation.text-footer.title3')}</h6>
+              <a href="#">{t('translation.text-footer.finance')}</a>
+              <a href="#">{t('translation.text-footer.sustainable')}</a>
+              <a href="#">{t('translation.text-footer.annual')}</a>
             </div>
           </div>
 

@@ -9,8 +9,11 @@ import Partner from './highlightpartner/Partner';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Testimonial from './highlighttestimonial/Testimonial';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -21,8 +24,8 @@ const Home = () => {
     <div className="homeMainContainer">
       <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
         <div className="container">
-          <p data-aos="fade-left">MEMBERIKAN KONEKTIVITAS TERBAIK </p>
-          <p data-aos="fade-right">DENGAN INFRASFRUKTUR TERPERCAYA</p>
+          <p data-aos="fade-left">{t('translation.hero-title.title1')}</p>
+          <p data-aos="fade-right">{t('translation.hero-title.title2')}</p>
         </div>
       </div>
       {/* <div className="perseroanHome">

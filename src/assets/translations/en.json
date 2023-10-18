@@ -1,0 +1,106 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Home",
+      "about": "About Us",
+      "gcg": "Corporate Governance",
+      "relations": "Investor Relations",
+      "news": "News & Activities",
+      "contact": "Contact Us",
+      "business": "Business",
+      "career": "Career"
+    },
+    "hero-title": {
+      "title1": "PROVIDING THE BEST CONNECTIVITY ",
+      "title2": "WITH RELIABLE INFRASTRUCTURE"
+    },
+    "menu-item": {
+      "boc": "Board of Commisioners",
+      "bod": "Board of Directors",
+      "ownership": "Ownership Groups",
+      "company": "Company Profile",
+      "annual": "Annual Reports",
+      "financial": "Financial Statements",
+      "press": "Press Release",
+      "idx": "IDX Announcements",
+      "earnings": "Earnings Webinars",
+      "contact": "Contact Us"
+    },
+    "text-product": {
+      "title": "Discover Connectivity for Your Needs",
+      "text": "Providing Digital Solutions for Your Needs"
+    },
+    "text-milestone": {
+      "title": "Discover Connectivity for Your Needs",
+      "text": "Providing Digital Solutions for Your Needs",
+      "text1": "A Well-Established Network",
+      "text2": "Years",
+      "text3": "Points of Presence"
+    },
+    "text-swiper": {
+      "title": "About Remala Abadi",
+      "text": "Company Activities"
+    },
+    "text-partner": {
+      "title1": "Our Partner",
+      "title2": "Our Client"
+    },
+    "text-testimonials": {
+      "title1": "CUSTOMER TESTIMONIALS",
+      "title2": "What they say about us?",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque numquam quae ea atque tempore labore facere excepturi expedita beatae ipsam."
+    },
+    "text-about": {
+      "title1": "PT. REMALA ABADI",
+      "title2": "Company Group",
+      "profile": "Profile",
+      "organization": "Organizational Structure",
+      "group": "Group Structure",
+      "anggaran": "Articles of Association",
+      "awards": "Awards"
+    },
+    "text-profile": {
+      "title1": "Company Profile",
+      "text1": "PT Remala Abadi has been established since 2004, engaged in trade and services. We have established two flagship subsidiaries, Tachyon Network Indonesia and Nethome Indonesia, which are companies in the field of internet access, telecommunications, and multimedia services. We are committed to developing a reliable infrastructure to provide the best services and solutions, applying creative and innovative thinking and working responsibly.",
+      "text2": "We have a fiber optic infrastructure and operate it as both a network backbone and a service medium with excellence. Along with Remala Abadi Group, previously established as a company focused on infrastructure and fiber optic network solutions, Fiber Media Indonesia (FMI).",
+      "text3": "Remala's topology covers JABODETABEK (Jakarta, Bogor, Depok, Tangerang, and Bekasi), which is the primary focus and will begin to expand to Java Island and surrounding areas. Up to now, Remala Abadi has connected to over 70% of Datacenters in JABODETABEK and more than 25,000 companies and households.",
+      "text4": "Our customer segmentation includes ISPs as partners, companies, SMEs, SOHOs, government, and housing. To expand our offerings to customers, we have other products such as Cloud, Virtual Private Network, IoT, CCTV, IP Domain, IP Public, Email Solution, and Managed Services, etc.",
+      "text5": "Our group of companies currently includes several companies:",
+      "key-features": "Company Profile",
+      "text-features": "With our capabilities and maximum support from all our partner-workers, we believe that PT Remala Abadi will be able to provide maximum services at a much more competitive cost. PT. Remala Abadi intends to grow together with partner-workers, customers, and employees.",
+      "visi": "Vision",
+      "text-visi": "To become the leading Internet Service and Solution provider in Indonesia (Ultimate Internet Solution).",
+      "misi": "Mision",
+      "text-misi": "To provide the right and reliable services and solutions to all customers by always maintaining commitment and working creatively and innovatively."
+    },
+    "text-group": {
+      "title1": "REMALA ABADI GROUP",
+      "text1": "Ownership structure of PT. Remala Abadi Tbk business group",
+      "text2": "with ownership percentage exceeding 50%",
+      "title2": "Detailed percentage of equity entities : ",
+      "btn-download": "Download PDF"
+    },
+    "text-anggaran": {
+      "search": "Search",
+      "reset": "Reset",
+      "filter": "Filter",
+      "close": "Close",
+      "download": "Download",
+      "title": "Articles of Association"
+    },
+    "text-footer": {
+      "title1": "Important Links",
+      "title2": "Announcements",
+      "title3": "Reports",
+      "about": "About Us",
+      "relations": "Investor Relations",
+      "management": "Management",
+      "rups": "RUPS Announcements",
+      "exposure": "Public Disclosure Announcements",
+      "emiten": "Issuer Announcements",
+      "finance": "Financial Reports",
+      "sustainable": "Sustainability Reports",
+      "annual": "Annual Reports"
+    }
+  }
+}

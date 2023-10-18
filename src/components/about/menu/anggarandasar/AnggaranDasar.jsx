@@ -6,6 +6,7 @@ import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const data = [
   {
@@ -24,6 +25,7 @@ const AnggaranDasar = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  const [t] = useTranslation('global');
 
   useEffect(() => {
     AOS.init({
@@ -69,7 +71,7 @@ const AnggaranDasar = () => {
               width: 90,
             }}
           >
-            Search
+            {t('translation.text-anggaran.search')}
           </Button>
           <Button
             onClick={() => clearFilters && handleReset(clearFilters)}
@@ -78,7 +80,7 @@ const AnggaranDasar = () => {
               width: 90,
             }}
           >
-            Reset
+            {t('translation.text-anggaran.reset')}
           </Button>
           <Button
             type="link"
@@ -91,7 +93,7 @@ const AnggaranDasar = () => {
               setSearchedColumn(dataIndex);
             }}
           >
-            Filter
+            {t('translation.text-anggaran.filter')}
           </Button>
           <Button
             type="link"
@@ -100,7 +102,7 @@ const AnggaranDasar = () => {
               close();
             }}
           >
-            close
+            {t('translation.text-anggaran.close')}
           </Button>
         </Space>
       </div>
@@ -163,7 +165,7 @@ const AnggaranDasar = () => {
             console.log(`Download ${text}`);
           }}
         >
-          Download
+          {t('translation.text-anggaran.download')}
         </Button>
       ),
     },
@@ -173,7 +175,7 @@ const AnggaranDasar = () => {
     <>
       <div className="containerAnggaran">
         <div className="anggaranTop" data-aos="fade-down">
-          <h3>Anggaran Dasar</h3>
+          <h3>{t('translation.text-anggaran.title')}</h3>
         </div>
         <hr />
         <div className="anggaranBottom" data-aos="fade-left">

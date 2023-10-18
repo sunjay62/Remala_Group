@@ -4,8 +4,11 @@ import tachyon from '../../../assets/home/logotachyonnew.png';
 import nethome from '../../../assets/home/logonethomee.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Produk = () => {
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -15,8 +18,8 @@ const Produk = () => {
   return (
     <>
       <div className="containerProduk">
-        <h3 data-aos="fade-up">Temukan Konektivitas Untuk Kebutuhan Anda</h3>
-        <p data-aos="fade-up">Memberikan Solusi Kebutuhan Digital</p>
+        <h3 data-aos="fade-up">{t('translation.text-product.title')}</h3>
+        <p data-aos="fade-up">{t('translation.text-product.text')}</p>
         <div className="m-auto d-block " data-aos="fade-up">
           <div className="d-flex justify-content-center mainImgContainer">
             <div className="tachyon col-5 d-flex align-items-center" data-aos="fade-right">

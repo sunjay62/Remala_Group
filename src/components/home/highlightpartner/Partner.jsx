@@ -16,9 +16,11 @@ import univPrasetyaMulyaIcon from '../../../assets/partner/univ-prasetya-mulya.p
 import './partner.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Partner = () => {
   const [slidesPerView, setSlidesPerView] = useState(6);
+  const [t] = useTranslation('global');
 
   useEffect(() => {
     AOS.init({
@@ -43,10 +45,11 @@ const Partner = () => {
   return (
     <>
       <div className="containerPartner">
-        <h3 className="text-center" data-aos="fade-up">
-          Our Partner
-        </h3>
-        <div className="line m-auto d-block" data-aos="fade-up"></div>
+        <div className="topContainer">
+          <h3 className="text-center mt-5" data-aos="fade-up">
+            {t('translation.text-partner.title1')}
+          </h3>
+        </div>
         <div className="boxpartner m-auto d-block">
           <div className="d-flex justify-content-evenly">
             <Swiper
@@ -114,10 +117,11 @@ const Partner = () => {
             </Swiper>
           </div>
         </div>
-        <h3 className="text-center mt-5" data-aos="fade-up">
-          Our Client
-        </h3>
-        <div className="line m-auto d-block" data-aos="fade-up"></div>
+        <div className="topContainer">
+          <h3 className="text-center mt-5" data-aos="fade-up">
+            {t('translation.text-partner.title2')}
+          </h3>
+        </div>
         <div className="boxpartner m-auto d-block">
           <Swiper
             grabCursor={true}

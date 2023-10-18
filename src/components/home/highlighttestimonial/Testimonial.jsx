@@ -8,6 +8,7 @@ import imgTesti from '../../../assets/fotoprofile/alamsyah.png';
 import imgTesti2 from '../../../assets/fotoprofile/verah-wahyudi.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const testimonialsData = [
   {
@@ -34,6 +35,8 @@ const testimonialsData = [
 ];
 
 const Testimonial = () => {
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -81,9 +84,9 @@ const Testimonial = () => {
         ))}
       </Swiper>
       <div className="testimonialHeaders" data-aos="fade-left">
-        <h4>TESTIMONIALS CUSTOMERS</h4>
-        <h2>Apa yang dia katakan tentang kami?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque numquam quae ea atque tempore labore facere excepturi expedita beatae ipsam.</p>
+        <h3>{t('translation.text-testimonials.title1')}</h3>
+        <h4>{t('translation.text-testimonials.title2')}</h4>
+        <p>{t('translation.text-testimonials.text')}</p>
       </div>
     </div>
   );

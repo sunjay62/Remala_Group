@@ -10,15 +10,17 @@ import itembanner3 from './bisnis3.jpg';
 import itembanner4 from './bisnis4.jpg';
 import itembanner5 from './bisnis5.jpg';
 import './swiper.scss';
+import { useTranslation } from 'react-i18next';
 
 const SimpleSlider = () => {
   const slidesPerView = window.innerWidth > 860 ? 4 : 1;
+  const [t] = useTranslation('global');
 
   return (
     <div className="containerSwiper">
       <div className="slideShow">
-        <h3>Seputar Remala Abadi</h3>
-        <p>Aktivitas Perusahaan</p>
+        <h3>{t('translation.text-swiper.title')}</h3>
+        <p>{t('translation.text-swiper.text')}</p>
         <Swiper
           slidesPerView={slidesPerView}
           spaceBetween={10}

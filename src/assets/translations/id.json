@@ -1,0 +1,106 @@
+{
+  "translation": {
+    "navbar": {
+      "home": "Beranda",
+      "about": "Tentang Kami",
+      "gcg": "Tata Kelola",
+      "relations": "Hubungan Investor",
+      "news": "News & Kegiatan",
+      "contact": "Hubungi Kami",
+      "business": "Bisnis",
+      "career": "Karir"
+    },
+    "hero-title": {
+      "title1": "MEMBERIKAN KONEKTIVITAS TERBAIK ",
+      "title2": "DENGAN INFRASFRUKTUR TERPERCAYA"
+    },
+    "menu-item": {
+      "boc": "Dewan Komisaris",
+      "bod": "Dewan Direksi",
+      "ownership": "Grup Pemilik",
+      "company": "Profil Perusahaan",
+      "annual": "Laporan Tahunan",
+      "financial": "Laporan Keuangan",
+      "press": "Siaran Pers",
+      "idx": "Pengumuman IDX",
+      "earnings": "Webinar Pendapatan",
+      "contact": "Hubungi Kami"
+    },
+    "text-product": {
+      "title": "Temukan Konektivitas Untuk Kebutuhan Anda",
+      "text": "Memberikan Solusi Kebutuhan Digital"
+    },
+    "text-milestone": {
+      "title": "Temukan Konektivitas Untuk Kebutuhan Anda",
+      "text": "Memberikan Solusi Kebutuhan Digital Anda",
+      "text1": "Jaringan Yang Sudah Tersebar",
+      "text2": "Tahun",
+      "text3": "Titik Presensi"
+    },
+    "text-swiper": {
+      "title": "Seputar Remala Abadi",
+      "text": "Aktivitas Perusahaan"
+    },
+    "text-partner": {
+      "title1": "Mitratama Kami",
+      "title2": "Pelanggan Kami"
+    },
+    "text-testimonials": {
+      "title1": "TESTIMONI PELANGGAN",
+      "title2": "Apa yang mereka katakan tentang kami?",
+      "text": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque numquam quae ea atque tempore labore facere excepturi expedita beatae ipsam."
+    },
+    "text-about": {
+      "title1": "PT. REMALA ABADI",
+      "title2": "Grup Perusahaan",
+      "profile": "Profil",
+      "organization": "Struktur Organisasi",
+      "group": "Struktur Group",
+      "anggaran": "Anggaran Dasar",
+      "awards": "Penghargaan"
+    },
+    "text-profile": {
+      "title1": "Profil Perusahaan",
+      "text1": "PT Remala Abadi telah berdiri sejak tahun 2004 yang bergerak dibidang perdagangan dan jasa, dan kami telah mendirikan dua anak perusahaan andalan yaitu Tachyon Network Indonesia dan Nethome Indonesia yang merupakan perusahaan dibidang penyedia akses internet, layanan telekomunikasi dan multimedia, yang berkomitmen untuk mengembangan infrastruktur yang handal supaya memberikan layanan serta solusi terbaik, menerapkan prinsip berfikir dan bekerja secara kreatif dan inovatif serta penuh tanggung jawab.",
+      "text2": "Kami telah mempunyai infrastruktur fiber optic dan telah mengoperasikannya sebagai backbone jaringan sekaligus sebagai media layanan dengan sangat baik, bersama dengan perusahaan Remala Abadi group yang sebelumnya telah didirikan untuk fokus sebagai perusahaan layanan dibidang infrastruktur dan solusi jaringan fiber optic, yaitu Fiber Media Indonesia (FMI).",
+      "text3": "Topologi Remala mencakup JABODETABEK ( Jakarta, Bogor, Depok, Tangerang and Bekasi ) yang merupakan fokus utama dan akan mulai berkembang ke pulau jawa dan area sekitarnya. Hingga sekarang Remala Abadi sudah terhubung lebih dari 70% Datacenter di JABODETABEK dan terhubung lebih dari 25.000 perusahaan dan perumahaan.",
+      "text4": "Segmentasi pelanggan kami antara ISP sebagai partner, Perusahaan, SMEs, SOHOs, Pemerintahan dan Perumahan, untuk memperluas penawaran kami kepada pelanggan kami memiliki produk lainnya seperti Cloud, Virtual Private Network, IoT, CCTV, IP Domain, IP Public, Email Splution and Managed Services, etc",
+      "text5": "Adapun group perusahaan kami saat ini meliputi beberapa perusahaan : ",
+      "key-features": "Profil Perusahaan",
+      "text-features": "Dengan kemampuan kami, serta dukungan yang maksimal dari seluruh mitra-kerja kami, maka kami yakin bahwa PT Remala Abadi akan mampu memberikan pelayanan yang maksimal dengan biaya yang jauh lebih kompetitif. PT. Remala Abadi berniat untuk tumbuh bersama dengan mitra-kerja, pelanggan, dan karyawan",
+      "visi": "Visi",
+      "text-visi": "Menjadi Penyedia Layanan Internet & Solusi yang utama di Indonesia (Ultimate Internet Solution)",
+      "misi": "Misi",
+      "text-misi": "Memberikan layanan dan solusi yang tepat dan handal kepada semua pelanggan dengan selalu menjaga komitmen serta selalu berfikir dan bekerja secara kreatif dan inovatif"
+    },
+    "text-group": {
+      "title1": "REMALA ABADI GRUP",
+      "text1": "Struktur kepemilikan saham kelompok usaha PT. Remala Abadi Tbk",
+      "text2": "dengan persentase kepemilikan lebih dari 50%",
+      "title2": "Detail persentase entitas saham : ",
+      "btn-download": "Unduh PDF"
+    },
+    "text-anggaran": {
+      "search": "Cari",
+      "reset": "Atur Ulang",
+      "filter": "Filter",
+      "close": "Tutup",
+      "download": "Unduh",
+      "title": "Anggaran Dasar"
+    },
+    "text-footer": {
+      "title1": "Tautan Penting",
+      "title2": "Pengumuman",
+      "title3": "Laporan",
+      "about": "Tentang Kami",
+      "relations": "Hubungan Investor",
+      "management": "Manajemen",
+      "rups": "Pengumuman RUPS",
+      "exposure": "Pengumuman Paparan Publik",
+      "emiten": "Pengumuman Emiten",
+      "finance": "Laporan Keuangan",
+      "sustainable": "Laporan Berkelanjutan",
+      "annual": "Laporan Tahunan"
+    }
+  }
+}

@@ -1,6 +1,24 @@
 .containerPartner {
   padding: 50px;
+
+  .topContainer {
+    h3 {
+      margin: 0 auto;
+      width: max-content;
+      padding: 7px 25px;
+      color: #fff;
+      background-color: #2a71a8;
+      border-radius: 15px;
+      box-shadow: 0px 0px 6px 1px rgba(7, 58, 136, 0.56);
+      -webkit-box-shadow: 0px 0px 6px 1px rgba(7, 58, 136, 0.56);
+      -moz-box-shadow: 0px 0px 6px 1px rgba(7, 58, 136, 0.56);
+    }
+  }
 }
+
+// .containerSwiperPartner {
+//   border: 2px solid red;
+// }
 
 .item-partner {
   border: 1px solid #095591;
@@ -46,6 +64,7 @@
   display: flex;
   justify-content: center;
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .line {
