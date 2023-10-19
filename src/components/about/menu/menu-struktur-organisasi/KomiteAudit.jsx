@@ -1,8 +1,26 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
+
+const profiles = [
+  {
+    name: 'Nama Lengkap',
+    image: '',
+  },
+  {
+    name: 'Nama Lengkap',
+    image: '',
+  },
+  {
+    name: 'Nama Lengkap',
+    image: '',
+  },
+];
 
 const KomiteAudit = () => {
+  const { t } = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -11,39 +29,16 @@ const KomiteAudit = () => {
 
   return (
     <>
-      <div className="col-profile d-flex" data-aos="fade-left">
-        <div className="col-6 profile-box "></div>
-        <div className="mx-4">
-          <h6>Nama Lengkap</h6>
-          <p>Ketua Komite Audit</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget imperdiet turpis. Nulla placerat arcu ligula, nec elementum massa accumsan nec. In maximus ornare lectus eu rutrum. Pellentesque eget elit eros. Phasellus
-            maximus lacinia dolor et gravida. Ut mollis scelerisque ipsum eu sollicitudin. Integer bibendum metus nec orci eleifend, .
-          </p>
+      {profiles.map((profile, index) => (
+        <div className="col-profile d-flex mt-5" data-aos="fade-left" key={index}>
+          <div className="col-6 profile-box">{profile.image && <img src={profile.image} alt={profile.name} />}</div>
+          <div className="mx-4">
+            <h6>{profile.name}</h6>
+            <p>{t(`translation.text-organization.audit.role${index + 1}`)}</p>
+            <p>{t(`translation.text-organization.audit.description${index + 1}`)}</p>
+          </div>
         </div>
-      </div>
-      <div className="col-profile d-flex mt-5" data-aos="fade-left">
-        <div className="col-6 profile-box"></div>
-        <div className="mx-4">
-          <h6>Nama Lengkap</h6>
-          <p>Anggota Komite Audit</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget imperdiet turpis. Nulla placerat arcu ligula, nec elementum massa accumsan nec. In maximus ornare lectus eu rutrum. Pellentesque eget elit eros. Phasellus
-            maximus lacinia dolor et gravida. Ut mollis scelerisque ipsum eu sollicitudin. Integer bibendum metus nec orci eleifend, .
-          </p>
-        </div>
-      </div>
-      <div className="col-profile d-flex mt-5" data-aos="fade-left">
-        <div className="col-6 profile-box"></div>
-        <div className="mx-4">
-          <h6>Nama Lengkap</h6>
-          <p>Komisaris</p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget imperdiet turpis. Nulla placerat arcu ligula, nec elementum massa accumsan nec. In maximus ornare lectus eu rutrum. Pellentesque eget elit eros. Phasellus
-            maximus lacinia dolor et gravida. Ut mollis scelerisque ipsum eu sollicitudin. Integer bibendum metus nec orci eleifend, .
-          </p>
-        </div>
-      </div>
+      ))}
     </>
   );
 };

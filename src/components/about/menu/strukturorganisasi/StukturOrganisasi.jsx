@@ -4,11 +4,12 @@ import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const StrukturOrganisasi = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
+  const [t] = useTranslation('global');
   const currentPath = location.pathname.split('/').pop();
   const [activeButton, setActiveButton] = useState(currentPath);
 
@@ -28,25 +29,25 @@ const StrukturOrganisasi = () => {
       <div className="mainContainerOrganisasi">
         <div className="menuStrukturOrganisasi" data-aos="fade-right">
           <div className={`btnOrganisasi ${activeButton === 'board-of-commissioners' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-commissioners')}>
-            Dewan Komaris
+            {t('translation.text-organization.btn-komisaris')}
           </div>
           <div className={`btnOrganisasi ${activeButton === 'board-of-director' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-director')}>
-            Jajaran Direksi
+            {t('translation.text-organization.btn-direksi')}
           </div>
           <div className={`btnOrganisasi ${activeButton === 'corporate-secretary' ? 'clicked' : ''}`} onClick={() => handleButtonClick('corporate-secretary')}>
-            Sekretaris Perusahaan
+            {t('translation.text-organization.btn-sekretaris')}
           </div>
           <div className={`btnOrganisasi ${activeButton === 'audit-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('audit-committee')}>
-            Komite Audit
+            {t('translation.text-organization.btn-komite')}
           </div>
           <div className={`btnOrganisasi ${activeButton === 'nomination-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('nomination-committee')}>
-            Komite Nominasi dan Remunerasi
+            {t('translation.text-organization.btn-nominasi')}
           </div>
           {/* <div className={`btnOrganisasi ${activeButton === 'evaluation-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('evaluation-committee')}>
             Komite Evaluasi, Monitoring Perencanaan dan Resiko
           </div> */}
         </div>
-        <div className="content-byMenu col-7">
+        <div className="outletOrganization ">
           <Outlet />
         </div>
       </div>

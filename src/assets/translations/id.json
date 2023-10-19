@@ -101,6 +101,78 @@
       "finance": "Laporan Keuangan",
       "sustainable": "Laporan Berkelanjutan",
       "annual": "Laporan Tahunan"
+    },
+    "text-organization": {
+      "btn-komisaris": "Dewan Komisaris",
+      "btn-direksi": "Jajaran Direksi",
+      "btn-sekretaris": "Sekretaris Perusahaan",
+      "btn-komite": "Komite Audit",
+      "btn-nominasi": "Komite Nominasi dan Remunerasi",
+      "commissioners": {
+        "role1": "Komisaris Utama",
+        "role2": "Komisaris Independen",
+        "role3": "Komisaris",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      },
+      "directors": {
+        "role1": "Direktur Utama",
+        "role2": "Direktur Keuangan",
+        "role3": "Direktur Marketing",
+        "role4": "Direktur Projek",
+        "role5": "Direktur Operasional",
+        "role6": "Direktur Network & IT Solution",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      },
+      "secretary": {
+        "role1": "Sekretari Perusahaan",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      },
+      "audit": {
+        "role1": "Ketua Komite Audit",
+        "role2": "Anggota Komite Audit",
+        "role3": "Anggota Komite Audit",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      },
+      "nomination": {
+        "role1": "Ketua Komite Nominasi dan Remunerasi",
+        "role2": "Anggota Komite Nominasi dan Remunerasi",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      }
+    },
+    "text-investor": {
+      "title1": "MENJUNJUNG TINGGI INTEGRITAS",
+      "title2": "DAN KOMITMEN DALAM",
+      "btn-report": "Laporan - Laporan",
+      "btn-information": "Informasi Saham",
+      "btn-news": "Berita & Kegiatan",
+      "btn-share": {
+        "price": "Harga & Volume Saham",
+        "pencatatan": "Kronologis Pencatatan Saham",
+        "prospektus": "Prospektus Penawaran Umum",
+        "komposisi": "Komposisi Pemegang Saham"
+      },
+      "btn-reports": {
+        "sec": "Laporan SEC",
+        "finance": "Laporan Keuangan",
+        "annual": "Laporan Tahunan",
+        "sustainability": "Laporan Keberlanjutan"
+      },
+      "btn-news-activities": {
+        "rups": "RUPS",
+        "calender": "Kalender Investor",
+        "emiten": "Pengumuman Emiten",
+        "exposure": "Paparan Publik"
+      }
     }
   }
 }

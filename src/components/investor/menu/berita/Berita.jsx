@@ -4,11 +4,12 @@ import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Berita = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
+  const [t] = useTranslation('global');
   const currentPath = location.pathname.split('/').pop();
   const [activeButton, setActiveButton] = useState(currentPath);
 
@@ -28,19 +29,19 @@ const Berita = () => {
       <div className="mainContainerBerita">
         <div className="menuStrukturBerita" data-aos="fade-right">
           <div className={`btnNews ${activeButton === 'rups' ? 'clicked' : ''}`} onClick={() => handleButtonClick('rups')}>
-            RUPS
+            {t('translation.text-investor.btn-news-activities.rups')}
           </div>
           <div className={`btnNews ${activeButton === 'investor-calender' ? 'clicked' : ''}`} onClick={() => handleButtonClick('investor-calender')}>
-            Kalender Investor
+            {t('translation.text-investor.btn-news-activities.calender')}
           </div>
           <div className={`btnNews ${activeButton === 'issuer-announcement' ? 'clicked' : ''}`} onClick={() => handleButtonClick('issuer-announcement')}>
-            Pengumuman Emiten
+            {t('translation.text-investor.btn-news-activities.emiten')}
           </div>
           <div className={`btnNews ${activeButton === 'public-exposure' ? 'clicked' : ''}`} onClick={() => handleButtonClick('public-exposure')}>
-            Paparan Publik
+            {t('translation.text-investor.btn-news-activities.exposure')}
           </div>
         </div>
-        <div className="content-byMenu col-7">
+        <div className="outletNews">
           <Outlet />
         </div>
       </div>

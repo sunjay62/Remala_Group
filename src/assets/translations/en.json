@@ -101,6 +101,78 @@
       "finance": "Financial Reports",
       "sustainable": "Sustainability Reports",
       "annual": "Annual Reports"
+    },
+    "text-organization": {
+      "btn-komisaris": "Board of Commissioners",
+      "btn-direksi": "Board of Directors",
+      "btn-sekretaris": "Corporate Secretary",
+      "btn-komite": "Audit Committee",
+      "btn-nominasi": "Nomination and Remuneration Committee",
+      "commissioners": {
+        "role1": "President Commissioner",
+        "role2": "Independent Commissioner",
+        "role3": "Commissioner",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. Ipsam dolorum, magni incidunt autem nihil, praesentium libero ipsa, corporis hic optio rerum reiciendis obcaecati laboriosam nobis quod natus.",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. Ipsam dolorum, magni incidunt autem nihil, praesentium libero ipsa, corporis hic optio rerum reiciendis obcaecati laboriosam nobis quod natus.",
+        "description3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. Ipsam dolorum, magni incidunt autem nihil, praesentium libero ipsa, corporis hic optio rerum reiciendis obcaecati laboriosam nobis quod natus."
+      },
+      "directors": {
+        "role1": "Chief Executive Officer",
+        "role2": "Chief Financial Officer",
+        "role3": "Chief Marketing Officer",
+        "role4": "Chief Project Officer",
+        "role5": "Chief Operating Officer",
+        "role6": "Chief Network & IT Solution Officer",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      },
+      "secretary": {
+        "role1": "Corporate Secretary",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      },
+      "audit": {
+        "role1": "Chair of the Audit Committee",
+        "role2": "Member of the Audit Committee",
+        "role3": "Member of the Audit Committee",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque.",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque.",
+        "description3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque."
+      },
+      "nomination": {
+        "role1": "Chair of the Nomination and Remuneration Committee",
+        "role2": "Member of the Nomination and Remuneration Committee",
+        "description1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. ",
+        "description2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate ullam minima et ut odio harum consequuntur iusto. Aperiam possimus aspernatur, dolor quibusdam quos eos soluta laboriosam unde temporibus saepe! Dolorum sit ad iste incidunt similique at dicta nihil impedit? Laudantium fuga mollitia assumenda itaque vitae, unde cumque. "
+      }
+    },
+    "text-investor": {
+      "title1": "UPHOLDING INTEGRITY",
+      "title2": "AND COMMITMENT IN",
+      "btn-report": "Reports",
+      "btn-information": "Share Information",
+      "btn-news": "News & Activities",
+      "btn-share": {
+        "price": "Stock Price & Volume",
+        "pencatatan": "Share Listing Chronology",
+        "prospektus": "Public Offering Prospectus",
+        "komposisi": "Shareholder Composition"
+      },
+      "btn-reports": {
+        "sec": "SEC Reports",
+        "finance": "Financial Reports",
+        "annual": "Annual Reports",
+        "sustainability": "Sustainability Reports"
+      },
+      "btn-news-activities": {
+        "rups": "GMS (General Meeting of Shareholders)",
+        "calender": "Investor Calendar",
+        "emiten": "Issuer Announcements",
+        "exposure": "Public Disclosures"
+      }
     }
   }
 }

@@ -4,11 +4,12 @@ import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Laporan = () => {
   const navigate = useNavigate();
   const location = useLocation();
-
+  const [t] = useTranslation('global');
   const currentPath = location.pathname.split('/').pop();
   const [activeButton, setActiveButton] = useState(currentPath);
 
@@ -28,19 +29,19 @@ const Laporan = () => {
       <div className="mainContainerLaporan">
         <div className="menuStrukturLaporan" data-aos="fade-right">
           <div className={`btnLaporan ${activeButton === 'sec-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('sec-report')}>
-            Laporan SEC
+            {t('translation.text-investor.btn-reports.sec')}
           </div>
           <div className={`btnLaporan ${activeButton === 'financial-statements' ? 'clicked' : ''}`} onClick={() => handleButtonClick('financial-statements')}>
-            Laporan Keuangan
+            {t('translation.text-investor.btn-reports.finance')}
           </div>
           <div className={`btnLaporan ${activeButton === 'annual-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('annual-report')}>
-            Laporan Tahunan
+            {t('translation.text-investor.btn-reports.annual')}
           </div>
           <div className={`btnLaporan ${activeButton === 'sustainability-report' ? 'clicked' : ''}`} onClick={() => handleButtonClick('sustainability-report')}>
-            Laporan Keberlanjutan
+            {t('translation.text-investor.btn-reports.sustainability')}
           </div>
         </div>
-        <div className="content-byMenu">
+        <div className="outletReport">
           <Outlet />
         </div>
       </div>
