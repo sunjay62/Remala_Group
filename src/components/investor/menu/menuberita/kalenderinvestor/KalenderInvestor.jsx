@@ -5,6 +5,7 @@ import { SearchOutlined } from '@ant-design/icons';
 import './kalenderinvestor.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const data = [
   {
@@ -43,6 +44,8 @@ const KalenderInvestor = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -87,7 +90,7 @@ const KalenderInvestor = () => {
               width: 90,
             }}
           >
-            Search
+            {t('translation.text-table.search')}
           </Button>
           <Button
             onClick={() => clearFilters && handleReset(clearFilters)}
@@ -96,7 +99,7 @@ const KalenderInvestor = () => {
               width: 90,
             }}
           >
-            Reset
+            {t('translation.text-table.reset')}
           </Button>
           <Button
             type="link"
@@ -109,7 +112,7 @@ const KalenderInvestor = () => {
               setSearchedColumn(dataIndex);
             }}
           >
-            Filter
+            {t('translation.text-table.filter')}
           </Button>
           <Button
             type="link"
@@ -118,7 +121,7 @@ const KalenderInvestor = () => {
               close();
             }}
           >
-            close
+            {t('translation.text-table.close')}
           </Button>
         </Space>
       </div>
@@ -162,19 +165,19 @@ const KalenderInvestor = () => {
       render: (text) => <span>{text}</span>,
     },
     {
-      title: 'Tanggal',
+      title: t('translation.text-table.date'),
       dataIndex: 'tanggal',
       key: 'tanggal',
       ...getColumnSearchProps('tanggal'),
     },
     {
-      title: 'Event',
+      title: t('translation.text-table.event'),
       dataIndex: 'event',
       key: 'event',
       ...getColumnSearchProps('event'),
     },
     {
-      title: 'Lokasi',
+      title: t('translation.text-table.location'),
       dataIndex: 'lokasi',
       key: 'lokasi',
       ...getColumnSearchProps('lokasi'),

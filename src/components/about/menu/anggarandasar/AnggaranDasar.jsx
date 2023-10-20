@@ -71,7 +71,7 @@ const AnggaranDasar = () => {
               width: 90,
             }}
           >
-            {t('translation.text-anggaran.search')}
+            {t('translation.text-table.search')}
           </Button>
           <Button
             onClick={() => clearFilters && handleReset(clearFilters)}
@@ -80,7 +80,7 @@ const AnggaranDasar = () => {
               width: 90,
             }}
           >
-            {t('translation.text-anggaran.reset')}
+            {t('translation.text-table.reset')}
           </Button>
           <Button
             type="link"
@@ -93,7 +93,7 @@ const AnggaranDasar = () => {
               setSearchedColumn(dataIndex);
             }}
           >
-            {t('translation.text-anggaran.filter')}
+            {t('translation.text-table.filter')}
           </Button>
           <Button
             type="link"
@@ -102,7 +102,7 @@ const AnggaranDasar = () => {
               close();
             }}
           >
-            {t('translation.text-anggaran.close')}
+            {t('translation.text-table.close')}
           </Button>
         </Space>
       </div>
@@ -146,13 +146,13 @@ const AnggaranDasar = () => {
       render: (text) => <span>{text}</span>,
     },
     {
-      title: 'Names',
+      title: t('translation.text-table.table-head'),
       dataIndex: 'name',
       key: 'name',
       ...getColumnSearchProps('name'),
     },
     {
-      title: 'Downloads',
+      title: t('translation.text-table.table-action'),
       dataIndex: 'download',
       key: 'download',
       width: '10%',
@@ -165,7 +165,7 @@ const AnggaranDasar = () => {
             console.log(`Download ${text}`);
           }}
         >
-          {t('translation.text-anggaran.download')}
+          {t('translation.text-table.download')}
         </Button>
       ),
     },

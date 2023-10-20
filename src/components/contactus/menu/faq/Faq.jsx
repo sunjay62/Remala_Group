@@ -4,8 +4,11 @@ import Footer from '../../../footer/Footer';
 import Accordion from 'react-bootstrap/Accordion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Faq = () => {
+  const { t } = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -16,7 +19,7 @@ const Faq = () => {
     <>
       <div className="containerFaq">
         <div className="containerTop" data-aos="fade-right">
-          <h1>Frequently Asked Question</h1>
+          <h1>{t('translation.text-contact.faq.title')}</h1>
         </div>
         <div className="containerAccordion" data-aos="fade-up">
           <Accordion defaultActiveKey="0">

@@ -81,12 +81,19 @@
       "btn-download": "Unduh PDF"
     },
     "text-anggaran": {
+      "title": "Anggaran Dasar"
+    },
+    "text-table": {
       "search": "Cari",
       "reset": "Atur Ulang",
       "filter": "Filter",
       "close": "Tutup",
       "download": "Unduh",
-      "title": "Anggaran Dasar"
+      "table-head": "Nama",
+      "table-action": "Unduh",
+      "date": "Tanggal",
+      "event": "Acara",
+      "location": "Lokasi"
     },
     "text-footer": {
       "title1": "Tautan Penting",
@@ -155,23 +162,52 @@
       "btn-report": "Laporan - Laporan",
       "btn-information": "Informasi Saham",
       "btn-news": "Berita & Kegiatan",
+      "btn-reports": {
+        "sec": "Laporan SEC",
+        "finance": "Laporan Keuangan",
+        "annual": "Laporan Tahunan",
+        "sustainability": "Laporan Keberlanjutan",
+        "text-reports": {
+          "text-sec": {
+            "title": "Laporan Sec"
+          },
+          "text-finance": {
+            "title": "Laporan Keuangan"
+          },
+          "text-annual": {
+            "title": "Laporan Tahunan"
+          },
+          "text-sustainability": {
+            "title": "Laporan Keberlanjutan"
+          }
+        }
+      },
       "btn-share": {
         "price": "Harga & Volume Saham",
         "pencatatan": "Kronologis Pencatatan Saham",
         "prospektus": "Prospektus Penawaran Umum",
         "komposisi": "Komposisi Pemegang Saham"
       },
-      "btn-reports": {
-        "sec": "Laporan SEC",
-        "finance": "Laporan Keuangan",
-        "annual": "Laporan Tahunan",
-        "sustainability": "Laporan Keberlanjutan"
-      },
       "btn-news-activities": {
         "rups": "RUPS",
         "calender": "Kalender Investor",
         "emiten": "Pengumuman Emiten",
         "exposure": "Paparan Publik"
+      }
+    },
+    "text-contact": {
+      "title1": "DAPATKAN DUKUNGAN 24/7",
+      "title2": "DAN INFORMASI",
+      "btn-regulasi": "Regulasi",
+      "btn-faq": "FAQ",
+      "text-location": "Lokasi",
+      "text-phone": "Telepon",
+      "text-mail": "E-mail",
+      "regulasi": {
+        "title": "Regulasi"
+      },
+      "faq": {
+        "title": "Pertanyaan yang Sering Diajukan"
       }
     }
   }

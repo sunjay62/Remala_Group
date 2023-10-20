@@ -5,6 +5,7 @@ import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const data = [
   {
@@ -43,6 +44,8 @@ const Sec = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -87,7 +90,7 @@ const Sec = () => {
               width: 90,
             }}
           >
-            Search
+            {t('translation.text-table.search')}
           </Button>
           <Button
             onClick={() => clearFilters && handleReset(clearFilters)}
@@ -96,7 +99,7 @@ const Sec = () => {
               width: 90,
             }}
           >
-            Reset
+            {t('translation.text-table.reset')}
           </Button>
           <Button
             type="link"
@@ -109,7 +112,7 @@ const Sec = () => {
               setSearchedColumn(dataIndex);
             }}
           >
-            Filter
+            {t('translation.text-table.filter')}
           </Button>
           <Button
             type="link"
@@ -118,7 +121,7 @@ const Sec = () => {
               close();
             }}
           >
-            close
+            {t('translation.text-table.close')}
           </Button>
         </Space>
       </div>
@@ -162,13 +165,13 @@ const Sec = () => {
       render: (text) => <span>{text}</span>,
     },
     {
-      title: 'Informasi Names',
+      title: t('translation.text-table.table-head'),
       dataIndex: 'name',
       key: 'name',
       ...getColumnSearchProps('name'),
     },
     {
-      title: 'Downloads',
+      title: t('translation.text-table.table-action'),
       dataIndex: 'download',
       key: 'download',
       width: '10%',
@@ -181,7 +184,7 @@ const Sec = () => {
             console.log(`Download ${text}`);
           }}
         >
-          Download
+          {t('translation.text-table.download')}
         </Button>
       ),
     },
@@ -191,7 +194,7 @@ const Sec = () => {
     <>
       <div className="containerSec">
         <div className="containerTop" data-aos="fade-down">
-          <h2>Laporan Sec</h2>
+          <h2>{t('translation.text-investor.btn-reports.text-reports.text-sec.title')}</h2>
         </div>
         <hr />
         <div className="containerBottom" data-aos="fade-left">

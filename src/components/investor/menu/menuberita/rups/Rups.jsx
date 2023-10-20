@@ -5,6 +5,7 @@ import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
 import './rups.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const data = [
   {
@@ -73,6 +74,8 @@ const Rups = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -117,7 +120,7 @@ const Rups = () => {
               width: 90,
             }}
           >
-            Search
+            {t('translation.text-table.search')}
           </Button>
           <Button
             onClick={() => clearFilters && handleReset(clearFilters)}
@@ -126,7 +129,7 @@ const Rups = () => {
               width: 90,
             }}
           >
-            Reset
+            {t('translation.text-table.reset')}
           </Button>
           <Button
             type="link"
@@ -139,7 +142,7 @@ const Rups = () => {
               setSearchedColumn(dataIndex);
             }}
           >
-            Filter
+            {t('translation.text-table.filter')}
           </Button>
           <Button
             type="link"
@@ -148,7 +151,7 @@ const Rups = () => {
               close();
             }}
           >
-            close
+            {t('translation.text-table.close')}
           </Button>
         </Space>
       </div>
@@ -192,13 +195,13 @@ const Rups = () => {
       render: (text) => <span>{text}</span>,
     },
     {
-      title: 'RUPS Names',
+      title: t('translation.text-table.table-head'),
       dataIndex: 'name',
       key: 'name',
       ...getColumnSearchProps('name'),
     },
     {
-      title: 'Downloads',
+      title: t('translation.text-table.table-action'),
       dataIndex: 'download',
       key: 'download',
       width: '10%',
@@ -211,7 +214,7 @@ const Rups = () => {
             console.log(`Download ${text}`);
           }}
         >
-          Download
+          {t('translation.text-table.download')}
         </Button>
       ),
     },
@@ -221,7 +224,7 @@ const Rups = () => {
     <>
       <div className="mainContainerRups">
         <div className="rupsTop" data-aos="fade-down">
-          <h4>Perseroan telah melakukan pengumuman terkait Rapat Umum Pemegang Saham (RUPS) setiap tahunnya sebagai berikut: </h4>
+          <h4>The company has made announcements regarding the Annual General Meeting of Shareholders (AGM) each year as follows:</h4>
           <br />
           <h2>RUPST</h2>
         </div>

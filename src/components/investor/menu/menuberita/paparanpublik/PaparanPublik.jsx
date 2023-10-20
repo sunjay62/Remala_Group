@@ -5,6 +5,8 @@ import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
+
 const data = [
   {
     key: '1',
@@ -42,6 +44,7 @@ const PaparanPublik = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
+  const [t] = useTranslation('global');
 
   useEffect(() => {
     AOS.init({
@@ -86,7 +89,7 @@ const PaparanPublik = () => {
               width: 90,
             }}
           >
-            Search
+            {t('translation.text-table.search')}
           </Button>
           <Button
             onClick={() => clearFilters && handleReset(clearFilters)}
@@ -95,7 +98,7 @@ const PaparanPublik = () => {
               width: 90,
             }}
           >
-            Reset
+            {t('translation.text-table.reset')}
           </Button>
           <Button
             type="link"
@@ -108,7 +111,7 @@ const PaparanPublik = () => {
               setSearchedColumn(dataIndex);
             }}
           >
-            Filter
+            {t('translation.text-table.filter')}
           </Button>
           <Button
             type="link"
@@ -117,7 +120,7 @@ const PaparanPublik = () => {
               close();
             }}
           >
-            close
+            {t('translation.text-table.close')}
           </Button>
         </Space>
       </div>
@@ -161,13 +164,13 @@ const PaparanPublik = () => {
       render: (text) => <span>{text}</span>,
     },
     {
-      title: 'Informasi Paparan Publik',
+      title: t('translation.text-table.table-head'),
       dataIndex: 'name',
       key: 'name',
       ...getColumnSearchProps('name'),
     },
     {
-      title: 'Downloads',
+      title: t('translation.text-table.table-action'),
       dataIndex: 'download',
       key: 'download',
       width: '10%',
@@ -180,7 +183,7 @@ const PaparanPublik = () => {
             console.log(`Download ${text}`);
           }}
         >
-          Download
+          {t('translation.text-table.download')}
         </Button>
       ),
     },

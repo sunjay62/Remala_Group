@@ -81,12 +81,19 @@
       "btn-download": "Download PDF"
     },
     "text-anggaran": {
+      "title": "Articles of Association"
+    },
+    "text-table": {
       "search": "Search",
       "reset": "Reset",
       "filter": "Filter",
       "close": "Close",
       "download": "Download",
-      "title": "Articles of Association"
+      "table-head": "Name",
+      "table-action": "Download",
+      "date": "Date",
+      "event": "Event",
+      "location": "Location"
     },
     "text-footer": {
       "title1": "Important Links",
@@ -155,23 +162,52 @@
       "btn-report": "Reports",
       "btn-information": "Share Information",
       "btn-news": "News & Activities",
+      "btn-reports": {
+        "sec": "SEC Reports",
+        "finance": "Financial Reports",
+        "annual": "Annual Reports",
+        "sustainability": "Sustainability Reports",
+        "text-reports": {
+          "text-sec": {
+            "title": "Sec Reports"
+          },
+          "text-finance": {
+            "title": "Financial Reports"
+          },
+          "text-annual": {
+            "title": "Annual Reports"
+          },
+          "text-sustainability": {
+            "title": "Sustainability Report"
+          }
+        }
+      },
       "btn-share": {
         "price": "Stock Price & Volume",
         "pencatatan": "Share Listing Chronology",
         "prospektus": "Public Offering Prospectus",
         "komposisi": "Shareholder Composition"
       },
-      "btn-reports": {
-        "sec": "SEC Reports",
-        "finance": "Financial Reports",
-        "annual": "Annual Reports",
-        "sustainability": "Sustainability Reports"
-      },
       "btn-news-activities": {
         "rups": "GMS (General Meeting of Shareholders)",
         "calender": "Investor Calendar",
         "emiten": "Issuer Announcements",
         "exposure": "Public Disclosures"
+      }
+    },
+    "text-contact": {
+      "title1": "GET 24/7 SUPPORT",
+      "title2": "AND INFORMATION",
+      "btn-regulasi": "Regulation",
+      "btn-faq": "FAQ",
+      "text-location": "Location",
+      "text-phone": "Phone",
+      "text-mail": "E-mail",
+      "regulasi": {
+        "title": "Regulation"
+      },
+      "faq": {
+        "title": "Frequently Asked Question"
       }
     }
   }

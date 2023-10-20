@@ -6,8 +6,11 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 import AttachEmailIcon from '@mui/icons-material/AttachEmail';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
+  const { t } = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -19,15 +22,15 @@ const Contact = () => {
       <div className="containerContact" data-aos="fade-up">
         <div className="location">
           <LocationOnIcon className="icon" />
-          <p>Location</p>
+          <p>{t('translation.text-contact.text-location')}</p>
         </div>
         <div className="phone">
           <PhoneInTalkIcon className="icon" />
-          <p>Phone</p>
+          <p>{t('translation.text-contact.text-phone')}</p>
         </div>
         <div className="email">
           <AttachEmailIcon className="icon" />
-          <p>E-Mail</p>
+          <p>{t('translation.text-contact.text-mail')}</p>
         </div>
       </div>
       <div className="footer">{<Footer />}</div>
