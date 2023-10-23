@@ -20,7 +20,7 @@ const Navbar = () => {
   const handleLanguageChange = (language) => {
     setSelectedLanguage(language);
     setLoading(true);
-
+    scrollToTop();
     setTimeout(() => {
       i18n.changeLanguage(language);
       setLoading(false);

@@ -192,7 +192,21 @@
         "rups": "GMS (General Meeting of Shareholders)",
         "calender": "Investor Calendar",
         "emiten": "Issuer Announcements",
-        "exposure": "Public Disclosures"
+        "exposure": "Public Disclosures",
+        "text-news-activities": {
+          "text-rups": {
+            "title": "GMS (General Meeting of Shareholders)"
+          },
+          "text-calender": {
+            "title": "Investor Calendar"
+          },
+          "text-emiten": {
+            "title": "Issuer Announcements Information"
+          },
+          "text-exposure": {
+            "title": "Public Disclosures Information"
+          }
+        }
       }
     },
     "text-contact": {

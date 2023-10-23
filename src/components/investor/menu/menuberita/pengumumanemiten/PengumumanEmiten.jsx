@@ -194,7 +194,7 @@ const PengumumanEmitan = () => {
     <>
       <div className="containerPengumumanEmiten">
         <div className="containerTop" data-aos="fade-down">
-          <h2>Informasi Kepada Investor</h2>
+          <h2>{t('translation.text-investor.btn-news-activities.text-news-activities.text-emiten.title')}</h2>
         </div>
         <hr />
         <div className="containerBottom" data-aos="fade-left">

@@ -192,7 +192,21 @@
         "rups": "RUPS",
         "calender": "Kalender Investor",
         "emiten": "Pengumuman Emiten",
-        "exposure": "Paparan Publik"
+        "exposure": "Paparan Publik",
+        "text-news-activities": {
+          "text-rups": {
+            "title": "RUPS"
+          },
+          "text-calender": {
+            "title": "Kalender Investor"
+          },
+          "text-emiten": {
+            "title": "Informasi Pengumuman Emiten"
+          },
+          "text-exposure": {
+            "title": "Informasi Paparan Publik"
+          }
+        }
       }
     },
     "text-contact": {

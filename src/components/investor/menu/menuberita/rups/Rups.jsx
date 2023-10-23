@@ -226,7 +226,7 @@ const Rups = () => {
         <div className="rupsTop" data-aos="fade-down">
           <h4>The company has made announcements regarding the Annual General Meeting of Shareholders (AGM) each year as follows:</h4>
           <br />
-          <h2>RUPST</h2>
+          <h2>{t('translation.text-investor.btn-news-activities.text-news-activities.text-rups.title')}</h2>
         </div>
         <hr />
         <div className="rupsBottom" data-aos="fade-left">

@@ -48,7 +48,9 @@
   .contentLeft {
     flex: 1.5;
   }
+}
 
+@media screen and (min-width: 860px) {
   .contentRight {
     background-color: #333;
     border-radius: 10px;
@@ -62,8 +64,17 @@
     padding: 15px;
   }
 
+  .contentRight {
+    background-color: #333;
+    border-radius: 10px;
+    height: 55vh;
+    width: 100%;
+  }
+
   .contentManajemen {
     border-radius: 25px;
+    flex-direction: column;
+    padding: 70px 25px;
   }
 }
 

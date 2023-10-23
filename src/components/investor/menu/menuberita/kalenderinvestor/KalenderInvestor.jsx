@@ -188,7 +188,7 @@ const KalenderInvestor = () => {
     <>
       <div className="mainContainerKalender">
         <div className="kalenderTop" data-aos="fade-down">
-          <h2>Kalender Investor</h2>
+          <h2>{t('translation.text-investor.btn-news-activities.text-news-activities.text-calender.title')}</h2>
         </div>
         <hr />
         <div className="kalenderBottom" data-aos="fade-left">
