@@ -223,6 +223,20 @@
       "faq": {
         "title": "Frequently Asked Question"
       }
+    },
+    "text-governance": {
+      "title1": "UPHOLDING INTEGRITY",
+      "title2": "AND COMMITMENT IN",
+      "btn-struckture": "Principles & Structure",
+      "btn-ethics": "Code of Ethics",
+      "btn-quality": "Quality Management",
+      "text-quality": {
+        "title1": "ISO Quality Management Certificate",
+        "title2": "ISO Anti-Corruption Certificate",
+        "title3": "ISO Information Technology Service Management Certificate",
+        "title4": "ISO Environmental Management Certificate",
+        "title5": "ISO Occupational Health and Safety Management Certificate"
+      }
     }
   }
 }

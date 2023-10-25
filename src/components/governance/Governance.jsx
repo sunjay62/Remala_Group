@@ -3,12 +3,14 @@ import './governance.scss';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const Governance = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const currentPath = location.pathname.split('/').pop();
   const [activeButton, setActiveButton] = useState(currentPath);
+  const [t] = useTranslation('global');
 
   useEffect(() => {
     AOS.init({
@@ -26,23 +28,23 @@ const Governance = () => {
       <div className="prinsip-content d-flex align-items-center justify-content-center">
         <div className="content-text">
           <h2 className="textHero" data-aos="fade-left">
-            MENJUNJUNG TINGGI INTEGRITAS
+            {t('translation.text-governance.title1')}
           </h2>
           <h2 className="textHero" data-aos="fade-right">
-            DAN KOMITMEN DALAM BEKERJA
+            {t('translation.text-governance.title2')}
           </h2>
         </div>
       </div>
       <div className="buttons">
         <div className="containerGovernance">
           <button className={`btnMenu ${activeButton === 'principle-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('principle-strucktur')}>
-            Prinsip & Struktur
+            {t('translation.text-governance.btn-struckture')}
           </button>
           <button className={`btnMenu ${activeButton === 'code-ethics' ? 'clicked' : ''}`} onClick={() => handleButtonClick('code-ethics')}>
-            Kode Etik
+            {t('translation.text-governance.btn-ethics')}
           </button>
           <button className={`btnMenu ${activeButton === 'quality-management' ? 'clicked' : ''}`} onClick={() => handleButtonClick('quality-management')}>
-            Manajemen Mutu
+            {t('translation.text-governance.btn-quality')}
           </button>
         </div>
         <div className="isi-content-governance">

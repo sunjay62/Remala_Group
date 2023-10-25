@@ -223,6 +223,20 @@
       "faq": {
         "title": "Pertanyaan yang Sering Diajukan"
       }
+    },
+    "text-governance": {
+      "title1": "MENJUNJUNG TINGGI INTEGRITAS",
+      "title2": "DAN KOMITMEN DALAM",
+      "btn-struckture": "Prinsip & Struktur",
+      "btn-ethics": "Kode Etik",
+      "btn-quality": "Manajemen Mutu",
+      "text-quality": {
+        "title1": "Sertifikat ISO Manajemen Mutu",
+        "title2": "Sertifikat ISO Anti Penyuapan",
+        "title3": "Sertifikat ISO Manajemen Layanan Teknologi Informasi",
+        "title4": "Sertifikat ISO Manajemen Lingkungan",
+        "title5": "Sertifikat ISO Manajemen Keselamatan dan Kesehatan Kerja"
+      }
     }
   }
 }

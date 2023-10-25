@@ -3,8 +3,11 @@ import './manajemenmutu.scss';
 import Footer from '../../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useTranslation } from 'react-i18next';
 
 const ManajemenMutu = () => {
+  const [t] = useTranslation('global');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -14,31 +17,31 @@ const ManajemenMutu = () => {
   // Data untuk masing-masing elemen
   const dataManajemen = [
     {
-      title: 'Sertifikat ISO Manajemen Mutu',
+      title: t('translation.text-governance.text-quality.title1'),
       description: 'Deskripsi :',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam earum dolor non adipisci quis vero doloremque odio unde natus, ratione ab assumenda! Adipisci veniam quidem delectus ducimus aliquid provident facere, id nulla consectetur cupiditate odit atque maxime nisi, iusto ut dicta ea beatae. Minus voluptatum nihil id at maxime.',
     },
     {
-      title: 'Sertifikat ISO Anti Penyuapan',
+      title: t('translation.text-governance.text-quality.title2'),
       description: 'Deskripsi :',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam earum dolor non adipisci quis vero doloremque odio unde natus, ratione ab assumenda! Adipisci veniam quidem delectus ducimus aliquid provident facere, id nulla consectetur cupiditate odit atque maxime nisi, iusto ut dicta ea beatae. Minus voluptatum nihil id at maxime.',
     },
     {
-      title: 'Sertifikat ISO Manajemen Layanan Teknologi Informasi',
+      title: t('translation.text-governance.text-quality.title3'),
       description: 'Deskripsi :',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam earum dolor non adipisci quis vero doloremque odio unde natus, ratione ab assumenda! Adipisci veniam quidem delectus ducimus aliquid provident facere, id nulla consectetur cupiditate odit atque maxime nisi, iusto ut dicta ea beatae. Minus voluptatum nihil id at maxime.',
     },
     {
-      title: 'Sertifikat ISO Manajemen Lingkungan',
+      title: t('translation.text-governance.text-quality.title4'),
       description: 'Deskripsi :',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam earum dolor non adipisci quis vero doloremque odio unde natus, ratione ab assumenda! Adipisci veniam quidem delectus ducimus aliquid provident facere, id nulla consectetur cupiditate odit atque maxime nisi, iusto ut dicta ea beatae. Minus voluptatum nihil id at maxime.',
     },
     {
-      title: 'Sertifikat ISO Manajemen Keselamatan dan Kesehatan Kerja',
+      title: t('translation.text-governance.text-quality.title5'),
       description: 'Deskripsi :',
       content:
         'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quam earum dolor non adipisci quis vero doloremque odio unde natus, ratione ab assumenda! Adipisci veniam quidem delectus ducimus aliquid provident facere, id nulla consectetur cupiditate odit atque maxime nisi, iusto ut dicta ea beatae. Minus voluptatum nihil id at maxime.',
