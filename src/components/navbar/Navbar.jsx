@@ -7,6 +7,9 @@ import Uk from '../../assets/navbar/uk.png';
 import { Tooltip } from '@material-ui/core';
 import { useTranslation } from 'react-i18next';
 import LoadingScreen from '../loadingscreen/LoadingScreen';
+import { DownOutlined } from '@ant-design/icons';
+import tachyon from '../../assets/home/logotachyonnew.png';
+import nethome from '../../assets/home/logonethomee.png';
 
 // Inside your component
 const Navbar = () => {
@@ -119,68 +122,73 @@ const Navbar = () => {
           <i className={active ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
 
-        <ul className={active ? 'nav-menu active' : 'nav-menu'}>
-          <li>
+        <div className="navbarRight">
+          <div className={active ? 'nav-menu active' : 'nav-menu'}>
             <Link
-              to="/"
               className="nav-links"
               onClick={() => {
                 scrollToTop();
                 handleMenuItemClick();
               }}
             >
-              {t('translation.navbar.home')}
+              <span>
+                {t('translation.navbar.about')}
+                <DownOutlined className="dropdown-arrow" />
+              </span>
+              <div className="dropdown-content">
+                <Link
+                  className="dropdown-links"
+                  to="/aboutus/profile"
+                  onClick={() => {
+                    scrollToTop();
+                    handleMenuItemClick();
+                  }}
+                >
+                  {t('translation.text-about.profile')}
+                </Link>
+                <Link
+                  className="dropdown-links"
+                  to="/aboutus/organitation-strucktur/board-of-commissioners"
+                  onClick={() => {
+                    scrollToTop();
+                    handleMenuItemClick();
+                  }}
+                >
+                  {t('translation.text-about.organization')}
+                </Link>
+                <Link
+                  className="dropdown-links"
+                  to="/aboutus/group-strucktur"
+                  onClick={() => {
+                    scrollToTop();
+                    handleMenuItemClick();
+                  }}
+                >
+                  {t('translation.text-about.group')}
+                </Link>
+                <Link
+                  className="dropdown-links"
+                  to="/aboutus/articles-of-association"
+                  onClick={() => {
+                    scrollToTop();
+                    handleMenuItemClick();
+                  }}
+                >
+                  {t('translation.text-about.anggaran')}
+                </Link>
+                <Link
+                  className="dropdown-links"
+                  to="/aboutus/award"
+                  onClick={() => {
+                    scrollToTop();
+                    handleMenuItemClick();
+                  }}
+                >
+                  {t('translation.text-about.awards')}
+                </Link>
+              </div>
             </Link>
-          </li>
-          <li>
-            <Link
-              to="/investor-relation/report/sec-report"
-              className="nav-links"
-              onClick={() => {
-                scrollToTop();
-                handleMenuItemClick();
-              }}
-            >
-              {t('translation.navbar.relations')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contactus"
-              className="nav-links"
-              onClick={() => {
-                scrollToTop();
-                handleMenuItemClick();
-              }}
-            >
-              {t('translation.navbar.contact')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="#"
-              className="nav-links"
-              onClick={() => {
-                scrollToTop();
-                handleMenuItemClick();
-              }}
-            >
-              {t('translation.navbar.business')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/aboutus/profile"
-              className="nav-links"
-              onClick={() => {
-                scrollToTop();
-                handleMenuItemClick();
-              }}
-            >
-              {t('translation.navbar.about')}
-            </Link>
-          </li>
-          <li>
+
             <Link
               to="/governance-corporate/principle-strucktur"
               className="nav-links"
@@ -191,11 +199,50 @@ const Navbar = () => {
             >
               {t('translation.navbar.gcg')}
             </Link>
-          </li>
 
-          <li>
             <Link
-              to="/investor-relation/news/rups"
+              to="/investor-relation/report/sec-report"
+              className="nav-links"
+              onClick={() => {
+                scrollToTop();
+                handleMenuItemClick();
+              }}
+            >
+              {t('translation.navbar.relations')}
+            </Link>
+
+            <Link
+              to="#"
+              className="nav-links"
+              onClick={() => {
+                scrollToTop();
+                handleMenuItemClick();
+              }}
+            >
+              <span>
+                {t('translation.navbar.business')}
+                <DownOutlined className="dropdown-arrow" />
+              </span>
+              <div className="dropdown-content">
+                <Link className="dropdown-links2">
+                  <div className="imgMenuLinks">
+                    <div className="containerLogo">
+                      <img src={nethome} />
+                    </div>
+                  </div>
+                </Link>
+                <Link className="dropdown-links2">
+                  <div className="imgMenuLinks2">
+                    <div className="containerLogo">
+                      <img src={tachyon} />
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </Link>
+
+            <Link
+              to="/news"
               className="nav-links"
               onClick={() => {
                 scrollToTop();
@@ -204,9 +251,18 @@ const Navbar = () => {
             >
               {t('translation.navbar.news')}
             </Link>
-          </li>
 
-          <li>
+            <Link
+              to="/contactus"
+              className="nav-links"
+              onClick={() => {
+                scrollToTop();
+                handleMenuItemClick();
+              }}
+            >
+              {t('translation.navbar.contact')}
+            </Link>
+
             <Link
               to="#"
               className="nav-links"
@@ -217,10 +273,24 @@ const Navbar = () => {
             >
               {t('translation.navbar.career')}
             </Link>
-          </li>
 
-          {/* Tampilkan div dengan class "language" di dalam ul jika layar berukuran lebih kecil dari 860px */}
-          {isMobile && (
+            {/* Tampilkan div dengan class "language" di dalam ul jika layar berukuran lebih kecil dari 860px */}
+            {isMobile && (
+              <div className="language">
+                <Tooltip title="Indonesia" arrow className="tooltipContainer">
+                  <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
+                    <img width="15" height="15" src={Indonesia} />
+                  </button>
+                </Tooltip>
+                <Tooltip title="English" arrow className="tooltipContainer">
+                  <button className={`language-button ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
+                    <img width="15" height="15" src={Uk} />
+                  </button>
+                </Tooltip>
+              </div>
+            )}
+          </div>
+          {!isMobile && (
             <div className="language">
               <Tooltip title="Indonesia" arrow className="tooltipContainer">
                 <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
@@ -234,23 +304,7 @@ const Navbar = () => {
               </Tooltip>
             </div>
           )}
-        </ul>
-        <span></span>
-        {/* Tampilkan div dengan class "language" di luar ul jika layar lebih besar atau sama dengan 860px */}
-        {!isMobile && (
-          <div className="language">
-            <Tooltip title="Indonesia" arrow className="tooltipContainer">
-              <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
-                <img width="15" height="15" src={Indonesia} />
-              </button>
-            </Tooltip>
-            <Tooltip title="English" arrow className="tooltipContainer">
-              <button className={`language-button ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
-                <img width="15" height="15" src={Uk} />
-              </button>
-            </Tooltip>
-          </div>
-        )}
+        </div>
       </nav>
     </>
   );

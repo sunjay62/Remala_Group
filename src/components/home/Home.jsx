@@ -24,8 +24,8 @@ const Home = () => {
     <div className="homeMainContainer">
       <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
         <div className="container">
-          <p data-aos="fade-left">{t('translation.hero-title.title1')}</p>
-          <p data-aos="fade-right">{t('translation.hero-title.title2')}</p>
+          <h1 data-aos="fade-left">{t('translation.hero-title.title1')}</h1>
+          <h1 data-aos="fade-right">{t('translation.hero-title.title2')}</h1>
         </div>
       </div>
       {/* <div className="perseroanHome">

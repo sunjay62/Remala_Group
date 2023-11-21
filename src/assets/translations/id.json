@@ -5,14 +5,14 @@
       "about": "Tentang Kami",
       "gcg": "Tata Kelola",
       "relations": "Hubungan Investor",
-      "news": "News & Kegiatan",
+      "news": "Berita",
       "contact": "Hubungi Kami",
       "business": "Bisnis",
       "career": "Karir"
     },
     "hero-title": {
       "title1": "MEMBERIKAN KONEKTIVITAS TERBAIK ",
-      "title2": "DENGAN INFRASFRUKTUR TERPERCAYA"
+      "title2": "DENGAN INFRASTRUKTUR TERPERCAYA"
     },
     "menu-item": {
       "boc": "Dewan Komisaris",
@@ -161,7 +161,7 @@
       "title2": "DAN KOMITMEN DALAM",
       "btn-report": "Laporan - Laporan",
       "btn-information": "Informasi Saham",
-      "btn-news": "Berita & Kegiatan",
+      "btn-news": "Kegiatan",
       "btn-reports": {
         "sec": "Laporan SEC",
         "finance": "Laporan Keuangan",
@@ -237,6 +237,9 @@
         "title4": "Sertifikat ISO Manajemen Lingkungan",
         "title5": "Sertifikat ISO Manajemen Keselamatan dan Kesehatan Kerja"
       }
+    },
+    "text-news": {
+      "title": "BERITA"
     }
   }
 }

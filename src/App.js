@@ -39,6 +39,8 @@ import Keuangan from './components/investor/menu/menulaporan/keuangan/Keuangan';
 import Tahunan from './components/investor/menu/menulaporan/tahunan/Tahunan';
 import Keberlanjutan from './components/investor/menu/menulaporan/keberlanjutan/Keberlanjutan';
 import BackTop from './components/backtop/BackTop';
+import News from './components/news/News';
+import NewsDetail from './components/news/newsdetail/NewsDetail';
 
 function App() {
   return (
@@ -91,6 +93,8 @@ function App() {
               <Route element={<Keberlanjutan />} path="sustainability-report" />
             </Route>
           </Route>
+          <Route element={<News />} path="/news" />
+          <Route path="/news/:id/:title" element={<NewsDetail />} />
         </Routes>
         <BackTop />
       </BrowserRouter>

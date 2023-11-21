@@ -4,11 +4,11 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import itembanner1 from './bisnis.jpg';
-import itembanner2 from './bisnis2.jpeg';
-import itembanner3 from './bisnis3.jpg';
-import itembanner4 from './bisnis4.jpg';
-import itembanner5 from './bisnis5.jpg';
+import agustusImg from '../../../assets/activities/17agustus.jpg';
+import idmImg from '../../../assets/activities/idm.jpg';
+import image1 from './bisnis.jpg';
+import image2 from './bisnis5.jpg';
+import image3 from './bisnis3.jpg';
 import './swiper.scss';
 import { useTranslation } from 'react-i18next';
 
@@ -36,34 +36,19 @@ const SimpleSlider = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <img src={itembanner1} alt="#" className="imgSwiper" />
+            <img src={image2} alt="#" className="imgSwiper" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={itembanner2} alt="#" className="imgSwiper" />
+            <img src={agustusImg} alt="#" className="imgSwiper" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={itembanner3} alt="#" className="imgSwiper" />
+            <img src={idmImg} alt="#" className="imgSwiper" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={itembanner4} alt="#" className="imgSwiper" />
+            <img src={image1} alt="#" className="imgSwiper" />
           </SwiperSlide>
           <SwiperSlide>
-            <img src={itembanner5} alt="#" className="imgSwiper" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={itembanner1} alt="#" className="imgSwiper" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={itembanner2} alt="#" className="imgSwiper" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={itembanner3} alt="#" className="imgSwiper" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={itembanner4} alt="#" className="imgSwiper" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={itembanner5} alt="#" className="imgSwiper" />
+            <img src={image3} alt="#" className="imgSwiper" />
           </SwiperSlide>
         </Swiper>
       </div>

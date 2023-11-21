@@ -5,7 +5,7 @@
       "about": "About Us",
       "gcg": "Corporate Governance",
       "relations": "Investor Relations",
-      "news": "News & Activities",
+      "news": "News",
       "contact": "Contact Us",
       "business": "Business",
       "career": "Career"
@@ -161,7 +161,7 @@
       "title2": "AND COMMITMENT IN",
       "btn-report": "Reports",
       "btn-information": "Share Information",
-      "btn-news": "News & Activities",
+      "btn-news": "Activities",
       "btn-reports": {
         "sec": "SEC Reports",
         "finance": "Financial Reports",
@@ -237,6 +237,9 @@
         "title4": "ISO Environmental Management Certificate",
         "title5": "ISO Occupational Health and Safety Management Certificate"
       }
+    },
+    "text-news": {
+      "title": "NEWS"
     }
   }
 }
