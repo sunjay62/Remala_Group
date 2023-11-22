@@ -66,52 +66,52 @@ const Partner = () => {
             >
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={alfamartIcon} alt="" srcset="" />
+                  <img src={alfamartIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={bpkIcon} alt="" srcset="" />
+                  <img src={bpkIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={bsiIcon} alt="" srcset="" />
+                  <img src={bsiIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={budiLuhurIcon} alt="" srcset="" />
+                  <img src={budiLuhurIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={dkiJakartaIcon} alt="" srcset="" />
+                  <img src={dkiJakartaIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={fajarMitraIndahIcon} alt="" srcset="" />
+                  <img src={fajarMitraIndahIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={hutamaKaryaIcon} alt="" srcset="" />
+                  <img src={hutamaKaryaIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={iconMediaIcon} alt="" srcset="" />
+                  <img src={iconMediaIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={rsudKabBekasiIcon} alt="" srcset="" />
+                  <img src={rsudKabBekasiIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={univPrasetyaMulyaIcon} alt="" srcset="" />
+                  <img src={univPrasetyaMulyaIcon} />
                 </div>
               </SwiperSlide>
             </Swiper>
@@ -137,52 +137,52 @@ const Partner = () => {
           >
             <SwiperSlide>
               <div className="item-partner">
-                <img src={alfamartIcon} alt="" srcset="" />
+                <img src={alfamartIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={bpkIcon} alt="" srcset="" />
+                <img src={bpkIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={bsiIcon} alt="" srcset="" />
+                <img src={bsiIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={budiLuhurIcon} alt="" srcset="" />
+                <img src={budiLuhurIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={dkiJakartaIcon} alt="" srcset="" />
+                <img src={dkiJakartaIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={fajarMitraIndahIcon} alt="" srcset="" />
+                <img src={fajarMitraIndahIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={hutamaKaryaIcon} alt="" srcset="" />
+                <img src={hutamaKaryaIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={iconMediaIcon} alt="" srcset="" />
+                <img src={iconMediaIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={rsudKabBekasiIcon} alt="" srcset="" />
+                <img src={rsudKabBekasiIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={univPrasetyaMulyaIcon} alt="" srcset="" />
+                <img src={univPrasetyaMulyaIcon} />
               </div>
             </SwiperSlide>
           </Swiper>

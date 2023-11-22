@@ -51,6 +51,33 @@
   margin-right: 0;
 }
 
+.modalSwiper {
+  top: 25px;
+
+  .imgModal {
+    width: 100%;
+    border-radius: 5px;
+    margin: 5px 0 20px 0;
+  }
+
+  h6 {
+    font-weight: 600;
+  }
+
+  .containerChillImg {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    .chillImg {
+      width: 25%;
+      border-radius: 5px;
+    }
+  }
+}
+
 @media screen and (max-width: 860px) {
   .swiper-button-prev,
   .swiper-button-next {

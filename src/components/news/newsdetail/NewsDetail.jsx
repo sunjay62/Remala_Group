@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import dummyNews from '../dummyNews';
@@ -6,15 +6,20 @@ import './newsdetail.scss';
 import Footer from '../../footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FacebookShareButton, WhatsappShareButton, TwitterShareButton } from 'react-share';
+import CopyToClipboard from 'react-copy-to-clipboard';
 import Twitter from '../../../assets/news/twittericon.png';
 import Facebook from '../../../assets/news/facebookicon.png';
 import Share from '../../../assets/news/shareicon.png';
 import Instagram from '../../../assets/news/instagramicon.png';
 import Whatsapp from '../../../assets/news/waicon.png';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const NewsDetail = () => {
   const [t] = useTranslation('global');
   const { id } = useParams();
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     // Scroll to the top when the component is mounted
@@ -38,6 +43,17 @@ const NewsDetail = () => {
     );
   }
 
+  const shareUrl = window.location.href;
+
+  const handleCopyToClipboard = () => {
+    setCopied(true);
+    // Show toast when copy is successful
+    toast.success('Link copied to clipboard!', {
+      position: 'bottom-center',
+      autoClose: 2000, // 2 seconds
+    });
+  };
+
   return (
     <div className="contentNewsDetail" data-aos="fade-down">
       <div className="newsDetail-content d-flex align-items-center justify-content-center">
@@ -52,26 +68,31 @@ const NewsDetail = () => {
         <div className="shareContent">
           <p>Bagikan Artikel</p>
           <div className="shareIcon">
+            <WhatsappShareButton url={shareUrl} className="linkIcon">
+              <img src={Whatsapp} alt="" className="imgIcon" />
+            </WhatsappShareButton>
+            <FacebookShareButton url={shareUrl} className="linkIcon">
+              <img src={Facebook} alt="" className="imgIcon" />
+            </FacebookShareButton>
             <Link className="linkIcon">
-              <img src={Whatsapp} alt="" srcset="" />
+              <img src={Instagram} alt="" className="imgIcon" />
             </Link>
-            <Link className="linkIcon">
-              <img src={Facebook} alt="" srcset="" />
-            </Link>
-            <Link className="linkIcon">
-              <img src={Instagram} alt="" srcset="" />
-            </Link>
-            <Link className="linkIcon">
-              <img src={Twitter} alt="" srcset="" />
-            </Link>
-            <Link className="linkIcon">
-              <img src={Share} alt="" srcset="" />
-            </Link>
+            <TwitterShareButton url={shareUrl} className="linkIcon">
+              <img src={Twitter} alt="" className="imgIcon" />
+            </TwitterShareButton>
+            <CopyToClipboard text={shareUrl} onCopy={handleCopyToClipboard}>
+              <div className="linkIcon" style={{ cursor: 'pointer' }}>
+                <img src={Share} alt="" className="imgIcon" />
+              </div>
+            </CopyToClipboard>
           </div>
         </div>
         <img src={selectedNews.image} alt={selectedNews.title} />
         <h5>{selectedNews.date}</h5>
         <p>{selectedNews.description}</p>
+        {selectedNews.paragraphs.map((paragraph, index) => (
+          <p key={index}>{paragraph.text}</p>
+        ))}
       </div>
       <div className="footer">{<Footer />}</div>
     </div>

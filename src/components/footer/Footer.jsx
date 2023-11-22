@@ -19,9 +19,9 @@ const Footer = () => {
               <img src={logo} alt="Remala" className="logoFooter" />
             </div>
             <div className="twoLeft">
-              <h7>
+              <h6>
                 <strong>PT. Remala Abadi</strong>
-              </h7>
+              </h6>
               <p>Graha Mustika Ratu</p>
               <p>
                 Jl. Gatot Subroto No 74-75, RT 02/ RW 01. <br />

@@ -124,7 +124,7 @@ const Navbar = () => {
 
         <div className="navbarRight">
           <div className={active ? 'nav-menu active' : 'nav-menu'}>
-            <Link
+            <div
               className="nav-links"
               onClick={() => {
                 scrollToTop();
@@ -187,7 +187,7 @@ const Navbar = () => {
                   {t('translation.text-about.awards')}
                 </Link>
               </div>
-            </Link>
+            </div>
 
             <Link
               to="/governance-corporate/principle-strucktur"
@@ -211,7 +211,7 @@ const Navbar = () => {
               {t('translation.navbar.relations')}
             </Link>
 
-            <Link
+            <div
               to="#"
               className="nav-links"
               onClick={() => {
@@ -239,7 +239,7 @@ const Navbar = () => {
                   </div>
                 </Link>
               </div>
-            </Link>
+            </div>
 
             <Link
               to="/news"
