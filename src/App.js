@@ -75,7 +75,7 @@ function App() {
           </Route>
           <Route element={<Investor />} path="/investor-relation">
             <Route element={<Saham />} path="stock-information">
-              <Route element={<Volume />} path="stock-volume" />
+              <Route element={<Volume symbol="BTCUSDT" interval="1D" />} path="stock-volume" />
               <Route element={<Pencatatan />} path="stock-record" />
               <Route element={<Prospektus />} path="public-prospectus" />
               <Route element={<Komposisi />} path="shareholder-composition" />
