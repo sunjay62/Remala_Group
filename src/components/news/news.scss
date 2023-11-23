@@ -28,6 +28,10 @@
     align-items: center;
     padding: 0 25px;
 
+    .autoComplete {
+      width: 200px;
+    }
+
     .filterTop {
       display: flex;
       gap: 15px;
@@ -93,6 +97,86 @@
     justify-content: end;
     align-items: center;
     padding-top: 25px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .bottomNews {
+    padding: 0;
+
+    .filter-search {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .autoComplete {
+        width: 150px;
+      }
+
+      .filterTop {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .page {
+        color: gray;
+        font-weight: 600;
+        font-size: 1.1rem;
+      }
+    }
+
+    .middle {
+      .bodyNews {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        img {
+          width: 100%;
+          margin-bottom: -25px;
+        }
+      }
+
+      .desc {
+        width: 100%;
+
+        h5 {
+          margin-bottom: 5px;
+        }
+
+        hr {
+          width: 45%;
+        }
+
+        a {
+          text-decoration: none;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #56a5ff;
+            transition: width 0.2s ease-in-out;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      padding-top: 25px;
+    }
   }
 }
 

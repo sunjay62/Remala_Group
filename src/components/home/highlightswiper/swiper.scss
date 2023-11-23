@@ -87,6 +87,14 @@
   .imgSwiper {
     height: 450px;
   }
+
+  .modalSwiper {
+    .containerChillImg {
+      .chillImg {
+        width: 45%;
+      }
+    }
+  }
 }
 
 @media (min-width: 14in) {

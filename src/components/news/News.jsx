@@ -83,7 +83,7 @@ const News = () => {
             <div>
               <Button type="default" icon={<ArrowDownOutlined rotate={filterType === 'newer' ? 180 : 0} />} onClick={handleFilter} />
             </div>
-            <AutoComplete placeholder="Cari Berita..." onSearch={handleSearch} onSelect={handleSelect} value={searchQuery} style={{ width: 200 }} />
+            <AutoComplete className="autoComplete" placeholder="Cari Berita..." onSearch={handleSearch} onSelect={handleSelect} value={searchQuery} />
           </div>
           <div className="page"> Page {currentPage}</div>
         </div>

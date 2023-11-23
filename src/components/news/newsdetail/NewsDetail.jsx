@@ -13,7 +13,7 @@ import Facebook from '../../../assets/news/facebookicon.png';
 import Share from '../../../assets/news/shareicon.png';
 import Instagram from '../../../assets/news/instagramicon.png';
 import Whatsapp from '../../../assets/news/waicon.png';
-import { toast, ToastContainer } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const NewsDetail = () => {
@@ -54,6 +54,13 @@ const NewsDetail = () => {
     });
   };
 
+  const handleInstagramShare = () => {
+    const instagramShareUrl = `https://www.instagram.com/?url=${encodeURIComponent(shareUrl)}`;
+
+    // Buka Instagram dengan URL scheme
+    window.open(instagramShareUrl, '_blank');
+  };
+
   return (
     <div className="contentNewsDetail" data-aos="fade-down">
       <div className="newsDetail-content d-flex align-items-center justify-content-center">
@@ -74,7 +81,7 @@ const NewsDetail = () => {
             <FacebookShareButton url={shareUrl} className="linkIcon">
               <img src={Facebook} alt="" className="imgIcon" />
             </FacebookShareButton>
-            <Link className="linkIcon">
+            <Link className="linkIcon" onClick={handleInstagramShare}>
               <img src={Instagram} alt="" className="imgIcon" />
             </Link>
             <TwitterShareButton url={shareUrl} className="linkIcon">
