@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './strukturorganisasi.scss';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
-import Footer from '../../../footer/Footer';
+import FooterId from '../../../footer/FooterId';
+import FooterEn from '../../../footer/FooterEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
@@ -12,6 +13,7 @@ const StrukturOrganisasi = () => {
   const [t] = useTranslation('global');
   const currentPath = location.pathname.split('/').pop();
   const [activeButton, setActiveButton] = useState(currentPath);
+  const isIdPath = window.location.pathname.startsWith('/en');
 
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
@@ -51,7 +53,7 @@ const StrukturOrganisasi = () => {
           <Outlet />
         </div>
       </div>
-      <div className="footer">{<Footer />}</div>
+      <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </>
   );
 };

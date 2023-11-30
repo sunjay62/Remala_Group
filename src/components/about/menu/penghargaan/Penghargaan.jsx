@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import './penghargaan.scss';
-import Footer from '../../../footer/Footer';
+import FooterId from '../../../footer/FooterId';
+import FooterEn from '../../../footer/FooterEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Penghargaan = () => {
+  const isIdPath = window.location.pathname.startsWith('/en');
+
   useEffect(() => {
     AOS.init({
       duration: 1300,
@@ -29,7 +32,7 @@ const Penghargaan = () => {
           </div>
         </div>
       </div>
-      <div className="footer">{<Footer />}</div>
+      <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </>
   );
 };

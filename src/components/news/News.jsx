@@ -5,7 +5,8 @@ import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
 import { Pagination, AutoComplete, Button } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
-import Footer from '../footer/Footer';
+import FooterId from '../footer/FooterId';
+import FooterEn from '../footer/FooterEn';
 import { ArrowRightOutlined, ArrowDownOutlined } from '@ant-design/icons';
 import dummyNews from './dummyNews';
 
@@ -18,6 +19,7 @@ const News = () => {
   const newsPerPage = 3;
   const [filterType, setFilterType] = useState(''); // 'older' or 'newer'
   const navigate = useNavigate(); // Use navigate hook
+  const isIdPath = window.location.pathname.startsWith('/en');
 
   useEffect(() => {
     AOS.init({
@@ -107,7 +109,7 @@ const News = () => {
           <Pagination current={currentPage} pageSize={newsPerPage} total={dummyNews.length} onChange={handlePageChange} />
         </div>
       </div>
-      <div className="footer">{<Footer />}</div>
+      <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </div>
   );
 };

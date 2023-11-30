@@ -1,33 +1,48 @@
 import React, { useRef, useState, useEffect } from 'react';
+import './tahunan.scss';
 import Highlighter from 'react-highlight-words';
-import './anggarandasar.scss';
-import FooterId from '../../../footer/FooterId';
-import FooterEn from '../../../footer/FooterEn';
 import { Button, Input, Space, Table } from 'antd';
 import { SearchOutlined, DownloadOutlined } from '@ant-design/icons';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
 
 const data = [
   {
     key: '1',
-    name: 'Anggaran Dasar 2022.',
-    download: 'Anggaran Dasar 2022.',
+    name: 'Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik.',
+    download: 'Undang-Undang Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik.',
   },
   {
     key: '2',
-    name: 'Anggaran Dasar 2023.',
-    download: 'Anggaran Dasar 2023.',
+    name: 'Peraturan Pemerintah Nomor 61 Tahun 2010 tentang Pelaksanaan UU Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik.',
+    download: 'Peraturan Pemerintah Nomor 61 Tahun 2010 tentang Pelaksanaan UU Nomor 14 Tahun 2008 tentang Keterbukaan Informasi Publik.',
+  },
+  {
+    key: '3',
+    name: 'Peraturan Komisi Informasi Nomor 1 Tahun 2010 tentang Standar Layanan Informasi.',
+    download: 'Peraturan Komisi Informasi Nomor 1 Tahun 2010 tentang Standar Layanan Informasi.',
+  },
+  {
+    key: '4',
+    name: 'Peraturan Komisi Informasi Pusah Nomor 1 Tahun 2013 tentang Prosedur Penyelesaian Sengketa Informasi Publik.',
+    download: 'Peraturan Komisi Informasi Pusah Nomor 1 Tahun 2013 tentang Prosedur Penyelesaian Sengketa Informasi Publik.',
+  },
+  {
+    key: '5',
+    name: 'Perma Nomor 02 Tahun 2011 tentang Tata Cara Penyelesaian Sengketa Informasi Publik di Pengadilan.',
+    download: 'Perma Nomor 02 Tahun 2011 tentang Tata Cara Penyelesaian Sengketa Informasi Publik di Pengadilan.',
+  },
+  {
+    key: '6',
+    name: 'Peraturan Komisi Informasi Nomor 1 Tahun 2017 tentang Pengklasifikasian Informasi Publik.',
+    download: 'Peraturan Komisi Informasi Nomor 1 Tahun 2017 tentang Pengklasifikasian Informasi Publik.',
   },
 ];
 
-const AnggaranDasar = () => {
+const Tahunan = () => {
   const [searchText, setSearchText] = useState('');
   const [searchedColumn, setSearchedColumn] = useState('');
   const searchInput = useRef(null);
-  const [t] = useTranslation('global');
-  const isIdPath = window.location.pathname.startsWith('/en');
 
   useEffect(() => {
     AOS.init({
@@ -73,7 +88,7 @@ const AnggaranDasar = () => {
               width: 90,
             }}
           >
-            {t('translation.text-table.search')}
+            Search
           </Button>
           <Button
             onClick={() => clearFilters && handleReset(clearFilters)}
@@ -82,7 +97,7 @@ const AnggaranDasar = () => {
               width: 90,
             }}
           >
-            {t('translation.text-table.reset')}
+            Reset
           </Button>
           <Button
             type="link"
@@ -95,7 +110,7 @@ const AnggaranDasar = () => {
               setSearchedColumn(dataIndex);
             }}
           >
-            {t('translation.text-table.filter')}
+            Filter
           </Button>
           <Button
             type="link"
@@ -104,7 +119,7 @@ const AnggaranDasar = () => {
               close();
             }}
           >
-            {t('translation.text-table.close')}
+            Close
           </Button>
         </Space>
       </div>
@@ -148,13 +163,13 @@ const AnggaranDasar = () => {
       render: (text) => <span>{text}</span>,
     },
     {
-      title: t('translation.text-table.table-head'),
+      title: 'Name',
       dataIndex: 'name',
       key: 'name',
       ...getColumnSearchProps('name'),
     },
     {
-      title: t('translation.text-table.table-action'),
+      title: 'Download',
       dataIndex: 'download',
       key: 'download',
       width: '10%',
@@ -167,26 +182,24 @@ const AnggaranDasar = () => {
             console.log(`Download ${text}`);
           }}
         >
-          {t('translation.text-table.download')}
+          Download
         </Button>
       ),
     },
   ];
-
   return (
     <>
-      <div className="containerAnggaran">
-        <div className="anggaranTop" data-aos="fade-down">
-          <h3>{t('translation.text-anggaran.title')}</h3>
+      <div className="containerTahunan">
+        <div className="containerTop" data-aos="fade-down">
+          <h2>Annual Reports</h2>
         </div>
         <hr />
-        <div className="anggaranBottom" data-aos="fade-left">
+        <div className="containerBottom" data-aos="fade-left">
           <Table columns={columns} dataSource={data} pagination={{ pageSize: 5 }} />
         </div>
       </div>
-      <div className="footer"> {isIdPath ? <FooterEn /> : <FooterId />}</div>
     </>
   );
 };
 
-export default AnggaranDasar;
+export default Tahunan;

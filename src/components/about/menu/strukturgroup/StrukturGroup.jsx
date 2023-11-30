@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import './strukturgrup.scss';
 import StrukturImage from '../../../../assets/home/organization-strucktur.png';
-import Footer from '../../../footer/Footer';
+import FooterId from '../../../footer/FooterId';
+import FooterEn from '../../../footer/FooterEn';
 import StrukturPdf from '../../../../assets/pdf/Detail-Struktur-Kepemilikan-Saham-PT.REMALA-ABADI-per-September-2023.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -9,6 +10,7 @@ import { useTranslation } from 'react-i18next';
 
 const StrukturGroup = () => {
   const [t] = useTranslation('global');
+  const isIdPath = window.location.pathname.startsWith('/en');
 
   useEffect(() => {
     AOS.init({
@@ -40,7 +42,7 @@ const StrukturGroup = () => {
           <button onClick={downloadPdf}>{t('translation.text-group.btn-download')}</button>
         </div>
       </div>
-      <div className="Footer">{<Footer />}</div>
+      <div className="Footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </>
   );
 };

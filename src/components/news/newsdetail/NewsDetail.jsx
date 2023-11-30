@@ -3,7 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
 import dummyNews from '../dummyNews';
 import './newsdetail.scss';
-import Footer from '../../footer/Footer';
+import FooterId from '../../footer/FooterId';
+import FooterEn from '../../footer/FooterEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FacebookShareButton, WhatsappShareButton, TwitterShareButton } from 'react-share';
@@ -20,6 +21,7 @@ const NewsDetail = () => {
   const [t] = useTranslation('global');
   const { id } = useParams();
   const [copied, setCopied] = useState(false);
+  const isIdPath = window.location.pathname.startsWith('/en');
 
   useEffect(() => {
     // Scroll to the top when the component is mounted
@@ -101,7 +103,7 @@ const NewsDetail = () => {
           <p key={index}>{paragraph.text}</p>
         ))}
       </div>
-      <div className="footer">{<Footer />}</div>
+      <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </div>
   );
 };
