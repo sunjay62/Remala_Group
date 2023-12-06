@@ -121,7 +121,7 @@ const NavbarEn = () => {
             src={logoremala}
             style={{ width: '70px' }}
             onClick={() => {
-              window.location.href = '/';
+              window.location.href = '/en/';
               scrollToTop();
             }}
           />
