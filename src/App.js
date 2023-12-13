@@ -8,7 +8,6 @@ import InvestorId from './components/investor/InvestorId';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutEn from './components/about/AboutEn';
 import AboutId from './components/about/AboutId';
-
 import StrukturGroup from './components/about/menu/strukturgroup/StrukturGroup';
 import StrukturOrganisasi from './components/about/menu/strukturorganisasi/StukturOrganisasi';
 import AnggaranDasar from './components/about/menu/anggarandasar/AnggaranDasar';

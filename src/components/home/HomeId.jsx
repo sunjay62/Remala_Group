@@ -32,9 +32,9 @@ const HomeId = () => {
       </div> */}
       <div className="front-content">
         <div className="containerMenuProduct">
-          <div className="menuItemHome">
+          {/* <div className="menuItemHome">
             <MenuitemId />
-          </div>
+          </div> */}
           <div className="produkHome">
             <ProdukId />
           </div>
