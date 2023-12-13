@@ -12,22 +12,6 @@ const profiles = [
     name: 'Samuel Adi Mulia',
     image: '',
   },
-  {
-    name: 'Nama Lengkap',
-    image: '',
-  },
-  {
-    name: 'Nama Lengkap',
-    image: '',
-  },
-  {
-    name: 'Sulihno',
-    image: '',
-  },
-  {
-    name: 'Nama Lengkap',
-    image: '',
-  },
 ];
 
 const JajaranDireksi = () => {

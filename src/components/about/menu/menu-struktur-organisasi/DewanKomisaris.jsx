@@ -14,10 +14,6 @@ const profiles = [
     name: 'Alamsyah Saragih',
     image: Alamsyah,
   },
-  {
-    name: 'Nama Lengkap',
-    image: '',
-  },
 ];
 
 const DewanKomisaris = () => {
