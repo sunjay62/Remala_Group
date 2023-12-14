@@ -4,32 +4,36 @@ import 'swiper/css';
 import 'swiper/css/effect-creative';
 import { EffectCreative, Pagination, Autoplay } from 'swiper/modules';
 import './testimonial.scss';
-import imgTesti from '../../../assets/fotoprofile/alamsyah.png';
-import imgTesti2 from '../../../assets/fotoprofile/verah-wahyudi.png';
+import PlazaAuto from '../../../assets/partner/plazaauto.png';
+import BpkPenabur from '../../../assets/partner/bpk-penabur.png';
+import Alfamart from '../../../assets/partner/alfamart.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const testimonialsData = [
   {
     id: 1,
-    name: 'Verah Wahyudi Singgih Wong',
-    position: 'Komisaris Utama',
-    text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
-    image: imgTesti2,
+    name: 'Plaza Auto via Bapak Fuad',
+    position: 'IT SPV Group Plaza Auto',
+    description:
+      "We have collaborated with Remala Abadi as an Internet network provider, which supports the network connection we need to run the company's ERP system. Our ERP system runs well and is connected between our sales branches to facilitate sales and administration processes.",
+    image: PlazaAuto,
   },
   {
     id: 2,
-    name: 'Alamsyah Saragih',
-    position: 'Komisaris Independen',
-    text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
-    image: imgTesti,
+    name: 'Alfaria Team',
+    position: 'Alfaria Team',
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
+    image: Alfamart,
   },
   {
     id: 3,
-    name: 'Sulihno',
-    position: 'Direktur Operasional',
-    text: '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
-    image: imgTesti,
+    name: 'BPK Penabur',
+    position: 'BPK Penabur Team',
+    description:
+      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
+    image: BpkPenabur,
   },
 ];
 
@@ -75,7 +79,7 @@ const Testimonial = () => {
               </div>
             </div>
             <div className="bottomCard">
-              <p>{testimonial.text}</p>
+              <p>{testimonial.description}</p>
             </div>
           </SwiperSlide>
         ))}

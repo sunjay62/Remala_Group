@@ -31,19 +31,19 @@ const StrukturOrganisasi = () => {
       <div className="mainContainerOrganisasi">
         <div className="menuStrukturOrganisasi" data-aos="fade-right">
           <div className={`btnOrganisasi ${activeButton === 'board-of-commissioners' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-commissioners')}>
-            {t('translation.text-organization.btn-komisaris')}
+            Dewan Komisaris
           </div>
           <div className={`btnOrganisasi ${activeButton === 'board-of-director' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-director')}>
-            {t('translation.text-organization.btn-direksi')}
+            Jajaran Direksi
           </div>
           <div className={`btnOrganisasi ${activeButton === 'corporate-secretary' ? 'clicked' : ''}`} onClick={() => handleButtonClick('corporate-secretary')}>
-            {t('translation.text-organization.btn-sekretaris')}
+            Sekretaris Perusahaan
           </div>
           <div className={`btnOrganisasi ${activeButton === 'audit-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('audit-committee')}>
-            {t('translation.text-organization.btn-komite')}
+            Komite Audit
           </div>
           <div className={`btnOrganisasi ${activeButton === 'nomination-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('nomination-committee')}>
-            {t('translation.text-organization.btn-nominasi')}
+            Komite Nominasi dan Remunerasi
           </div>
           {/* <div className={`btnOrganisasi ${activeButton === 'evaluation-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('evaluation-committee')}>
             Komite Evaluasi, Monitoring Perencanaan dan Resiko

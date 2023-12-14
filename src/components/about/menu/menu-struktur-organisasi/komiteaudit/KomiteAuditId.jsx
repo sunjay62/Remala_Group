@@ -5,16 +5,20 @@ import { useTranslation } from 'react-i18next';
 
 const profiles = [
   {
-    name: 'Richard Kartawijaya',
+    name: 'Nama Lengkap',
     image: '',
   },
   {
-    name: 'Samuel Adi Mulia',
+    name: 'Nama Lengkap',
+    image: '',
+  },
+  {
+    name: 'Nama Lengkap',
     image: '',
   },
 ];
 
-const JajaranDireksi = () => {
+const KomiteAudit = () => {
   const { t } = useTranslation('global');
 
   useEffect(() => {
@@ -30,8 +34,8 @@ const JajaranDireksi = () => {
           <div className="col-6 profile-box">{profile.image && <img src={profile.image} alt={profile.name} />}</div>
           <div className="mx-4">
             <h6>{profile.name}</h6>
-            <p>{t(`translation.text-organization.directors.role${index + 1}`)}</p>
-            <p>{t(`translation.text-organization.directors.description${index + 1}`)}</p>
+            <p>{t(`translation.text-organization.audit.role${index + 1}`)}</p>
+            <p>{t(`translation.text-organization.audit.description${index + 1}`)}</p>
           </div>
         </div>
       ))}
@@ -39,4 +43,4 @@ const JajaranDireksi = () => {
   );
 };
 
-export default JajaranDireksi;
+export default KomiteAudit;

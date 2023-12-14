@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link, useParams } from 'react-router-dom';
-import dummyNews from '../dummyNews';
+import dataNewsEn from '../data/dataNewsEn';
 import './newsdetail.scss';
 import FooterId from '../../footer/FooterId';
 import FooterEn from '../../footer/FooterEn';
@@ -34,7 +34,7 @@ const NewsDetail = () => {
   }, []);
 
   // Find the news item with the matching id
-  const selectedNews = dummyNews.find((news) => news.id === parseInt(id, 10));
+  const selectedNews = dataNewsEn.find((news) => news.id === parseInt(id, 10));
 
   if (!selectedNews) {
     // If the news with the specified id is not found, you can handle it here
@@ -68,12 +68,12 @@ const NewsDetail = () => {
       <div className="newsDetail-content d-flex align-items-center justify-content-center">
         <div className="content-text">
           <h2 className="textHero" data-aos="fade-up">
-            {t('translation.text-news.title')}
+            NEWS
           </h2>
         </div>
       </div>
       <div className="bottomNewsDetail">
-        <h1>{selectedNews.title}</h1>
+        <h1>{selectedNews.titleDetail}</h1>
         <div className="shareContent">
           <p>Bagikan Artikel</p>
           <div className="shareIcon">
@@ -96,12 +96,75 @@ const NewsDetail = () => {
             </CopyToClipboard>
           </div>
         </div>
-        <img src={selectedNews.image} alt={selectedNews.title} />
+        <img src={selectedNews.image} alt={selectedNews.title} className="heroImageNews" />
         <h5>{selectedNews.date}</h5>
-        <p>{selectedNews.description}</p>
-        {selectedNews.paragraphs.map((paragraph, index) => (
-          <p key={index}>{paragraph.text}</p>
+        <p>{selectedNews?.descriptionDetail}</p>
+        <br />
+        {(selectedNews.paragraph1 || []).map((paragraph, index) => (
+          <div key={index}>
+            <h6>{paragraph.title}</h6>
+            <p>{paragraph.description}</p>
+            <div className="containerChillImg">
+              {(paragraph.images || []).map((image, imgIndex) => (
+                <img key={imgIndex} src={image} alt="#" className="chillImg" />
+              ))}
+            </div>
+          </div>
         ))}
+        <br />
+        {(selectedNews.paragraph2 || []).map((paragraph, index) => (
+          <div key={index}>
+            <h6>{paragraph.title}</h6>
+            <p>{paragraph.description}</p>
+            <div className="containerChillImg">
+              {(paragraph.images || []).map((image, imgIndex) => (
+                <img key={imgIndex} src={image} alt="#" className="chillImg" />
+              ))}
+            </div>
+          </div>
+        ))}
+        <br />
+        {(selectedNews.paragraph3 || []).map((paragraph, index) => (
+          <div key={index}>
+            <h6>{paragraph.title}</h6>
+            <p>{paragraph.description}</p>
+            <div className="containerChillImg">
+              {(paragraph.images || []).map((image, imgIndex) => (
+                <img key={imgIndex} src={image} alt="#" className="chillImg" />
+              ))}
+            </div>
+          </div>
+        ))}
+        <br />
+        {(selectedNews.paragraph4 || []).map((paragraph, index) => (
+          <div key={index}>
+            <h6>{paragraph.title}</h6>
+            <p>{paragraph.description}</p>
+            <p>{paragraph.description1}</p>
+            <div className="containerChillImg">
+              {(paragraph.images || []).map((image, imgIndex) => (
+                <img key={imgIndex} src={image} alt="#" className="chillImg" />
+              ))}
+            </div>
+            <br />
+            <p>{paragraph.description2}</p>
+          </div>
+        ))}
+        <br />
+        {(selectedNews.paragraph5 || []).map((paragraph, index) => (
+          <div key={index}>
+            <h6>{paragraph.title}</h6>
+            <p>{paragraph.description1}</p>
+            <div className="containerChillImg">
+              {(paragraph.images || []).map((image, imgIndex) => (
+                <img key={imgIndex} src={image} alt="#" className="chillImg" />
+              ))}
+            </div>
+            <br />
+            <p>{paragraph.description2}</p>
+          </div>
+        ))}
+        <br />
       </div>
       <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </div>

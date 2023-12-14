@@ -9,17 +9,27 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutEn from './components/about/AboutEn';
 import AboutId from './components/about/AboutId';
 import StrukturGroup from './components/about/menu/strukturgroup/StrukturGroup';
-import StrukturOrganisasi from './components/about/menu/strukturorganisasi/StukturOrganisasi';
+import StrukturOrganisasiId from './components/about/menu/strukturorganisasi/StukturOrganisasiId';
+import StrukturOrganisasiEn from './components/about/menu/strukturorganisasi/StukturOrganisasiEn';
 import AnggaranDasar from './components/about/menu/anggarandasar/AnggaranDasar';
 import Penghargaan from './components/about/menu/penghargaan/Penghargaan';
 import ProfileId from './components/about/menu/profile/ProfileId';
 import ProfileEn from './components/about/menu/profile/ProfileEn';
-import DewanKomisaris from './components/about/menu/menu-struktur-organisasi/DewanKomisaris';
-import JajaranDireksi from './components/about/menu/menu-struktur-organisasi/JajaranDireksi';
-import SekretarisPerusahaan from './components/about/menu/menu-struktur-organisasi/SekretarisPerusahaan';
-import KomiteAudit from './components/about/menu/menu-struktur-organisasi/KomiteAudit';
-import KomiteNominasi from './components/about/menu/menu-struktur-organisasi/KomiteNominasi';
-import KomiteEvaluasi from './components/about/menu/menu-struktur-organisasi/KomiteEvaluasi';
+
+import DewanKomisarisId from './components/about/menu/menu-struktur-organisasi/dewankomisaris/DewanKomisarisId';
+import JajaranDireksiId from './components/about/menu/menu-struktur-organisasi/jajarandireksi/JajaranDireksiId';
+import SekretarisPerusahaanId from './components/about/menu/menu-struktur-organisasi/sekretarisperusahaan/SekretarisPerusahaanId';
+import KomiteAuditId from './components/about/menu/menu-struktur-organisasi/komiteaudit/KomiteAuditId';
+import KomiteNominasiId from './components/about/menu/menu-struktur-organisasi/komitenominasi/KomiteNominasiId';
+import KomiteEvaluasiId from './components/about/menu/menu-struktur-organisasi/komiteevaluasi/KomiteEvaluasiId';
+
+import DewanKomisarisEn from './components/about/menu/menu-struktur-organisasi/dewankomisaris/DewanKomisarisEn';
+import JajaranDireksiEn from './components/about/menu/menu-struktur-organisasi/jajarandireksi/JajaranDireksiEn';
+import SekretarisPerusahaanEn from './components/about/menu/menu-struktur-organisasi/sekretarisperusahaan/SekretarisPerusahaanEn';
+import KomiteAuditEn from './components/about/menu/menu-struktur-organisasi/komiteaudit/KomiteAuditEn';
+import KomiteNominasiEn from './components/about/menu/menu-struktur-organisasi/komitenominasi/KomiteNominasiEn';
+import KomiteEvaluasiEn from './components/about/menu/menu-struktur-organisasi/komiteevaluasi/KomiteEvaluasiEn';
+
 import GovernanceId from './components/governance/GovernanceId';
 import PrinsipStrukturId from './components/governance/menu/prinsipstruktur/PrinsipStrukturId';
 import ManajemenMutuId from './components/governance/menu/manajemenmutu/ManajemenMutuId';
@@ -59,8 +69,10 @@ import KeuanganEn from './components/investor/menu/menulaporan/keuangan/Keuangan
 import TahunanEn from './components/investor/menu/menulaporan/tahunan/TahunanEn';
 import KeberlanjutanEn from './components/investor/menu/menulaporan/keberlanjutan/KeberlanjutanEn';
 import BackTop from './components/backtop/BackTop';
-import News from './components/news/News';
-import NewsDetail from './components/news/newsdetail/NewsDetail';
+import NewsId from './components/news/NewsId';
+import NewsEn from './components/news/NewsEn';
+import NewsDetailId from './components/news/newsdetail/NewsDetailId';
+import NewsDetailEn from './components/news/newsdetail/NewsDetailEn';
 
 function App() {
   const isIdPath = window.location.pathname.startsWith('/en');
@@ -73,13 +85,13 @@ function App() {
           {isIdPath ? <Route element={<HomeEn />} path="/en" /> : <Route element={<HomeId />} path="/" />}
           {isIdPath ? (
             <Route element={<AboutEn />} path="/en/aboutus">
-              <Route element={<StrukturOrganisasi />} path="/en/aboutus/organitation-strucktur">
-                <Route element={<DewanKomisaris />} path="board-of-commissioners" />
-                <Route element={<JajaranDireksi />} path="board-of-director" />
-                <Route element={<SekretarisPerusahaan />} path="corporate-secretary" />
-                <Route element={<KomiteAudit />} path="audit-committee" />
-                <Route element={<KomiteNominasi />} path="nomination-committee" />
-                <Route element={<KomiteEvaluasi />} path="evaluation-committee" />
+              <Route element={<StrukturOrganisasiEn />} path="organitation-strucktur">
+                <Route element={<DewanKomisarisEn />} path="board-of-commissioners" />
+                <Route element={<JajaranDireksiEn />} path="board-of-director" />
+                <Route element={<SekretarisPerusahaanEn />} path="corporate-secretary" />
+                <Route element={<KomiteAuditEn />} path="audit-committee" />
+                <Route element={<KomiteNominasiEn />} path="nomination-committee" />
+                <Route element={<KomiteEvaluasiEn />} path="evaluation-committee" />
               </Route>
               <Route element={<StrukturGroup />} path="group-strucktur" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
@@ -88,13 +100,13 @@ function App() {
             </Route>
           ) : (
             <Route element={<AboutId />} path="/aboutus">
-              <Route element={<StrukturOrganisasi />} path="organitation-strucktur">
-                <Route element={<DewanKomisaris />} path="board-of-commissioners" />
-                <Route element={<JajaranDireksi />} path="board-of-director" />
-                <Route element={<SekretarisPerusahaan />} path="corporate-secretary" />
-                <Route element={<KomiteAudit />} path="audit-committee" />
-                <Route element={<KomiteNominasi />} path="nomination-committee" />
-                <Route element={<KomiteEvaluasi />} path="evaluation-committee" />
+              <Route element={<StrukturOrganisasiId />} path="organitation-strucktur">
+                <Route element={<DewanKomisarisId />} path="board-of-commissioners" />
+                <Route element={<JajaranDireksiId />} path="board-of-director" />
+                <Route element={<SekretarisPerusahaanId />} path="corporate-secretary" />
+                <Route element={<KomiteAuditId />} path="audit-committee" />
+                <Route element={<KomiteNominasiId />} path="nomination-committee" />
+                <Route element={<KomiteEvaluasiId />} path="evaluation-committee" />
               </Route>
               <Route element={<StrukturGroup />} path="group-strucktur" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
@@ -173,8 +185,10 @@ function App() {
               </Route>
             </Route>
           )}
-          <Route element={<News />} path="/news" />
-          <Route path="/news/:id/:title" element={<NewsDetail />} />
+
+          {isIdPath ? <Route element={<NewsEn />} path="/en/news" /> : <Route element={<NewsId />} path="/news" />}
+
+          {isIdPath ? <Route element={<NewsDetailEn />} path="/en/news/:id/:title" /> : <Route element={<NewsDetailId />} path="/news/:id/:title" />}
         </Routes>
         <BackTop />
       </BrowserRouter>

@@ -209,7 +209,7 @@ const NavbarEn = () => {
               Corporate Governance
             </Link>
 
-            <Link
+            {/* <Link
               to="/en/investor-relation/report/sec-report"
               className="nav-links"
               onClick={() => {
@@ -218,7 +218,7 @@ const NavbarEn = () => {
               }}
             >
               Investor Relations
-            </Link>
+            </Link> */}
 
             <div
               to="#"
@@ -233,17 +233,18 @@ const NavbarEn = () => {
                 <DownOutlined className="dropdown-arrow" />
               </span>
               <div className="dropdown-content">
-                <Link className="dropdown-links2">
+                <Link to="https://nethome.id/" className="dropdown-links2" target="_blank" rel="noopener noreferrer">
                   <div className="imgMenuLinks">
                     <div className="containerLogo">
-                      <img src={nethome} />
+                      <img src={nethome} alt="Nethome Logo" />
                     </div>
                   </div>
                 </Link>
-                <Link className="dropdown-links2">
+
+                <Link to="https://tachyon.net.id/" className="dropdown-links2" target="_blank" rel="noopener noreferrer">
                   <div className="imgMenuLinks2">
                     <div className="containerLogo">
-                      <img src={tachyon} />
+                      <img src={tachyon} alt="Tachyon Logo" />
                     </div>
                   </div>
                 </Link>

@@ -1,22 +1,16 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Verah from '../../../../assets/fotoprofile/verah-wahyudi.png';
-import Alamsyah from '../../../../assets/fotoprofile/alamsyah.png';
 import { useTranslation } from 'react-i18next';
 
 const profiles = [
   {
-    name: 'Verah Wahyudi Singgih Wong',
-    image: Verah,
-  },
-  {
-    name: 'Alamsyah Saragih',
-    image: Alamsyah,
+    name: 'Chintia Hong',
+    image: '',
   },
 ];
 
-const DewanKomisaris = () => {
+const SekretarisPerusahaan = () => {
   const { t } = useTranslation('global');
 
   useEffect(() => {
@@ -32,8 +26,8 @@ const DewanKomisaris = () => {
           <div className="col-6 profile-box">{profile.image && <img src={profile.image} alt={profile.name} />}</div>
           <div className="mx-4">
             <h6>{profile.name}</h6>
-            <p>{t(`translation.text-organization.commissioners.role${index + 1}`)}</p>
-            <p>{t(`translation.text-organization.commissioners.description${index + 1}`)}</p>
+            <p>{t(`translation.text-organization.secretary.role${index + 1}`)}</p>
+            <p>{t(`translation.text-organization.secretary.description${index + 1}`)}</p>
           </div>
         </div>
       ))}
@@ -41,4 +35,4 @@ const DewanKomisaris = () => {
   );
 };
 
-export default DewanKomisaris;
+export default SekretarisPerusahaan;

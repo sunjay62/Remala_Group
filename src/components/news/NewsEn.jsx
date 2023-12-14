@@ -2,18 +2,16 @@ import React, { useEffect, useState } from 'react';
 import './news.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
 import { Pagination, AutoComplete, Button } from 'antd';
 import { Link, useNavigate } from 'react-router-dom';
 import FooterId from '../footer/FooterId';
 import FooterEn from '../footer/FooterEn';
 import { ArrowRightOutlined, ArrowDownOutlined } from '@ant-design/icons';
-import dummyNews from './dummyNews';
+import dataNewsEn from './data/dataNewsEn';
 
 const { Option } = AutoComplete;
 
 const News = () => {
-  const [t] = useTranslation('global');
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
   const newsPerPage = 3;
@@ -27,7 +25,7 @@ const News = () => {
     });
   }, []);
 
-  const [filteredNews, setFilteredNews] = useState(dummyNews);
+  const [filteredNews, setFilteredNews] = useState(dataNewsEn);
 
   const indexOfLastNews = currentPage * newsPerPage;
   const indexOfFirstNews = indexOfLastNews - newsPerPage;
@@ -40,9 +38,9 @@ const News = () => {
   const handleSearch = (value) => {
     setSearchQuery(value);
     if (value === '') {
-      setFilteredNews(dummyNews);
+      setFilteredNews(dataNewsEn);
     } else {
-      const filtered = dummyNews.filter((news) => news.title.toLowerCase().includes(value.toLowerCase()));
+      const filtered = dataNewsEn.filter((news) => news.title.toLowerCase().includes(value.toLowerCase()));
       setFilteredNews(filtered);
     }
     setCurrentPage(1); // Reset to the first page when a new search is performed
@@ -58,7 +56,7 @@ const News = () => {
     setFilterType(newFilterType);
 
     // Perform filtering based on 'older' or 'newer'
-    const sortedNews = newFilterType === 'older' ? [...dummyNews].sort((a, b) => new Date(a.date) - new Date(b.date)) : [...dummyNews].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const sortedNews = newFilterType === 'older' ? [...dataNewsEn].sort((a, b) => new Date(a.date) - new Date(b.date)) : [...dataNewsEn].sort((a, b) => new Date(b.date) - new Date(a.date));
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setFilteredNews(sortedNews);
     setCurrentPage(1);
@@ -66,7 +64,7 @@ const News = () => {
 
   const handleReadMore = (id, url) => {
     const encodedurl = encodeURIComponent(url);
-    navigate(`/news/${id}/${encodedurl}`);
+    navigate(`/en/news/${id}/${encodedurl}`);
   };
 
   return (
@@ -74,7 +72,7 @@ const News = () => {
       <div className="news-content d-flex align-items-center justify-content-center">
         <div className="content-text">
           <h2 className="textHero" data-aos="fade-up">
-            {t('translation.text-news.title')}
+            NEWS
           </h2>
         </div>
       </div>
@@ -98,15 +96,15 @@ const News = () => {
                 <h5>{news.date}</h5>
                 <p>{news.description}</p>
                 <hr />
-                <Link to={`/news/${news.id}/${encodeURIComponent(news.url)}`} onClick={() => handleReadMore(news.id, news.url)}>
-                  LIHAT SELENGKAPNYA <ArrowRightOutlined />
+                <Link to={`/en/news/${news.id}/${encodeURIComponent(news.url)}`} onClick={() => handleReadMore(news.id, news.url)}>
+                  SEE MORE <ArrowRightOutlined />
                 </Link>
               </div>
             </div>
           ))}
         </div>
         <div className="pagination">
-          <Pagination current={currentPage} pageSize={newsPerPage} total={dummyNews.length} onChange={handlePageChange} />
+          <Pagination current={currentPage} pageSize={newsPerPage} total={dataNewsEn.length} onChange={handlePageChange} />
         </div>
       </div>
       <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>

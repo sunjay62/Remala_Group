@@ -64,6 +64,7 @@
     width: 100%;
     height: 60vh;
     margin-bottom: 25px;
+    border-radius: 5px;
   }
 
   h5 {
@@ -71,11 +72,33 @@
     color: rgb(80, 80, 80);
     margin-bottom: 25px;
   }
+
+  h6 {
+    font-weight: 600;
+  }
+}
+
+.containerChillImg {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  .chillImg {
+    width: 45%;
+    height: 40%;
+    border-radius: 5px;
+    margin-bottom: -1px;
+  }
 }
 
 @media screen and (max-width: 860px) {
   .bottomNewsDetail {
     padding: 25px;
+
+    .heroImageNews {
+      max-height: 30vh;
+    }
 
     .shareContent {
       display: flex;

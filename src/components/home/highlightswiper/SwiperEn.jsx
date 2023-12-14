@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -6,20 +6,15 @@ import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import './swiper.scss';
 import swiperDataEn from './swipercomponent/data/swiperDataEn';
-import { Modal } from 'antd';
+import { Link, useNavigate } from 'react-router-dom';
 
 const SimpleSlider = () => {
   const slidesPerView = window.innerWidth > 860 ? 4 : 1;
-  const [visible, setVisible] = useState(false);
-  const [selectedSlide, setSelectedSlide] = useState(null);
+  const navigate = useNavigate(); // Use navigate hook
 
-  const handleSlideClick = (slide) => {
-    setSelectedSlide(slide);
-    setVisible(true);
-  };
-
-  const handleModalClose = () => {
-    setVisible(false);
+  const handleReadMore = (id, url) => {
+    const encodedurl = encodeURIComponent(url);
+    navigate(`/news/${id}/${encodedurl}`);
   };
 
   return (
@@ -39,78 +34,14 @@ const SimpleSlider = () => {
           className="mySwiper"
         >
           {swiperDataEn.map((slide) => (
-            <SwiperSlide key={slide.id} onClick={() => handleSlideClick(slide)}>
-              <img src={slide.image} alt="#" className="imgSwiper" />
+            <SwiperSlide key={slide.id}>
+              <Link to={`/en/news/${slide.id}/${encodeURIComponent(slide.url)}`} onClick={() => handleReadMore(slide.id, slide.url)}>
+                <img src={slide.image} alt="#" className="imgSwiper" />
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-      <Modal width={1000} title={selectedSlide?.title} open={visible} onCancel={handleModalClose} footer={null} className="modalSwiper">
-        {selectedSlide && (
-          <>
-            <img src={selectedSlide?.banner} alt="#" className="imgModal" />
-            <p>{selectedSlide?.description}</p>
-            {(selectedSlide.paragraph1 || []).map((paragraph, index) => (
-              <div key={index}>
-                <h6>{paragraph.title}</h6>
-                <p>{paragraph.description}</p>
-                <div className="containerChillImg">
-                  {(paragraph.images || []).map((image, imgIndex) => (
-                    <img key={imgIndex} src={image} alt="#" className="chillImg" />
-                  ))}
-                </div>
-              </div>
-            ))}
-            {(selectedSlide.paragraph2 || []).map((paragraph, index) => (
-              <div key={index}>
-                <h6>{paragraph.title}</h6>
-                <p>{paragraph.description}</p>
-                <div className="containerChillImg">
-                  {(paragraph.images || []).map((image, imgIndex) => (
-                    <img key={imgIndex} src={image} alt="#" className="chillImg" />
-                  ))}
-                </div>
-              </div>
-            ))}
-            {(selectedSlide.paragraph3 || []).map((paragraph, index) => (
-              <div key={index}>
-                <h6>{paragraph.title}</h6>
-                <p>{paragraph.description}</p>
-                <div className="containerChillImg">
-                  {(paragraph.images || []).map((image, imgIndex) => (
-                    <img key={imgIndex} src={image} alt="#" className="chillImg" />
-                  ))}
-                </div>
-              </div>
-            ))}
-            {(selectedSlide.paragraph4 || []).map((paragraph, index) => (
-              <div key={index}>
-                <h6>{paragraph.title}</h6>
-                <p>{paragraph.description}</p>
-                <p>{paragraph.description1}</p>
-                <div className="containerChillImg">
-                  {(paragraph.images || []).map((image, imgIndex) => (
-                    <img key={imgIndex} src={image} alt="#" className="chillImg" />
-                  ))}
-                </div>
-                <p>{paragraph.description2}</p>
-              </div>
-            ))}
-            {(selectedSlide.paragraph5 || []).map((paragraph, index) => (
-              <div key={index}>
-                <h6>{paragraph.title}</h6>
-                <p>{paragraph.description1}</p>
-                <div className="containerChillImg">
-                  {(paragraph.images || []).map((image, imgIndex) => (
-                    <img key={imgIndex} src={image} alt="#" className="chillImg" />
-                  ))}
-                </div>
-                <p>{paragraph.description2}</p>
-              </div>
-            ))}
-          </>
-        )}
-      </Modal>
     </div>
   );
 };

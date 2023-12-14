@@ -35,9 +35,9 @@ const ContactUs = () => {
       </div>
       <div className="buttons">
         <div className="containerAbout">
-          <button className={`btnMenu ${activeButton === 'regulations-menu' ? 'clicked' : ''}`} onClick={() => handleButtonClick('regulations-menu')}>
+          {/* <button className={`btnMenu ${activeButton === 'regulations-menu' ? 'clicked' : ''}`} onClick={() => handleButtonClick('regulations-menu')}>
             Regulasi
-          </button>
+          </button> */}
           <button className={`btnMenu ${activeButton === 'faq' ? 'clicked' : ''}`} onClick={() => handleButtonClick('faq')}>
             FAQ
           </button>

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import './strukturgrup.scss';
-import StrukturImage from '../../../../assets/home/organization-strucktur.png';
+import StrukturImage from '../../../../assets/home/strucktur-organization.png';
 import FooterId from '../../../footer/FooterId';
 import FooterEn from '../../../footer/FooterEn';
-import StrukturPdf from '../../../../assets/pdf/Detail-Struktur-Kepemilikan-Saham-PT.REMALA-ABADI-per-September-2023.pdf';
+import StrukturPdf from '../../../../assets/pdf/Stukur-Kepemilikan-Saham-PT.REMALA-ABADI-per-Des-2023.V.03.pdf';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useTranslation } from 'react-i18next';
