@@ -199,7 +199,7 @@ const NavbarId = () => {
             </div>
 
             <Link
-              to="/governance-corporate/principle-strucktur"
+              to="/governance-corporate/quality-management"
               className="nav-links"
               onClick={() => {
                 scrollToTop();

@@ -37,9 +37,9 @@ const Governance = () => {
       </div>
       <div className="buttons">
         <div className="containerGovernance">
-          <button className={`btnMenu ${activeButton === 'principle-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('principle-strucktur')}>
+          {/* <button className={`btnMenu ${activeButton === 'principle-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('principle-strucktur')}>
             Prinsip & Struktur
-          </button>
+          </button> */}
           {/* <button className={`btnMenu ${activeButton === 'code-ethics' ? 'clicked' : ''}`} onClick={() => handleButtonClick('code-ethics')}>
             Kode Etik
           </button> */}
