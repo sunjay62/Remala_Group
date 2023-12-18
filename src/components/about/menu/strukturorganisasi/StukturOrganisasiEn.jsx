@@ -1,16 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './strukturorganisasi.scss';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import FooterId from '../../../footer/FooterId';
 import FooterEn from '../../../footer/FooterEn';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
 
 const StrukturOrganisasi = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [t] = useTranslation('global');
   const currentPath = location.pathname.split('/').pop();
   const [activeButton, setActiveButton] = useState(currentPath);
   const isIdPath = window.location.pathname.startsWith('/en');
@@ -20,16 +17,10 @@ const StrukturOrganisasi = () => {
     navigate(`/en/aboutus/organitation-strucktur/${componentName.toLowerCase()}`);
   };
 
-  useEffect(() => {
-    AOS.init({
-      duration: 1300,
-    });
-  }, []);
-
   return (
     <>
       <div className="mainContainerOrganisasi">
-        <div className="menuStrukturOrganisasi" data-aos="fade-right">
+        <div className="menuStrukturOrganisasi">
           <div className={`btnOrganisasi ${activeButton === 'board-of-commissioners' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-commissioners')}>
             Board of Commissioners
           </div>

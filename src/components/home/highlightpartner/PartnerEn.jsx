@@ -12,6 +12,8 @@ import fajarMitraIndahIcon from '../../../assets/partner/fajar-mitra-indah.png';
 import hutamaKaryaIcon from '../../../assets/partner/hutama-karya.png';
 import iconMediaIcon from '../../../assets/partner/iconmedia.png';
 import rsudKabBekasiIcon from '../../../assets/partner/rsud-kab-bekasi.png';
+import plazaAutoIcon from '../../../assets/partner/plazaauto.png';
+import ruijieIcon from '../../../assets/partner/ruijie.png';
 import univPrasetyaMulyaIcon from '../../../assets/partner/univ-prasetya-mulya.png';
 import './partner.scss';
 import AOS from 'aos';
@@ -112,6 +114,11 @@ const Partner = () => {
                   <img src={univPrasetyaMulyaIcon} />
                 </div>
               </SwiperSlide>
+              <SwiperSlide>
+                <div className="item-partner">
+                  <img src={ruijieIcon} />
+                </div>
+              </SwiperSlide>
             </Swiper>
           </div>
         </div>
@@ -181,6 +188,11 @@ const Partner = () => {
             <SwiperSlide>
               <div className="item-partner">
                 <img src={univPrasetyaMulyaIcon} />
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="item-partner">
+                <img src={plazaAutoIcon} />
               </div>
             </SwiperSlide>
           </Swiper>
