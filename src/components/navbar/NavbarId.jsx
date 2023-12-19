@@ -175,7 +175,7 @@ const NavbarId = () => {
                 >
                   Struktur Grup
                 </Link>
-                <Link
+                {/* <Link
                   className="dropdown-links"
                   to="/aboutus/articles-of-association"
                   onClick={() => {
@@ -184,7 +184,7 @@ const NavbarId = () => {
                   }}
                 >
                   Anggaran Dasar
-                </Link>
+                </Link> */}
                 <Link
                   className="dropdown-links"
                   to="/aboutus/award"

@@ -406,3 +406,12 @@
     display: none;
   }
 }
+
+@media (min-width: 14in) {
+  .navbar {
+    padding: 0 250px;
+  }
+  .navbar.scrolled {
+    padding: 0 250px;
+  }
+}

@@ -175,7 +175,7 @@ const NavbarEn = () => {
                 >
                   Group Structure
                 </Link>
-                <Link
+                {/* <Link
                   className="dropdown-links"
                   to="/en/aboutus/articles-of-association"
                   onClick={() => {
@@ -184,7 +184,7 @@ const NavbarEn = () => {
                   }}
                 >
                   Article of Association
-                </Link>
+                </Link> */}
                 <Link
                   className="dropdown-links"
                   to="/en/aboutus/award"
