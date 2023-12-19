@@ -1,7 +1,7 @@
 const dataNewsEn = [
   {
     id: 1,
-    url: 'title-1',
+    url: 'celebrating-independence',
     image: require('../../../assets/news/17agustusbanner.jpg'),
     title: 'Gathering on August 17th',
     titleDetail: 'Celebrating Independence: Special Office Event and Gathering on August 17th',
@@ -67,7 +67,7 @@ const dataNewsEn = [
   },
   {
     id: 2,
-    url: 'title-2',
+    url: 'idm-event',
     image: require('../../../assets/news/idmbanner.jpg'),
     title: 'Indonesia Digital Meetup Event SMESCO Indonesia.',
     titleDetail: 'Remala Abadi: Achieving the Best Connectivity in the Indonesia Digital Meetup Event held at SMESCO Indonesia.',

@@ -1,7 +1,7 @@
 const dataNewsId = [
   {
     id: 1,
-    url: 'title-1',
+    url: 'celebrating-independence',
     image: require('../../../assets/news/17agustusbanner.jpg'),
     title: 'Gathering Spesial 17 Agustus',
     titleDetail: 'Semarak Kemerdekaan : Acara Kantor dan Gathering Spesial 17 Agustus',
@@ -67,7 +67,7 @@ const dataNewsId = [
   },
   {
     id: 2,
-    url: 'title-2',
+    url: 'idm-event',
     image: require('../../../assets/news/idmbanner.jpg'),
     title: 'Event Indonesia Digital Meetup SMESCO Indonesia.',
     titleDetail: 'Remala Abadi : Mewujudkan Konektivitas Terbaik dalam Event Indonesia Digital Meetup yang dilaksanakan di SMESCO Indonesia.',

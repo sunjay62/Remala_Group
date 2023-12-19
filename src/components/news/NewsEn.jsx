@@ -51,15 +51,36 @@ const News = () => {
     handleSearch(value);
   };
 
+  const monthNameMap = {
+    januari: 'January',
+    februari: 'February',
+    maret: 'March',
+    april: 'April',
+    mei: 'May',
+    juni: 'June',
+    juli: 'July',
+    agustus: 'August',
+    september: 'September',
+    oktober: 'October',
+    november: 'November',
+    desember: 'December',
+  };
+
   const handleFilter = () => {
     const newFilterType = filterType === 'newer' ? 'older' : 'newer';
     setFilterType(newFilterType);
 
-    // Perform filtering based on 'older' or 'newer'
-    const sortedNews = newFilterType === 'older' ? [...dataNewsEn].sort((a, b) => new Date(a.date) - new Date(b.date)) : [...dataNewsEn].sort((a, b) => new Date(b.date) - new Date(a.date));
+    const sortedNews = newFilterType === 'older' ? [...dataNewsEn].sort((a, b) => parseDate(a.date) - parseDate(b.date)) : [...dataNewsEn].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
     setFilteredNews(sortedNews);
     setCurrentPage(1);
+  };
+
+  const parseDate = (dateString) => {
+    // Convert Indonesian month names to English month names
+    const englishDateString = dateString.replace(/(\w+)/g, (match) => monthNameMap[match.toLowerCase()] || match);
+    return new Date(englishDateString);
   };
 
   const handleReadMore = (id, url) => {
@@ -83,7 +104,7 @@ const News = () => {
             <div>
               <Button type="default" icon={<ArrowDownOutlined rotate={filterType === 'newer' ? 180 : 0} />} onClick={handleFilter} />
             </div>
-            <AutoComplete className="autoComplete" placeholder="Cari Berita..." onSearch={handleSearch} onSelect={handleSelect} value={searchQuery} />
+            <AutoComplete className="autoComplete" placeholder="Search News..." onSearch={handleSearch} onSelect={handleSelect} value={searchQuery} />
           </div>
           <div className="page"> Page {currentPage}</div>
         </div>

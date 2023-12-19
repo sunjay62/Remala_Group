@@ -85,7 +85,7 @@ function App() {
           {isIdPath ? <Route element={<HomeEn />} path="/en" /> : <Route element={<HomeId />} path="/" />}
           {isIdPath ? (
             <Route element={<AboutEn />} path="/en/aboutus">
-              <Route element={<StrukturOrganisasiEn />} path="organitation-strucktur">
+              <Route element={<StrukturOrganisasiEn />} path="organization-strucktur">
                 <Route element={<DewanKomisarisEn />} path="board-of-commissioners" />
                 <Route element={<JajaranDireksiEn />} path="board-of-director" />
                 <Route element={<SekretarisPerusahaanEn />} path="corporate-secretary" />
@@ -100,7 +100,7 @@ function App() {
             </Route>
           ) : (
             <Route element={<AboutId />} path="/aboutus">
-              <Route element={<StrukturOrganisasiId />} path="organitation-strucktur">
+              <Route element={<StrukturOrganisasiId />} path="organization-strucktur">
                 <Route element={<DewanKomisarisId />} path="board-of-commissioners" />
                 <Route element={<JajaranDireksiId />} path="board-of-director" />
                 <Route element={<SekretarisPerusahaanId />} path="corporate-secretary" />

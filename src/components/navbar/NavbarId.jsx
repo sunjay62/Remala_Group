@@ -157,7 +157,7 @@ const NavbarId = () => {
                 </Link>
                 <Link
                   className="dropdown-links"
-                  to="/aboutus/organitation-strucktur/board-of-commissioners"
+                  to="/aboutus/organization-strucktur"
                   onClick={() => {
                     scrollToTop();
                     handleMenuItemClick();

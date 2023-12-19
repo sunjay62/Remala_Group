@@ -3,14 +3,17 @@ import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import './about.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useTranslation } from 'react-i18next';
 
 const AboutEn = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const currentPath = location.pathname.split('/').pop();
-  const [activeButton, setActiveButton] = useState(currentPath);
-  const [t] = useTranslation('global');
+  const [activeButton, setActiveButton] = useState('');
+
+  // Update activeButton based on the current route
+  useEffect(() => {
+    const currentPath = location.pathname.split('/').pop();
+    setActiveButton(currentPath);
+  }, [location.pathname]);
 
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
@@ -40,7 +43,7 @@ const AboutEn = () => {
           <button className={`btnMenuAbout ${activeButton === 'profile' ? 'clicked' : ''}`} onClick={() => handleButtonClick('profile')}>
             Profile
           </button>
-          <button className={`btnMenuAbout ${activeButton === 'organitation-strucktur/board-of-commissioners' ? 'clicked' : ''}`} onClick={() => handleButtonClick('organitation-strucktur/board-of-commissioners')}>
+          <button className={`btnMenuAbout ${activeButton === 'organization-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('organization-strucktur')}>
             Organizational Structure
           </button>
           <button className={`btnMenuAbout ${activeButton === 'group-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('group-strucktur')}>
