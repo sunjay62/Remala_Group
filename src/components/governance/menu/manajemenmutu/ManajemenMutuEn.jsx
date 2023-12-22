@@ -4,7 +4,10 @@ import FooterId from '../../../footer/FooterId';
 import FooterEn from '../../../footer/FooterEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import pdfFile from '../../../../assets/pdf/26_Surat Keterangan_Remala_rev1-6-ISO27001_page-0001.jpg';
+import iso27001 from '../../../../assets/iso/ISO27001-ACS.jpeg';
+import iso9001 from '../../../../assets/iso/ISO9001-ACS.jpeg';
+import iso20000 from '../../../../assets/iso/ISO20000-1-ACS.jpeg';
+import iso45001 from '../../../../assets/iso/ISO45001-ACS.jpeg';
 
 const ManajemenMutu = () => {
   const isIdPath = window.location.pathname.startsWith('/en');
@@ -64,7 +67,16 @@ const ManajemenMutu = () => {
             </div>
           ))} */}
           <div className="PdfContainer">
-            <img src={pdfFile} />
+            <img src={iso27001} />
+          </div>
+          <div className="PdfContainer">
+            <img src={iso9001} />
+          </div>
+          <div className="PdfContainer">
+            <img src={iso20000} />
+          </div>
+          <div className="PdfContainer">
+            <img src={iso45001} />
           </div>
         </div>
       </div>

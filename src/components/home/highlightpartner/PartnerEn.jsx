@@ -15,6 +15,7 @@ import rsudKabBekasiIcon from '../../../assets/partner/rsud-kab-bekasi.png';
 import plazaAutoIcon from '../../../assets/partner/plazaauto.png';
 import ruijieIcon from '../../../assets/partner/ruijie.png';
 import univPrasetyaMulyaIcon from '../../../assets/partner/univ-prasetya-mulya.png';
+import bsiUnivIcon from '../../../assets/partner/bsiuniv.png';
 import './partner.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -152,7 +153,7 @@ const Partner = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={bsiIcon} />
+                <img src={bsiUnivIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>

@@ -50,6 +50,10 @@
   }
 }
 
+.PdfContainer {
+  border-bottom: 2px solid grey;
+}
+
 @media screen and (min-width: 860px) {
   .contentRight {
     background-color: #333;
@@ -75,6 +79,12 @@
     border-radius: 25px;
     flex-direction: column;
     padding: 70px 25px;
+  }
+
+  .PdfContainer {
+    img {
+      width: 100%;
+    }
   }
 }
 

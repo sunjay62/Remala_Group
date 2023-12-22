@@ -13,6 +13,7 @@ import hutamaKaryaIcon from '../../../assets/partner/hutama-karya.png';
 import iconMediaIcon from '../../../assets/partner/iconmedia.png';
 import rsudKabBekasiIcon from '../../../assets/partner/rsud-kab-bekasi.png';
 import univPrasetyaMulyaIcon from '../../../assets/partner/univ-prasetya-mulya.png';
+import bsiUnivIcon from '../../../assets/partner/bsiuniv.png';
 import './partner.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -45,7 +46,7 @@ const Partner = () => {
       <div className="containerPartner">
         <div className="topContainer">
           <h3 className="text-center mt-5" data-aos="fade-up">
-            Mitratama Kami{' '}
+            Mitratama Kami
           </h3>
         </div>
         <div className="boxpartner m-auto d-block">
@@ -117,7 +118,7 @@ const Partner = () => {
         </div>
         <div className="topContainer">
           <h3 className="text-center mt-5" data-aos="fade-up">
-            Pelanggan Kami{' '}
+            Pelanggan Kami
           </h3>
         </div>
         <div className="boxpartner m-auto d-block">
@@ -145,7 +146,7 @@ const Partner = () => {
             </SwiperSlide>
             <SwiperSlide>
               <div className="item-partner">
-                <img src={bsiIcon} />
+                <img src={bsiUnivIcon} />
               </div>
             </SwiperSlide>
             <SwiperSlide>
