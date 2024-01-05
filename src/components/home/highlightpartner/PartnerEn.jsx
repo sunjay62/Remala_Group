@@ -5,7 +5,6 @@ import 'swiper/css/effect-creative';
 import { Pagination, Autoplay } from 'swiper/modules';
 import alfamartIcon from '../../../assets/partner/alfamart.png';
 import bpkIcon from '../../../assets/partner/bpk-penabur.png';
-import bsiIcon from '../../../assets/partner/bsi.png';
 import budiLuhurIcon from '../../../assets/partner/budi-luhur.png';
 import dkiJakartaIcon from '../../../assets/partner/dki-jakarta.png';
 import fajarMitraIndahIcon from '../../../assets/partner/fajar-mitra-indah.png';
@@ -77,7 +76,7 @@ const Partner = () => {
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={bsiIcon} />
+                  <img src={bsiUnivIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>

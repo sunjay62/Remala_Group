@@ -69,15 +69,12 @@ const ManajemenMutu = () => {
           <div className="PdfContainer">
             <img src={iso27001} />
           </div>
-          <hr />
           <div className="PdfContainer">
             <img src={iso9001} />
           </div>
-          <hr />
           <div className="PdfContainer">
             <img src={iso20000} />
           </div>
-          <hr />
           <div className="PdfContainer">
             <img src={iso45001} />
           </div>
