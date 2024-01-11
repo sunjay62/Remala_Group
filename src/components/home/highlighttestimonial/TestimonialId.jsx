@@ -4,9 +4,9 @@ import 'swiper/css';
 import 'swiper/css/effect-creative';
 import { EffectCreative, Pagination, Autoplay } from 'swiper/modules';
 import './testimonial.scss';
-import PlazaAuto from '../../../assets/partner/plazaauto.png';
-import BpkPenabur from '../../../assets/partner/bpk-penabur.png';
-import Alfamart from '../../../assets/partner/alfamart.png';
+import PlazaAuto from '../../../assets/logoclient/plazaauto.png';
+import BpkPenabur from '../../../assets/logoclient/bpk-penabur.png';
+import Alfamart from '../../../assets/logoclient/alfamart.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 

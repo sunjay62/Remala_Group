@@ -3,17 +3,25 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 import { Pagination, Autoplay } from 'swiper/modules';
-import alfamartIcon from '../../../assets/partner/alfamart.png';
-import bpkIcon from '../../../assets/partner/bpk-penabur.png';
-import bsiIcon from '../../../assets/partner/bsi.png';
-import budiLuhurIcon from '../../../assets/partner/budi-luhur.png';
-import dkiJakartaIcon from '../../../assets/partner/dki-jakarta.png';
-import fajarMitraIndahIcon from '../../../assets/partner/fajar-mitra-indah.png';
-import hutamaKaryaIcon from '../../../assets/partner/hutama-karya.png';
-import iconMediaIcon from '../../../assets/partner/iconmedia.png';
-import rsudKabBekasiIcon from '../../../assets/partner/rsud-kab-bekasi.png';
-import univPrasetyaMulyaIcon from '../../../assets/partner/univ-prasetya-mulya.png';
-import bsiUnivIcon from '../../../assets/partner/bsiuniv.png';
+import alfamartIcon from '../../../assets/logoclient/alfamart.png';
+import bpkIcon from '../../../assets/logoclient/bpk-penabur.png';
+import budiLuhurIcon from '../../../assets/logoclient/budi-luhur.png';
+import dkiJakartaIcon from '../../../assets/logoclient/dki-jakarta.png';
+import fajarMitraIndahIcon from '../../../assets/logoclient/fajar-mitra-indah.png';
+import hutamaKaryaIcon from '../../../assets/logoclient/hutama-karya.png';
+import iconMediaIcon from '../../../assets/logoclient/iconmedia.png';
+import rsudKabBekasiIcon from '../../../assets/logoclient/rsud-kab-bekasi.png';
+import univPrasetyaMulyaIcon from '../../../assets/logoclient/univ-prasetya-mulya.png';
+import bsiUnivIcon from '../../../assets/logoclient/bsiuniv.png';
+import aswatamaIcon from '../../../assets/logopartner/aswatama.png';
+import dcsIcon from '../../../assets/logopartner/dcs.png';
+import grandstreamIcon from '../../../assets/logopartner/grandstream.png';
+import juniperIcon from '../../../assets/logopartner/juniper.png';
+import mikrotikIcon from '../../../assets/logopartner/mikrotik.png';
+import pmIcon from '../../../assets/logopartner/pm.png';
+import ruijieeIcon from '../../../assets/logopartner/ruijiee.png';
+import sigmatelindoIcon from '../../../assets/logopartner/sigmatelindo.png';
+import vokselIcon from '../../../assets/logopartner/voksel.png';
 import './partner.scss';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -65,52 +73,47 @@ const Partner = () => {
             >
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={alfamartIcon} />
+                  <img src={aswatamaIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={bpkIcon} />
+                  <img src={juniperIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={bsiUnivIcon} />
+                  <img src={dcsIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={budiLuhurIcon} />
+                  <img src={ruijieeIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={dkiJakartaIcon} />
+                  <img src={mikrotikIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={fajarMitraIndahIcon} />
+                  <img src={vokselIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={hutamaKaryaIcon} />
+                  <img src={pmIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={iconMediaIcon} />
+                  <img src={grandstreamIcon} />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="item-partner">
-                  <img src={rsudKabBekasiIcon} />
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="item-partner">
-                  <img src={univPrasetyaMulyaIcon} />
+                  <img src={sigmatelindoIcon} />
                 </div>
               </SwiperSlide>
             </Swiper>
