@@ -5,27 +5,27 @@ import 'swiper/css/effect-creative';
 import { EffectCreative, Pagination, Autoplay } from 'swiper/modules';
 import './testimonial.scss';
 import PlazaAuto from '../../../assets/logoclient/plazaauto.png';
+import UnivBsi from '../../../assets/logoclient/bsiuniv.png';
 import BpkPenabur from '../../../assets/logoclient/bpk-penabur.png';
-import Alfamart from '../../../assets/logoclient/alfamart.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const testimonialsData = [
   {
     id: 1,
-    name: 'Plaza Auto via Bapak Fuad',
+    name: 'Plaza Auto - Bapak Fuad',
     position: 'IT SPV Group Plaza Auto',
     description:
-      "We have collaborated with Remala Abadi as an Internet network provider, which supports the network connection we need to run the company's ERP system. Our ERP system runs well and is connected between our sales branches to facilitate sales and administration processes.",
+      '"We have collaborated with Remala Abadi as an Internet network provider, which supports the network connection we need to run the company ERP system. Our ERP system runs well and is connected between our sales branches to facilitate sales and administration processes."',
     image: PlazaAuto,
   },
   {
     id: 2,
-    name: 'Alfaria Team',
-    position: 'Alfaria Team',
+    name: 'Bina Sarana Informatika University',
+    position: '',
     description:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
-    image: Alfamart,
+      '"PT Remala Abadi provides good internet service for us at BSI Group. It is easy to contact the Support team and we also been contact by the after sales team that contact and put attention to us every month. The internet can accommodate whole interactive and digital activities that we need on our beloved campus and if there are problems, we are alert by the Customer Service team and we received quick and best solution for our network issue.We hope to continue the service which has been deliver since 2014 with PT. Remala Abadi"',
+    image: UnivBsi,
   },
   {
     id: 3,
