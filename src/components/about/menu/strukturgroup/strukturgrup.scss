@@ -62,3 +62,15 @@
     margin-bottom: 50px;
   }
 }
+
+@media screen and (max-width: 860px) {
+  .containerStruktur {
+    padding: 0 15px;
+  }
+
+  .containerMiddle {
+    img {
+      width: 100%;
+    }
+  }
+}

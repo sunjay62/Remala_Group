@@ -8,13 +8,15 @@ import InvestorId from './components/investor/InvestorId';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import AboutEn from './components/about/AboutEn';
 import AboutId from './components/about/AboutId';
-import StrukturGroup from './components/about/menu/strukturgroup/StrukturGroup';
 import StrukturOrganisasiId from './components/about/menu/strukturorganisasi/StukturOrganisasiId';
 import StrukturOrganisasiEn from './components/about/menu/strukturorganisasi/StukturOrganisasiEn';
 import AnggaranDasar from './components/about/menu/anggarandasar/AnggaranDasar';
 import Penghargaan from './components/about/menu/penghargaan/Penghargaan';
 import ProfileId from './components/about/menu/profile/ProfileId';
 import ProfileEn from './components/about/menu/profile/ProfileEn';
+
+import StrukturGroupId from './components/about/menu/strukturgroup/StrukturGroupId';
+import StrukturGroupEn from './components/about/menu/strukturgroup/StrukturGroupEn';
 
 import DewanKomisarisId from './components/about/menu/menu-struktur-organisasi/dewankomisaris/DewanKomisarisId';
 import JajaranDireksiId from './components/about/menu/menu-struktur-organisasi/jajarandireksi/JajaranDireksiId';
@@ -93,7 +95,7 @@ function App() {
                 <Route element={<KomiteNominasiEn />} path="nomination-committee" />
                 <Route element={<KomiteEvaluasiEn />} path="evaluation-committee" />
               </Route>
-              <Route element={<StrukturGroup />} path="group-strucktur" />
+              <Route element={<StrukturGroupEn />} path="group-strucktur" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
               <Route element={<Penghargaan />} path="award" />
               <Route element={<ProfileEn />} path="profile" />
@@ -108,7 +110,7 @@ function App() {
                 <Route element={<KomiteNominasiId />} path="nomination-committee" />
                 <Route element={<KomiteEvaluasiId />} path="evaluation-committee" />
               </Route>
-              <Route element={<StrukturGroup />} path="group-strucktur" />
+              <Route element={<StrukturGroupId />} path="group-strucktur" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
               <Route element={<Penghargaan />} path="award" />
               <Route element={<ProfileId />} path="profile" />

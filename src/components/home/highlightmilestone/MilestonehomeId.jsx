@@ -21,7 +21,7 @@ const Milestonehome = () => {
             <div className="boxmile col-md-4 col-11 mt-md-0 mt-3" data-aos="fade-right">
               <div>
                 <h2>
-                  <CountUp className="amount" start={0} end={8500} duration={5} separator=" " />
+                  <CountUp className="amount" start={0} end={8500} duration={8} separator=" " />
                   KM
                 </h2>
                 <h4>Jaringan Yang Sudah Tersebar</h4>
@@ -30,7 +30,7 @@ const Milestonehome = () => {
             <div className="boxmile col-md-4 col-11 mt-md-0 mt-3 mx-md-2" data-aos="fade-up">
               <div>
                 <h2>
-                  <CountUp className="amountyear" start={0} end={20} duration={8} separator=" " />
+                  <CountUp className="amountyear" start={0} end={20} duration={13} separator=" " />
                   Th
                 </h2>
                 <h4 className="year">Tahun</h4>
@@ -39,7 +39,7 @@ const Milestonehome = () => {
             <div className="boxmile col-md-4 col-11 mt-md-0 mt-3" data-aos="fade-left">
               <div>
                 <h1>
-                  <CountUp className="amount" start={0} end={150} duration={5} separator=" " />
+                  <CountUp className="amount" start={0} end={150} duration={8} separator=" " />
                 </h1>
                 <h4>Titik Presensi</h4>
               </div>

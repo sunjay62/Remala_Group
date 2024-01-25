@@ -29,17 +29,18 @@ const StrukturGroup = () => {
     <>
       <div className="containerStruktur">
         <div className="containerTop" data-aos="fade-right">
-          <h3>{t('translation.text-group.title1')}</h3>
+          <h3>REMALA ABADI GRUP</h3>
           <p>
-            {t('translation.text-group.text1')} <br /> {t('translation.text-group.text2')}
+            Struktur Kepemilikan Saham Kelompok Usaha PT. Remala Abadi Tbk. <br />
+            dengan persentase kepemilikan lebih dari 50%
           </p>
         </div>
         <div className="containerMiddle">
           <img src={StrukturImage} alt="" className="imgStrukturOne" data-aos="fade-up" />
         </div>
         <div className="containerBottom">
-          <h6>{t('translation.text-group.title2')}</h6>
-          <button onClick={downloadPdf}>{t('translation.text-group.btn-download')}</button>
+          <h6>Detail persentase entitas saham : </h6>
+          <button onClick={downloadPdf}>Unduh PDF</button>
         </div>
       </div>
       <div className="Footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
