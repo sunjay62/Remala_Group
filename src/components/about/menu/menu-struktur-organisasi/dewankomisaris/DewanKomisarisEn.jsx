@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Verah from '../../../../../assets/fotoprofile/verah-wahyudi.png';
 import Alamsyah from '../../../../../assets/fotoprofile/alamsyah.png';
+import './dewankomisaris.scss';
 
 const profiles = [
   {

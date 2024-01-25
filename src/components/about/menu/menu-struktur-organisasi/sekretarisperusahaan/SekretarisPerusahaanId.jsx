@@ -31,8 +31,10 @@ const SekretarisPerusahaan = () => {
         <div className="col-profile d-flex mt-5" data-aos="fade-left" key={index}>
           <div className="col-6 profile-box">{profile.image && <img src={profile.image} alt={profile.name} />}</div>
           <div className="mx-4">
-            <h6>{profile.name}</h6>
-            <p>{profile.role}</p>
+            <div className="nameDivision">
+              <h6>{profile.name}</h6>
+              <p>{profile.role}</p>
+            </div>
             <p dangerouslySetInnerHTML={{ __html: profile.description }} />
           </div>
         </div>
