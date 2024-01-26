@@ -9,21 +9,21 @@ const swiperData = [
     url: 'idm-event',
     image: require('../image/idm.jpg'),
   },
-  {
-    id: 3,
-    url: 'title-1',
-    image: require('../image/bisnis4.jpg'),
-  },
-  {
-    id: 4,
-    url: 'title-1',
-    image: require('../image/bisnis5.jpg'),
-  },
-  {
-    id: 5,
-    url: 'title-1',
-    image: require('../image/bisnis3.jpg'),
-  },
+  // {
+  //   id: 3,
+  //   url: 'title-1',
+  //   image: require('../image/bisnis4.jpg'),
+  // },
+  // {
+  //   id: 4,
+  //   url: 'title-1',
+  //   image: require('../image/bisnis5.jpg'),
+  // },
+  // {
+  //   id: 5,
+  //   url: 'title-1',
+  //   image: require('../image/bisnis3.jpg'),
+  // },
 ];
 
 export default swiperData;

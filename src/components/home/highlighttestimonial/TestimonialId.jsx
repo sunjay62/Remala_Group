@@ -6,7 +6,7 @@ import { EffectCreative, Pagination, Autoplay } from 'swiper/modules';
 import './testimonial.scss';
 import PlazaAuto from '../../../assets/logoclient/plazaauto.png';
 import UnivBsi from '../../../assets/logoclient/bsiuniv.png';
-import BpkPenabur from '../../../assets/logoclient/bpk-penabur.png';
+// import BpkPenabur from '../../../assets/logoclient/bpk-penabur.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -27,14 +27,14 @@ const testimonialsData = [
       '“PT Remala Abadi memberikan layanan internet yang baik bagi kami di BSI Group. Tim Support mudah dihubungi dan kami juga dihubungi oleh tim purna jual yang menghubungi dan memperhatikan kami setiap bulannya. Internet dapat menampung keseluruhan interaktif dan digital kegiatan-kegiatan yang kami perlukan di kampus tercinta dan jika ada kendala kami disiagakan oleh tim Customer Service dan kami mendapat solusi cepat dan terbaik untuk permasalahan jaringan kami. Kami berharap dapat melanjutkan pelayanan yang telah kami berikan sejak tahun 2014 bersama PT. Remala Abadi"',
     image: UnivBsi,
   },
-  {
-    id: 3,
-    name: 'BPK Penabur',
-    position: 'BPK Penabur Team',
-    description:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
-    image: BpkPenabur,
-  },
+  // {
+  //   id: 3,
+  //   name: 'BPK Penabur',
+  //   position: 'BPK Penabur Team',
+  //   description:
+  //     '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum voluptates? Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!Similique quia veritatis nemo, id, ea aut modi earum libero veniam ullam, odit at aliquam sint ut facere. Eum!"',
+  //   image: BpkPenabur,
+  // },
 ];
 
 const Testimonial = () => {
