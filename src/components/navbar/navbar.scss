@@ -27,7 +27,7 @@
       height: 100%;
       cursor: pointer;
       display: flex;
-      // align-items: center;
+      align-items: center;
       flex-direction: column;
       justify-content: center;
       position: relative;
@@ -330,6 +330,8 @@
 
     .nav-links {
       font-size: 1.2rem;
+      display: flex;
+      align-self: flex-start;
 
       &::after {
         content: '';
