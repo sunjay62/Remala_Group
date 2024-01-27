@@ -75,14 +75,12 @@ import NewsId from './components/news/NewsId';
 import NewsEn from './components/news/NewsEn';
 import NewsDetailId from './components/news/newsdetail/NewsDetailId';
 import NewsDetailEn from './components/news/newsdetail/NewsDetailEn';
-import MetaTags from './utils/Metatags/MetaTags';
 
 function App() {
   const isIdPath = window.location.pathname.startsWith('/en');
 
   return (
     <div>
-      <MetaTags title="Remala Group" description="Company Profile - Remala Group" image="https://remala.id/metaimage.png" url="https://remala.id" />
       <BrowserRouter>
         {isIdPath ? <NavbarEn /> : <NavbarId />}
         <Routes>

@@ -9,6 +9,7 @@ import PartnerEn from './highlightpartner/PartnerEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialEn from './highlighttestimonial/TestimonialEn';
+import MetaTags from '../../utils/Metatags/MetaTags';
 
 const HomeEn = () => {
   useEffect(() => {
@@ -19,6 +20,7 @@ const HomeEn = () => {
 
   return (
     <div className="homeMainContainer">
+      <MetaTags title="Remala Group" description="Company Profile - Remala Group" image="https://remala.id/metaimage.png" url="https://remala.id" />
       <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
         <div className="container">
           <h1 data-aos="fade-left">PROVIDING THE BEST CONNECTIVITY</h1>
