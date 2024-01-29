@@ -9,8 +9,6 @@ import PartnerEn from './highlightpartner/PartnerEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialEn from './highlighttestimonial/TestimonialEn';
-import { Helmet } from 'react-helmet';
-import HomeImage from '../../assets/meta/homeimage.png';
 
 const HomeEn = () => {
   useEffect(() => {
@@ -21,13 +19,6 @@ const HomeEn = () => {
 
   return (
     <div className="homeMainContainer">
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Remala Group - Home</title>
-        <link rel="canonical" href="https://remala.id/" />
-        <meta name="description" content="Welcome to Remala Group. We provide exceptional services in various fields." />
-        <meta name="image" content={HomeImage} />
-      </Helmet>
       <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
         <div className="container">
           <h1 data-aos="fade-left">PROVIDING THE BEST CONNECTIVITY</h1>
