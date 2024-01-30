@@ -75,6 +75,7 @@ import NewsId from './components/news/NewsId';
 import NewsEn from './components/news/NewsEn';
 import NewsDetailId from './components/news/newsdetail/NewsDetailId';
 import NewsDetailEn from './components/news/newsdetail/NewsDetailEn';
+import MetaHome from './components/metaimage/MetaHome';
 
 function App() {
   const isIdPath = window.location.pathname.startsWith('/en');
@@ -84,6 +85,7 @@ function App() {
       <BrowserRouter>
         {isIdPath ? <NavbarEn /> : <NavbarId />}
         <Routes>
+          <Route element={<MetaHome />} path="/metahomeimage" />
           {isIdPath ? <Route element={<HomeEn />} path="/en" /> : <Route element={<HomeId />} path="/" />}
           {isIdPath ? (
             <Route element={<AboutEn />} path="/en/aboutus">
