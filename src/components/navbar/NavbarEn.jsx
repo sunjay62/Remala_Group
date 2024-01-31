@@ -43,6 +43,21 @@ const NavbarEn = () => {
     setActive(false);
   };
 
+  const handleSubMenuItemClick = () => {
+    setActive(false);
+
+    // Check current scroll position
+    const currentScrollPosition = window.scrollY;
+
+    // Scroll only if current scroll position is less than 400px
+    if (currentScrollPosition < 400) {
+      window.scrollTo({
+        top: 400,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const navbarRef = useRef(null);
 
   const handleClickOutside = (e) => {
@@ -136,8 +151,7 @@ const NavbarEn = () => {
             <div
               className="nav-links"
               onClick={() => {
-                scrollToTop();
-                handleMenuItemClick();
+                handleSubMenuItemClick();
               }}
             >
               <span>
@@ -149,8 +163,7 @@ const NavbarEn = () => {
                   className="dropdown-links"
                   to="/en/aboutus/profile"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Profile
@@ -159,8 +172,7 @@ const NavbarEn = () => {
                   className="dropdown-links"
                   to="/en/aboutus/organization-strucktur"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Organizational Structure
@@ -169,8 +181,7 @@ const NavbarEn = () => {
                   className="dropdown-links"
                   to="/en/aboutus/group-strucktur"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Group Structure
@@ -179,8 +190,7 @@ const NavbarEn = () => {
                   className="dropdown-links"
                   to="/en/aboutus/articles-of-association"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Article of Association
@@ -189,8 +199,7 @@ const NavbarEn = () => {
                   className="dropdown-links"
                   to="/en/aboutus/award"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Awards

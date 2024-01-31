@@ -43,6 +43,21 @@ const NavbarId = () => {
     setActive(false);
   };
 
+  const handleSubMenuItemClick = () => {
+    setActive(false);
+
+    // Check current scroll position
+    const currentScrollPosition = window.scrollY;
+
+    // Scroll only if current scroll position is less than 400px
+    if (currentScrollPosition < 400) {
+      window.scrollTo({
+        top: 400,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const navbarRef = useRef(null);
 
   const handleClickOutside = (e) => {
@@ -136,8 +151,7 @@ const NavbarId = () => {
             <div
               className="nav-links"
               onClick={() => {
-                scrollToTop();
-                handleMenuItemClick();
+                handleSubMenuItemClick();
               }}
             >
               <span>
@@ -149,8 +163,7 @@ const NavbarId = () => {
                   className="dropdown-links"
                   to="/aboutus/profile"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Profil
@@ -159,8 +172,7 @@ const NavbarId = () => {
                   className="dropdown-links"
                   to="/aboutus/organization-strucktur"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Struktur Organisasi
@@ -169,8 +181,7 @@ const NavbarId = () => {
                   className="dropdown-links"
                   to="/aboutus/group-strucktur"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Struktur Grup
@@ -180,7 +191,7 @@ const NavbarId = () => {
                   to="/aboutus/articles-of-association"
                   onClick={() => {
                     scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Anggaran Dasar
@@ -189,8 +200,7 @@ const NavbarId = () => {
                   className="dropdown-links"
                   to="/aboutus/award"
                   onClick={() => {
-                    scrollToTop();
-                    handleMenuItemClick();
+                    handleSubMenuItemClick();
                   }}
                 >
                   Penghargaan

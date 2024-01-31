@@ -18,6 +18,17 @@ const AboutEn = () => {
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
     navigate(`/en/aboutus/${componentName.toLowerCase()}`);
+
+    // Check current scroll position
+    const currentScrollPosition = window.scrollY;
+
+    // Scroll only if current scroll position is less than 400px
+    if (currentScrollPosition < 400) {
+      window.scrollTo({
+        top: 400,
+        behavior: 'smooth',
+      });
+    }
   };
 
   useEffect(() => {
