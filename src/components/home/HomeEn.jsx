@@ -22,7 +22,7 @@ const HomeEn = () => {
   return (
     <div>
       <Helmet>
-        <title>PT. Remala Abadi Tbk. - Home</title>
+        <title>PT. Remala Abadi Tbk. - Home EN</title>
         <meta name="description" content="Ini adalah halaman utama website kami." />
         <meta property="og:title" content="PT. Remala Abadi Tbk. - Home<" />
         <meta property="og:description" content="Ini adalah halaman utama website kami." />

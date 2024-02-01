@@ -22,7 +22,7 @@ const HomeId = () => {
   return (
     <div>
       <Helmet>
-        <title>PT. Remala Abadi Tbk. - Home</title>
+        <title>PT. Remala Abadi Tbk. - Home ID</title>
         <meta name="description" content="This is first page my website" />
         <meta property="og:title" content="PT. Remala Abadi Tbk. - Home" />
         <meta property="og:description" content="This is first page my website." />
