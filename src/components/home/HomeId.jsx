@@ -9,6 +9,10 @@ import PartnerId from './highlightpartner/PartnerId';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialId from './highlighttestimonial/TestimonialId';
+import MetaDecorator from '../Util/MetaDcorator';
+import metaThumbnail from '../../utils/Data/Image/meta/homeimage.png';
+
+const content = require('../../utils/Data/json/home.json');
 
 const HomeId = () => {
   useEffect(() => {
@@ -19,6 +23,7 @@ const HomeId = () => {
 
   return (
     <div className="homeMainContainer">
+      <MetaDecorator description={content.pageDescription} title={content.pageTitle} imageUrl={metaThumbnail} imageAlt={content.metaImageAlt} />
       <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
         <div className="container">
           <h1 data-aos="fade-left">MEMBERIKAN KONEKTIVITAS TERBAIK</h1>
