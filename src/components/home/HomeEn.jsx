@@ -9,10 +9,8 @@ import PartnerEn from './highlightpartner/PartnerEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialEn from './highlighttestimonial/TestimonialEn';
-import MetaDecorator from '../Util/MetaDcorator';
-import metaThumbnail from '../../utils/Data/Image/meta/homeimage.png';
-
-const content = require('../../utils/Data/json/home.json');
+import { Helmet } from 'react-helmet';
+import homeImage from '../../assets/meta/homeimage.png';
 
 const HomeEn = () => {
   useEffect(() => {
@@ -22,43 +20,51 @@ const HomeEn = () => {
   }, []);
 
   return (
-    <div className="homeMainContainer">
-      <MetaDecorator description={content.pageDescription} title={content.pageTitle} imageUrl={metaThumbnail} imageAlt={content.metaImageAlt} />
-      <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
-        <div className="container">
-          <h1 data-aos="fade-left">PROVIDING THE BEST CONNECTIVITY</h1>
-          <h1 data-aos="fade-right">WITH RELIABLE INFRASTRUCTURE</h1>
+    <div>
+      <Helmet>
+        <title>PT. Remala Abadi Tbk. - Home</title>
+        <meta name="description" content="Ini adalah halaman utama website kami." />
+        <meta property="og:title" content="PT. Remala Abadi Tbk. - Home<" />
+        <meta property="og:description" content="Ini adalah halaman utama website kami." />
+        <meta property="og:image" content={homeImage} />
+      </Helmet>
+      <div className="homeMainContainer">
+        <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
+          <div className="container">
+            <h1 data-aos="fade-left">PROVIDING THE BEST CONNECTIVITY</h1>
+            <h1 data-aos="fade-right">WITH RELIABLE INFRASTRUCTURE</h1>
+          </div>
         </div>
-      </div>
-      {/* <div className="perseroanHome">
+        {/* <div className="perseroanHome">
         <div className="isiContent">
           <h1>Leading National Internet Business Group in Indonesia</h1>
         </div>
       </div> */}
-      <div className="front-content">
-        <div className="containerMenuProduct">
-          {/* <div className="menuItemHome">
+        <div className="front-content">
+          <div className="containerMenuProduct">
+            {/* <div className="menuItemHome">
             <MenuitemEn />
           </div> */}
-          <div className="produkHome">
-            <ProdukEn />
+            <div className="produkHome">
+              <ProdukEn />
+            </div>
+          </div>
+          <div className="milestoneHome" data-aos="fade-up">
+            <HighlightMilestoneEn />
+          </div>
+          <div className="swiperHome" data-aos="fade-up">
+            <SwiperEn />
+          </div>
+          <div className="partnerHome">
+            <PartnerEn />
+          </div>
+          <div className="testimonialHome">
+            <TestimonialEn />
           </div>
         </div>
-        <div className="milestoneHome" data-aos="fade-up">
-          <HighlightMilestoneEn />
+        <div className="containerFooter">
+          <FooterEn />
         </div>
-        <div className="swiperHome" data-aos="fade-up">
-          <SwiperEn />
-        </div>
-        <div className="partnerHome">
-          <PartnerEn />
-        </div>
-        <div className="testimonialHome">
-          <TestimonialEn />
-        </div>
-      </div>
-      <div className="containerFooter">
-        <FooterEn />
       </div>
     </div>
   );
