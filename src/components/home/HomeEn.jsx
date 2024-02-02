@@ -32,7 +32,7 @@ const HomeEn = () => {
           property="og:description"
           content="PT Remala Abadi has been established since 2004, engaged in trade and services. We have established two flagship subsidiaries, Tachyon Network Indonesia and Nethome Indonesia, which are companies in the field of internet access, telecommunications, and multimedia services.."
         />
-        <meta property="og:image" content="https://tachyon.net.id/wp-content/uploads/2021/12/homeimage_compress.png" />
+        <meta property="og:image" content="https://tachyon.net.id/wp-content/uploads/2021/12/Logo_Tachyon-removebg-preview.png" />
         <meta property="og:url" content="https://remala.id/" />
         <meta property="og:type" content="website" />
       </Helmet>
