@@ -23,10 +23,16 @@ const HomeId = () => {
       <Helmet>
         <title>PT. Remala Abadi Tbk. - Home ID</title>
         <link rel="canonical" href="/" />
-        <meta name="description" content="Ini adalah halaman utama website kami." />
+        <meta
+          name="description"
+          content="PT Remala Abadi telah berdiri sejak tahun 2004 yang bergerak dibidang perdagangan dan jasa, dan kami telah mendirikan dua anak perusahaan andalan yaitu Tachyon Network Indonesia dan Nethome Indonesia yang merupakan perusahaan dibidang penyedia akses internet, layanan telekomunikasi dan multimedia."
+        />
         <meta property="og:title" content="PT. Remala Abadi Tbk. - Home<" />
-        <meta property="og:description" content="Ini adalah halaman utama website kami." />
-        <meta property="og:image" content="https://remala.id/metaimage.png" />
+        <meta
+          property="og:description"
+          content="PT Remala Abadi telah berdiri sejak tahun 2004 yang bergerak dibidang perdagangan dan jasa, dan kami telah mendirikan dua anak perusahaan andalan yaitu Tachyon Network Indonesia dan Nethome Indonesia yang merupakan perusahaan dibidang penyedia akses internet, layanan telekomunikasi dan multimedia."
+        />
+        <meta property="og:image" content="https://tachyon.net.id/wp-content/uploads/2021/12/homeimage_compress.png" />
         <meta property="og:url" content="https://remala.id/" />
         <meta property="og:type" content="website" />
       </Helmet>

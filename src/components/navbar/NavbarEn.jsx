@@ -148,12 +148,7 @@ const NavbarEn = () => {
 
         <div className="navbarRight">
           <div className={active ? 'nav-menu active' : 'nav-menu'}>
-            <div
-              className="nav-links"
-              onClick={() => {
-                handleSubMenuItemClick();
-              }}
-            >
+            <div className="nav-links">
               <span>
                 About Us
                 <DownOutlined className="dropdown-arrow" />
