@@ -9,7 +9,10 @@ import PartnerId from './highlightpartner/PartnerId';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialId from './highlighttestimonial/TestimonialId';
-import { Helmet } from 'react-helmet';
+import metaThumbnail from '../data/images/meta/homeimage.png';
+import MetaDecorator from '../Util/MetaDecorator';
+
+const home = require('../data/json/home.json');
 
 const HomeId = () => {
   useEffect(() => {
@@ -20,22 +23,7 @@ const HomeId = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>PT. Remala Abadi Tbk. - Home ID</title>
-        <link rel="canonical" href="/" />
-        <meta
-          name="description"
-          content="PT Remala Abadi telah berdiri sejak tahun 2004 yang bergerak dibidang perdagangan dan jasa, dan kami telah mendirikan dua anak perusahaan andalan yaitu Tachyon Network Indonesia dan Nethome Indonesia yang merupakan perusahaan dibidang penyedia akses internet, layanan telekomunikasi dan multimedia."
-        />
-        <meta property="og:title" content="PT. Remala Abadi Tbk. - Home<" />
-        <meta
-          property="og:description"
-          content="PT Remala Abadi telah berdiri sejak tahun 2004 yang bergerak dibidang perdagangan dan jasa, dan kami telah mendirikan dua anak perusahaan andalan yaitu Tachyon Network Indonesia dan Nethome Indonesia yang merupakan perusahaan dibidang penyedia akses internet, layanan telekomunikasi dan multimedia."
-        />
-        <meta property="og:image" content="https://tachyon.net.id/wp-content/uploads/2021/12/Logo_Tachyon-removebg-preview.png" />
-        <meta property="og:url" content="https://remala.id/" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      <MetaDecorator description={home.pageDescription} title={home.pageTitle} imageUrl={metaThumbnail} imageAlt={home.metaImageAlt} />
       <div className="homeMainContainer">
         <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
           <div className="container">

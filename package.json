@@ -37,6 +37,7 @@
     "react-countup": "^6.5.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-helmet-async": "^2.0.4",
     "react-highlight-words": "^0.20.0",
     "react-i18next": "^13.3.0",
     "react-id-swiper": "^2.4.0",
