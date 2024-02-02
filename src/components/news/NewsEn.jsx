@@ -8,6 +8,8 @@ import FooterId from '../footer/FooterId';
 import FooterEn from '../footer/FooterEn';
 import { ArrowRightOutlined, ArrowDownOutlined } from '@ant-design/icons';
 import dataNewsEn from './data/dataNewsEn';
+import { Helmet } from 'react-helmet';
+import homeImage from '../../assets/meta/homeimage.png';
 
 const { Option } = AutoComplete;
 
@@ -89,46 +91,58 @@ const News = () => {
   };
 
   return (
-    <div className="contentNews" data-aos="fade-down">
-      <div className="news-content d-flex align-items-center justify-content-center">
-        <div className="content-text">
-          <h2 className="textHero" data-aos="fade-up">
-            NEWS
-          </h2>
-        </div>
-      </div>
-      <div className="bottomNews">
-        <div className="filter-search">
-          <div className="filterTop">
-            <h3>Filter</h3>
-            <div>
-              <Button type="default" icon={<ArrowDownOutlined rotate={filterType === 'newer' ? 180 : 0} />} onClick={handleFilter} />
-            </div>
-            <AutoComplete className="autoComplete" placeholder="Search News..." onSearch={handleSearch} onSelect={handleSelect} value={searchQuery} />
+    <div>
+      <Helmet>
+        <title>PT. Remala Abadi Tbk. - News</title>
+        <link rel="canonical" href="/" />
+        <meta name="description" content="Ini adalah halaman news website kami." />
+        <meta property="og:title" content="PT. Remala Abadi Tbk. - News<" />
+        <meta property="og:description" content="Ini adalah halaman News website kami." />
+        <meta property="og:image" content={homeImage} />
+        <meta property="og:url" content="https://remala.id/news" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+      <div className="contentNews" data-aos="fade-down">
+        <div className="news-content d-flex align-items-center justify-content-center">
+          <div className="content-text">
+            <h2 className="textHero" data-aos="fade-up">
+              NEWS
+            </h2>
           </div>
-          <div className="page"> Page {currentPage}</div>
         </div>
-        <div className="middle">
-          {filteredNews.slice(indexOfFirstNews, indexOfLastNews).map((news) => (
-            <div key={news.id} className="bodyNews">
-              <img src={news.image} />
-              <div className="desc">
-                <h2>{news.title}</h2>
-                <h5>{news.date}</h5>
-                <p>{news.description}</p>
-                <hr />
-                <Link to={`/en/news/${news.id}/${encodeURIComponent(news.url)}`} onClick={() => handleReadMore(news.id, news.url)}>
-                  SEE MORE <ArrowRightOutlined />
-                </Link>
+        <div className="bottomNews">
+          <div className="filter-search">
+            <div className="filterTop">
+              <h3>Filter</h3>
+              <div>
+                <Button type="default" icon={<ArrowDownOutlined rotate={filterType === 'newer' ? 180 : 0} />} onClick={handleFilter} />
               </div>
+              <AutoComplete className="autoComplete" placeholder="Search News..." onSearch={handleSearch} onSelect={handleSelect} value={searchQuery} />
             </div>
-          ))}
+            <div className="page"> Page {currentPage}</div>
+          </div>
+          <div className="middle">
+            {filteredNews.slice(indexOfFirstNews, indexOfLastNews).map((news) => (
+              <div key={news.id} className="bodyNews">
+                <img src={news.image} />
+                <div className="desc">
+                  <h2>{news.title}</h2>
+                  <h5>{news.date}</h5>
+                  <p>{news.description}</p>
+                  <hr />
+                  <Link to={`/en/news/${news.id}/${encodeURIComponent(news.url)}`} onClick={() => handleReadMore(news.id, news.url)}>
+                    SEE MORE <ArrowRightOutlined />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="pagination">
+            <Pagination current={currentPage} pageSize={newsPerPage} total={dataNewsEn.length} onChange={handlePageChange} />
+          </div>
         </div>
-        <div className="pagination">
-          <Pagination current={currentPage} pageSize={newsPerPage} total={dataNewsEn.length} onChange={handlePageChange} />
-        </div>
+        <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
       </div>
-      <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </div>
   );
 };

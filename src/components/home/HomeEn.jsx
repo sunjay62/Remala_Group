@@ -10,7 +10,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialEn from './highlighttestimonial/TestimonialEn';
 import { Helmet } from 'react-helmet';
-import homeImage from '../../assets/meta/homeimage.png';
 
 const HomeEn = () => {
   useEffect(() => {
@@ -23,10 +22,13 @@ const HomeEn = () => {
     <div>
       <Helmet>
         <title>PT. Remala Abadi Tbk. - Home EN</title>
-        <meta name="description" content="Ini adalah halaman utama website kami." />
-        <meta property="og:title" content="PT. Remala Abadi Tbk. - Home<" />
-        <meta property="og:description" content="Ini adalah halaman utama website kami." />
-        <meta property="og:image" content={homeImage} />
+        <meta name="description" content="This is first page my website" />
+        <link rel="canonical" href="/en" />
+        <meta property="og:title" content="PT. Remala Abadi Tbk. - Home" />
+        <meta property="og:description" content="This is first page my website." />
+        <meta property="og:image" content="https://remala.id/metaimage.png" />
+        <meta property="og:url" content="https://remala.id/" />
+        <meta property="og:type" content="website" />
       </Helmet>
       <div className="homeMainContainer">
         <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
