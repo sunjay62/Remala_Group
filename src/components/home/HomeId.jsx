@@ -23,7 +23,7 @@ const HomeId = () => {
 
   return (
     <div>
-      <MetaDecorator description={home.pageDescription} title={home.pageTitle} imageUrl={metaThumbnail} imageAlt={home.metaImageAlt} />
+      <MetaDecorator description={home.pageDescriptionId} title={home.pageTitle} imageUrl={metaThumbnail} imageAlt={home.metaImageAlt} />
       <div className="homeMainContainer">
         <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
           <div className="container">

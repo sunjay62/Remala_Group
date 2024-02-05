@@ -9,7 +9,10 @@ import PartnerEn from './highlightpartner/PartnerEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import TestimonialEn from './highlighttestimonial/TestimonialEn';
-import { Helmet } from 'react-helmet';
+import metaThumbnail from '../data/images/meta/homeimage.png';
+import MetaDecorator from '../Util/MetaDecorator';
+
+const home = require('../data/json/home.json');
 
 const HomeEn = () => {
   useEffect(() => {
@@ -20,22 +23,7 @@ const HomeEn = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>PT. Remala Abadi Tbk. - Home EN</title>
-        <meta
-          name="description"
-          content="PT Remala Abadi has been established since 2004, engaged in trade and services. We have established two flagship subsidiaries, Tachyon Network Indonesia and Nethome Indonesia, which are companies in the field of internet access, telecommunications, and multimedia services."
-        />
-        <link rel="canonical" href="/en" />
-        <meta property="og:title" content="PT. Remala Abadi Tbk. - Home" />
-        <meta
-          property="og:description"
-          content="PT Remala Abadi has been established since 2004, engaged in trade and services. We have established two flagship subsidiaries, Tachyon Network Indonesia and Nethome Indonesia, which are companies in the field of internet access, telecommunications, and multimedia services.."
-        />
-        <meta property="og:image" content="https://remala.id/metaimage.png" />
-        <meta property="og:url" content="https://remala.id/" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      <MetaDecorator description={home.pageDescriptionEn} title={home.pageTitle} imageUrl={metaThumbnail} imageAlt={home.metaImageAlt} />
       <div className="homeMainContainer">
         <div className="content-title-home d-flex justify-content-center align-items-center" data-aos="fade-down">
           <div className="container">
