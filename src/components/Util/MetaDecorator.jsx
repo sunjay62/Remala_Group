@@ -10,8 +10,10 @@ const MetaDecorator = ({ title, description, imageUrl, imageAlt }) => (
     <meta name="title" property="og:title" content={title} />
     <meta name="description" content={description} />
     <meta name="description" property="og:description" content={description} />
-    <meta name="image" property="og:image" content={metaDecorator.hostname + imageUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={`${metaDecorator.hostname}${imageUrl}`} />
     <meta property="og:url" content={metaDecorator.hostname + window.location.pathname + window.location.search} />
+    <meta name="twitter:image" content={`${metaDecorator.hostname}${imageUrl}`} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image:alt" content={imageAlt} />
     <meta name="author" content={metaDecorator.author} />

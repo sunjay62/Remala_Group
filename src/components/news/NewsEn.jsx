@@ -8,8 +8,10 @@ import FooterId from '../footer/FooterId';
 import FooterEn from '../footer/FooterEn';
 import { ArrowRightOutlined, ArrowDownOutlined } from '@ant-design/icons';
 import dataNewsEn from './data/dataNewsEn';
-import { Helmet } from 'react-helmet';
-import homeImage from '../../assets/meta/homeimage.png';
+import metaThumbnail from '../data/images/meta/homeimage.png';
+import MetaDecorator from '../Util/MetaDecorator';
+
+const news = require('../data/json/news.json');
 
 const { Option } = AutoComplete;
 
@@ -92,16 +94,7 @@ const News = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>PT. Remala Abadi Tbk. - News</title>
-        <link rel="canonical" href="/" />
-        <meta name="description" content="Ini adalah halaman news website kami." />
-        <meta property="og:title" content="PT. Remala Abadi Tbk. - News<" />
-        <meta property="og:description" content="Ini adalah halaman News website kami." />
-        <meta property="og:image" content={homeImage} />
-        <meta property="og:url" content="https://remala.id/news" />
-        <meta property="og:type" content="website" />
-      </Helmet>
+      <MetaDecorator description={news.pageDescriptionEn} title={news.pageTitleEn} imageUrl={metaThumbnail} imageAlt={news.metaImageAltEn} />
       <div className="contentNews" data-aos="fade-down">
         <div className="news-content d-flex align-items-center justify-content-center">
           <div className="content-text">
