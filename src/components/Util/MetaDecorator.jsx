@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
+// import logoFavicon from "../../../public/logo.png"
 
 const metaDecorator = require('../data/json/metaDecorator.json');
 
@@ -17,6 +18,7 @@ const MetaDecorator = ({ title, description, imageUrl, imageAlt }) => (
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:image:alt" content={imageAlt} />
     <meta name="author" content={metaDecorator.author} />
+    <link rel="icon" href="../../../public/favicon.ico" type="image/x-icon" />
   </Helmet>
 );
 
