@@ -31,6 +31,14 @@
       flex-direction: column;
       justify-content: center;
       position: relative;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      padding: 8px;
+
+      &:hover {
+        color: #e6e6e6;
+      }
 
       &::after {
         content: '';
@@ -55,7 +63,7 @@
         margin-left: 5px;
         transition: transform 0.3s ease-in-out;
         display: inline-block;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
       }
 
       // Define the rotation animation on hover
@@ -63,6 +71,56 @@
         transform: rotate(180deg);
       }
     }
+  }
+}
+
+#languageContainer {
+  margin-left: 20px;
+
+  .span-menu {
+    display: flex;
+
+    gap: 5px;
+    border-radius: 13px;
+    padding: 8px 10px;
+    background-color: rgba(145, 205, 255, 0.507);
+  }
+}
+
+.languageDropdown {
+  display: flex;
+  flex-direction: column;
+  min-width: 75px;
+  padding: 10px;
+  gap: 5px;
+
+  .language-button-dropdown {
+    display: flex;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: all ease-in-out 0.2s;
+
+    p {
+      margin: 0 auto;
+    }
+
+    &:hover {
+      background-color: #d1d1d1;
+      color: #ffffff;
+    }
+  }
+
+  .language-button-dropdown.active {
+    background-color: rgba(148, 148, 148, 0.507);
+    color: white;
+    border: none;
+    transition: all 0.2s ease-in-out;
   }
 }
 
@@ -236,25 +294,15 @@
 
 .navbar.scrolled .nav-links {
   color: #0a5493;
+
+  &:hover {
+    color: #1c66a7;
+  }
 }
 
 .fa-react {
   margin-left: 0.5rem;
   font-size: 1.6rem;
-}
-
-.nav-links {
-  position: relative;
-  color: #ffffff;
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 8px;
-  transition: color 0.2s ease-in-out;
-  display: inline-block; /* Add this line to make ::before behave like an inline element */
-
-  &:hover {
-    color: #e6e6e6;
-  }
 }
 
 .nav-links-mobile {

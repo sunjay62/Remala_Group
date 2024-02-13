@@ -289,6 +289,27 @@ const NavbarId = () => {
               Karir
             </Link>
 
+            {!isMobile && (
+              <div to="#" className="nav-links" id="languageContainer">
+                <span className="span-menu">
+                  <img width="18" height="18" src={Uk} />
+                  <DownOutlined className="dropdown-arrow" />
+                </span>
+                <div className="dropdown-content">
+                  <div className="languageDropdown">
+                    <button className={`language-button-dropdown ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
+                      <img width="15" height="15" src={Indonesia} />
+                      <p>Bahasa</p>
+                    </button>
+                    <button className={`language-button-dropdown ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
+                      <img width="15" height="15" src={Uk} />
+                      <p>English</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Tampilkan div dengan class "language" di dalam ul jika layar berukuran lebih kecil dari 860px */}
             {isMobile && (
               <div className="language">
@@ -305,20 +326,6 @@ const NavbarId = () => {
               </div>
             )}
           </div>
-          {!isMobile && (
-            <div className="language">
-              <Tooltip title="Indonesia" arrow className="tooltipContainer">
-                <button className={`language-button ${selectedLanguage === 'id' ? 'active' : ''}`} onClick={() => handleLanguageChange('id')}>
-                  <img width="15" height="15" src={Indonesia} />
-                </button>
-              </Tooltip>
-              <Tooltip title="English" arrow className="tooltipContainer">
-                <button className={`language-button ${selectedLanguage === 'en' ? 'active' : ''}`} onClick={() => handleLanguageChange('en')}>
-                  <img width="15" height="15" src={Uk} />
-                </button>
-              </Tooltip>
-            </div>
-          )}
         </div>
       </nav>
     </>
