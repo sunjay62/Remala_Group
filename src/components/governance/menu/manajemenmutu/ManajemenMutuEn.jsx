@@ -4,10 +4,12 @@ import FooterId from '../../../footer/FooterId';
 import FooterEn from '../../../footer/FooterEn';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import iso27001 from '../../../../assets/iso/ISO27001-ACS.jpeg';
-import iso9001 from '../../../../assets/iso/ISO9001-ACS.jpeg';
 import iso20000 from '../../../../assets/iso/ISO20000-1-ACS.jpeg';
-import iso45001 from '../../../../assets/iso/ISO45001-ACS.jpeg';
+import iso00452 from '../../../../assets/iso/EMS-00452.jpg';
+import iso00025 from '../../../../assets/iso/ISMS-00025.jpg';
+import iso00252 from '../../../../assets/iso/OHS-00252.jpg';
+import iso02073 from '../../../../assets/iso/QSC-02073.jpg';
+import iso00147 from '../../../../assets/iso/SAB-00147.jpg';
 
 const ManajemenMutu = () => {
   const isIdPath = window.location.pathname.startsWith('/en');
@@ -67,16 +69,22 @@ const ManajemenMutu = () => {
             </div>
           ))} */}
           <div className="PdfContainer">
-            <img src={iso27001} />
+            <img src={iso00452} />
           </div>
           <div className="PdfContainer">
-            <img src={iso9001} />
+            <img src={iso00025} />
           </div>
           <div className="PdfContainer">
-            <img src={iso20000} />
+            <img src={iso00252} />
           </div>
           <div className="PdfContainer">
-            <img src={iso45001} />
+            <img src={iso02073} />
+          </div>
+          <div className="PdfContainer">
+            <img src={iso00147} />
+          </div>
+          <div>
+            <img className="isoAcs" src={iso20000} />
           </div>
         </div>
       </div>
