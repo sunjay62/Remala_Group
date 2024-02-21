@@ -1,6 +1,12 @@
 import React from 'react';
 import './footer.scss';
 import logo from '../../assets/navbar/logoremala.png';
+import awardsIntegrasi from '../../assets/iso/Integrasi.png';
+import awards9001 from '../../assets/iso/ISO-9001.png';
+import awards14001 from '../../assets/iso/ISO-14001.png';
+import awards27001 from '../../assets/iso/ISO-27001.png';
+import awards37001 from '../../assets/iso/ISO-37001.png';
+import awards45001 from '../../assets/iso/ISO-45001.png';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -17,6 +23,16 @@ const FooterEn = () => {
           <div className="footerLeft">
             <div className="firstLeft">
               <img src={logo} alt="Remala" className="logoFooter" />
+              <div className="awardsImage">
+                <img src={awardsIntegrasi} alt="Remala" className="awards" />
+                <img src={awards9001} alt="Remala" className="awards" />
+                <img src={awards14001} alt="Remala" className="awards" />
+              </div>
+              <div className="awardsImage">
+                <img src={awards27001} alt="Remala" className="awards" />
+                <img src={awards37001} alt="Remala" className="awards" />
+                <img src={awards45001} alt="Remala" className="awards" />
+              </div>
             </div>
             <div className="twoLeft">
               <h6>
@@ -46,17 +62,17 @@ const FooterEn = () => {
               <a href="#">Investor Relations</a>
               <a href="#">Management</a>
             </div>
-            <div className="pengumuman">
-              <h6>Announcements</h6>
-              <a href="#">RUPS Announcements</a>
-              <a href="#">Public Disclosure Announcements</a>
-              <a href="#">Issuer Announcements</a>
-            </div>
             <div className="laporan">
               <h6>Reports</h6>
               <a href="#">Financial Reports</a>
               <a href="#">Sustainability Reports</a>
               <a href="#">Annual Reports</a>
+            </div>
+            <div className="pengumuman">
+              <h6>Announcements</h6>
+              <a href="#">RUPS Announcements</a>
+              <a href="#">Public Disclosure Announcements</a>
+              <a href="#">Issuer Announcements</a>
             </div>
           </div>
 
