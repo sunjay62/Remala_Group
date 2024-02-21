@@ -82,7 +82,7 @@ const FooterId = () => {
         </div>
         <hr />
         <div className="footerBottom">
-          <p>Copyright &copy; Remala Group 2023 All Right Reserved</p>
+          <p>Copyright &copy; Remala Group 2024 All Right Reserved</p>
         </div>
       </div>
     </>

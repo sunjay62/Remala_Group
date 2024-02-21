@@ -11,7 +11,8 @@ import AboutId from './components/about/AboutId';
 import StrukturOrganisasiId from './components/about/menu/strukturorganisasi/StukturOrganisasiId';
 import StrukturOrganisasiEn from './components/about/menu/strukturorganisasi/StukturOrganisasiEn';
 import AnggaranDasar from './components/about/menu/anggarandasar/AnggaranDasar';
-import Penghargaan from './components/about/menu/penghargaan/Penghargaan';
+import PenghargaanEn from './components/about/menu/penghargaan/PenghargaanEn';
+import PenghargaanId from './components/about/menu/penghargaan/PenghargaanId';
 import ProfileId from './components/about/menu/profile/ProfileId';
 import ProfileEn from './components/about/menu/profile/ProfileEn';
 
@@ -97,7 +98,7 @@ function App() {
               </Route>
               <Route element={<StrukturGroupEn />} path="group-strucktur" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
-              <Route element={<Penghargaan />} path="award" />
+              <Route element={<PenghargaanEn />} path="award" />
               <Route element={<ProfileEn />} path="profile" />
             </Route>
           ) : (
@@ -112,7 +113,7 @@ function App() {
               </Route>
               <Route element={<StrukturGroupId />} path="group-strucktur" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
-              <Route element={<Penghargaan />} path="award" />
+              <Route element={<PenghargaanId />} path="award" />
               <Route element={<ProfileId />} path="profile" />
             </Route>
           )}
