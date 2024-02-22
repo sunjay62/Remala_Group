@@ -76,6 +76,8 @@ import NewsId from './components/news/NewsId';
 import NewsEn from './components/news/NewsEn';
 import NewsDetailId from './components/news/newsdetail/NewsDetailId';
 import NewsDetailEn from './components/news/newsdetail/NewsDetailEn';
+import GcgDetailEn from './components/governance/menu/manajemenmutu/gcgdetail/GcgDetailEn';
+import GcgDetailId from './components/governance/menu/manajemenmutu/gcgdetail/GcgDetailId';
 
 function App() {
   const isIdPath = window.location.pathname.startsWith('/en');
@@ -192,6 +194,8 @@ function App() {
           {isIdPath ? <Route element={<NewsEn />} path="/en/news" /> : <Route element={<NewsId />} path="/news" />}
 
           {isIdPath ? <Route element={<NewsDetailEn />} path="/en/news/:id/:title" /> : <Route element={<NewsDetailId />} path="/news/:id/:title" />}
+
+          {isIdPath ? <Route element={<GcgDetailEn />} path="/en/governance-corporate/quality-management/:id/:title" /> : <Route element={<GcgDetailId />} path="/governance-corporate/quality-management/:id/:title" />}
         </Routes>
         <BackTop />
       </BrowserRouter>

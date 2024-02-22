@@ -31,7 +31,7 @@ const ManajemenMutu = () => {
                   <p>{item.description}</p>
                 </div>
                 <div className="bottom">
-                  <Link to={`/governance-corporate/quality-management/${item.id}/${encodeURIComponent(item.url)}`}>LIHAT SELENGKAPNYA</Link>
+                  <Link to={`/en/governance-corporate/quality-management/${item.id}/${encodeURIComponent(item.url)}`}>VIEW MORE</Link>
                 </div>
               </div>
             </div>
