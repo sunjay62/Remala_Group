@@ -11,11 +11,9 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 const FooterId = () => {
-  const [t] = useTranslation('global');
-
   return (
     <>
       <div className="mainFooter stickyFooter">

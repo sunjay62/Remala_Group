@@ -21,21 +21,17 @@ const Profile = () => {
         <div className="company-profile-text" data-aos="fade-up">
           <h4 className="text-center">Company Profile</h4>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT Remala Abadi has been established since 2004, engaged in trade and services. We have established two flagship subsidiaries, Tachyon Network Indonesia and Nethome Indonesia, which are
-            companies in the field of internet access, telecommunications, and multimedia services. We are committed to developing a reliable infrastructure to provide the best services and solutions, applying creative and innovative
-            thinking and working responsibly.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT. Remala Abadi Tbk has been established since 2004 and operates in the ISP (Internet Service Provider) sector, providing Internet services including Broadband internet, Local Link services,
+            Managed Services (IP CAM setup, VOIP, WiFi Device), Server Colocation, as well as Fiber Optic Business to Business connectivity/installation and multimedia services. We are committed to developing reliable infrastructure to
+            deliver the best services and solutions to all customers while maintaining our commitment and working creatively and innovatively.
           </p>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have a fiber optic infrastructure and operate it as both a network backbone and a service medium with excellence. Along with Remala Abadi Group, previously established as a company focused
-            on infrastructure and fiber optic network solutions, Fiber Media Indonesia (FMI).
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remala's topology covers JABODETABEK (Jakarta, Bogor, Depok, Tangerang, and Bekasi), which is our main focus, and we are beginning to expand to Java Island and surrounding areas. To date,
+            Remala Abadi has connected to more than 70% of Datacenters in JABODETABEK and linked to over 25,000 companies and residences.
           </p>
           <p>
-            Remala's topology covers JABODETABEK (Jakarta, Bogor, Depok, Tangerang, and Bekasi), which is the primary focus and will begin to expand to Java Island and surrounding areas. Up to now, Remala Abadi has connected to over 70% of
-            Datacenters in JABODETABEK and more than 25,000 companies and households.
-          </p>
-          <p>
-            Our customer segmentation includes ISPs as partners, companies, SMEs, SOHOs, government, and housing. To expand our offerings to customers, we have other products such as Cloud, Virtual Private Network, IoT, CCTV, IP Domain, IP
-            Public, Email Solution, and Managed Services, etc.
+            Our customer segmentation includes ISPs as partners, Corporations, SMEs, SOHOs, Government and Residential sectors. To expand our offerings to customers, we have other products such as Cloud services, Virtual Private Networks,
+            IoT, CCTV, IP Domain, IP Public, Email Solutions, and Managed Services, etc.
           </p>
           <p>Our group of companies currently includes several companies:</p>
           <ol>

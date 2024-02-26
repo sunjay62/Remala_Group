@@ -5,7 +5,7 @@ const dataMutiEn = [
     image: require('../../../../../assets/iso/EMS-00452.jpg'),
     title: 'SNI ISO 14001:2015',
     description: 'Environmental Management System - Requirements with guidance for use.',
-    Scope:
+    scope:
       'Environmental Aspect and Impact Control in Internet Service Provisioning Services covering Broadband Internet services (Internet Service Provider/ISP), Local Link Services, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Business-to-Business Fiber Optic Connectivity/Installation Provisioning.',
   },
   {
@@ -14,7 +14,7 @@ const dataMutiEn = [
     image: require('../../../../../assets/iso/ISMS-00025.jpg'),
     title: 'SNI ISO/IEC 27001:2022',
     description: 'Information Security Management System Requirements.',
-    Scope:
+    scope:
       'Environmental Aspect and Impact Control in Internet Service Provisioning Services covering Broadband Internet services (Internet Service Provider/ISP), Local Link Services, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Business-to-Business Fiber Optic Connectivity/Installation Provisioning.',
   },
   {
@@ -23,7 +23,7 @@ const dataMutiEn = [
     image: require('../../../../../assets/iso/OHS-00252.jpg'),
     title: 'SNI ISO 45001:2018',
     description: 'Occupational Health and Safety Management System - Requirements with guidance for use.',
-    Scope:
+    scope:
       'Environmental Aspect and Impact Control in Internet Service Provisioning Services covering Broadband Internet services (Internet Service Provider/ISP), Local Link Services, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Business-to-Business Fiber Optic Connectivity/Installation Provisioning.',
   },
   {
@@ -32,7 +32,7 @@ const dataMutiEn = [
     image: require('../../../../../assets/iso/QSC-02073.jpg'),
     title: 'SNI ISO 9001:2015',
     description: 'Quality Management System - Requirements.',
-    Scope:
+    scope:
       'Environmental Aspect and Impact Control in Internet Service Provisioning Services covering Broadband Internet services (Internet Service Provider/ISP), Local Link Services, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Business-to-Business Fiber Optic Connectivity/Installation Provisioning.',
   },
   {
@@ -41,7 +41,7 @@ const dataMutiEn = [
     image: require('../../../../../assets/iso/SAB-00147.jpg'),
     title: 'SNI ISO 37001:2016',
     description: 'Anti-Bribery Management System.',
-    Scope: 'Implementation of anti-corruption management system in HRGA & Legal Division, Purchasing, Finance Accounting Tax',
+    scope: 'Implementation of anti-corruption management system in HRGA & Legal Division, Purchasing, Finance Accounting Tax',
   },
   {
     id: 6,

@@ -21,21 +21,17 @@ const Profile = () => {
         <div className="company-profile-text" data-aos="fade-up">
           <h4 className="text-center">Profil Perusahaan</h4>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT Remala Abadi telah berdiri sejak tahun 2004 yang bergerak dibidang perdagangan dan jasa, dan kami telah mendirikan dua anak perusahaan andalan yaitu Tachyon Network Indonesia dan Nethome
-            Indonesia yang merupakan perusahaan dibidang penyedia akses internet, layanan telekomunikasi dan multimedia, yang berkomitmen untuk mengembangan infrastruktur yang handal supaya memberikan layanan serta solusi terbaik,
-            menerapkan prinsip berfikir dan bekerja secara kreatif dan inovatif serta penuh tanggung jawab.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PT Remala Abadi Tbk telah berdiri sejak tahun 2004 yang bergerak dibidang ISP (Internet Service Provider) yaitu perusahaan Jasa Penyediaan Layanan Internet yang mencakup layanan internet
+            Broadband, Layanan Local Link, Layanan Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, serta Penyediaan Konektivitas/Instalasi Fiber Optic Business to Business dan multimedia yang berkomitmen untuk
+            mengembangkan infrastruktur yang handal supaya memberikan layanan serta solusi terbaik kepada semua pelanggan dengan selalu menjaga komitmen serta selalu bekerja secara kreatif dan inovatif.
           </p>
           <p>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kami telah mempunyai infrastruktur fiber optic dan telah mengoperasikannya sebagai backbone jaringan sekaligus sebagai media layanan dengan sangat baik, bersama dengan perusahaan Remala Abadi
-            group yang sebelumnya telah didirikan untuk fokus sebagai perusahaan layanan dibidang infrastruktur dan solusi jaringan fiber optic, yaitu Fiber Media Indonesia (FMI).
-          </p>
-          <p>
-            Topologi Remala mencakup JABODETABEK ( Jakarta, Bogor, Depok, Tangerang and Bekasi ) yang merupakan fokus utama dan akan mulai berkembang ke pulau jawa dan area sekitarnya. Hingga sekarang Remala Abadi sudah terhubung lebih dari
-            70% Datacenter di JABODETABEK dan terhubung lebih dari 25.000 perusahaan dan perumahaan.
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Topologi Remala mencakup JABODETABEK ( Jakarta, Bogor, Depok, Tangerang and Bekasi ) yang merupakan fokus utama dan akan mulai berkembang ke pulau jawa dan area sekitarnya. Hingga sekarang
+            Remala Abadi sudah terhubung lebih dari 70% Datacenter di JABODETABEK dan terhubung lebih dari 25.000 perusahaan dan perumahaan.
           </p>
           <p>
             Segmentasi pelanggan kami antara ISP sebagai partner, Perusahaan, SMEs, SOHOs, Pemerintahan dan Perumahan, untuk memperluas penawaran kami kepada pelanggan kami memiliki produk lainnya seperti Cloud, Virtual Private Network,
-            IoT, CCTV, IP Domain, IP Public, Email Splution and Managed Services, etc
+            IoT, CCTV, IP Domain, IP Public, Email Solution and Managed Services, etc
           </p>
           <p>Adapun group perusahaan kami saat ini meliputi beberapa perusahaan : </p>
           <ol>
