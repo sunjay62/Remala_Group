@@ -100,6 +100,11 @@
       }
     }
   }
+
+  .mySwiper .swiper-slide {
+    flex-shrink: 0;
+    left: 0%;
+  }
 }
 
 @media (min-width: 14in) {

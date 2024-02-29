@@ -31,7 +31,7 @@ const SimpleSlider = () => {
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper" // Menambahkan kelas CSS di sini
+          className="mySwiper"
         >
           {swiperDataId.map((slide) => (
             <SwiperSlide key={slide.id}>
