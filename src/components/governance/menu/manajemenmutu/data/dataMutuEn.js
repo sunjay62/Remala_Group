@@ -1,5 +1,14 @@
 const dataMutiEn = [
   {
+    id: 7,
+    url: 'ims-00241',
+    image: require('../../../../../assets/iso/IMS-00241.jpg'),
+    title: 'SUCOFINDO INTERNATIONAL CERTIFICATION SERVICE',
+    description: 'PT. REMALA ABADI Tbk - has implemented an integrated management system',
+    scope:
+      'Internet Service Provisioning that includes Broadband Internet Service (Internet Service Provider/ISP), Local Link Service, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Provisioning of Connectivity/Installation of Business to Business Fiber Optics',
+  },
+  {
     id: 1,
     url: 'iso-14001',
     image: require('../../../../../assets/iso/EMS-00452.jpg'),

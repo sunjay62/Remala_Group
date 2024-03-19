@@ -1,5 +1,14 @@
 const dataMutiId = [
   {
+    id: 7,
+    url: 'ims-00241',
+    image: require('../../../../../assets/iso/IMS-00241.jpg'),
+    title: 'SUCOFINDO INTERNASIONAL SERTIFIKAT SERVIS',
+    description: 'PT. REMALA ABADI Tbk - Telah menerapkan sistem manajemen terintegrasi',
+    scope:
+      'Jasa Penyediaan Layanan Internet yang mencakup layanan internet Broadband (Internet Service Provider/ISP), Layanan Local Link, Layanan Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, serta Penyediaan Konektivitas/Instalasi Fiber Optic Business to Business',
+  },
+  {
     id: 1,
     url: 'iso-14001',
     image: require('../../../../../assets/iso/EMS-00452.jpg'),
