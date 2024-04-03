@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Maureen from '../../../../../assets/fotoprofile/maureen.png';
-import './sekretarisperusahaan.scss';
 
 const profiles = [
   {
@@ -28,11 +27,11 @@ const SekretarisPerusahaan = () => {
         <div className="col-profile d-flex mt-5" data-aos="fade-left" key={index}>
           <div className="col-6 profile-box">{profile.image && <img src={profile.image} alt={profile.name} />}</div>
           <div className="mx-4">
-            <div className="identityDivision">
+            <div className="nameDivision">
               <h6>{profile.name}</h6>
               <p>{profile.role}</p>
-              <p dangerouslySetInnerHTML={{ __html: profile.description }} />
             </div>
+            <p dangerouslySetInnerHTML={{ __html: profile.description }} />
           </div>
         </div>
       ))}
