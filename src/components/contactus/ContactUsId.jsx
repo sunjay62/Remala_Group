@@ -40,14 +40,14 @@ const ContactUs = () => {
           </div>
         </div>
         <div className="buttons">
-          <div className="containerAbout">
-            {/* <button className={`btnMenu ${activeButton === 'regulations-menu' ? 'clicked' : ''}`} onClick={() => handleButtonClick('regulations-menu')}>
+          {/* <div className="containerAbout">
+            <button className={`btnMenu ${activeButton === 'regulations-menu' ? 'clicked' : ''}`} onClick={() => handleButtonClick('regulations-menu')}>
             Regulasi
-          </button> */}
+          </button>
             <button className={`btnMenu ${activeButton === 'faq' ? 'clicked' : ''}`} onClick={() => handleButtonClick('faq')}>
               FAQ
             </button>
-          </div>
+          </div> */}
           <div className="isi-content-contactUs">
             <Outlet />
           </div>
