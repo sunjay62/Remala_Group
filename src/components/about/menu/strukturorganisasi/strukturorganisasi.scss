@@ -54,7 +54,7 @@
   justify-content: center;
   align-items: end;
   width: 30%;
-  height: max-content;
+  height: 18rem;
   padding-top: 25px;
   background-color: rgb(221, 221, 221);
 }
@@ -111,6 +111,10 @@
     width: 100%;
     margin-left: 0;
     padding: 0;
+  }
+
+  .profile-box {
+    height: 22rem;
   }
 }
 

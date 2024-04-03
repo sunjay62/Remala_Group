@@ -1,20 +1,17 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Chintia from '../../../../../assets/fotoprofile/chintia.png';
+import Maureen from '../../../../../assets/fotoprofile/maureen-new.png';
+import './sekretarisperusahaan.scss';
 
 const profiles = [
   {
-    name: 'Chintia Hong',
-    image: Chintia,
+    name: 'Maureen Graciela',
+    image: Maureen,
     role: 'Corporate Secretary',
     description:
-      'My name is Chintia Hong, In my current role at PT. Remala Abadi, where I have been serving since August 2022, I hold the position of Corporate Secretary since November 2023. In my earlier role from November 2022 to November 2023, I served as the Head of Customer Relation Department. Prior to this, I started as the Personal Assistant to the Board of Director from August 2022 to November 2022. In these capacities, I have been responsible for executing and maintaining all necessary official corporate filings, documents, reports, and records in compliance with applicable laws and regulations. This includes managing shareholder relations, communicating with board members, and coordinating shareholder lists and registrations. Additionally, I actively maintain communication with our customers through various channels, employing Likert Scale-based surveys to gauge satisfaction rates.<br><br>' +
-      'Previously, at XYNERGY REALTY INDONESIA, a Melbourne-based Property & Real Estate Company, I served as a Property Administrator Officer from February 2021 to August 2022. In this role, I processed renter applications, scheduled property inductions and open inspections through the IRE Application, sent welcome letters, and ensured accurate documentation in the database system. My responsibilities also involved close coordination with the Property Manager for application approvals and addressing any related issues.<br><br>' +
-      'Before that, at ASTON CIREBON HOTEL & CONVENTION CENTER in West Java, I held the position of Account Payable Clerk from October 2020 to February 2021. My responsibilities included receiving original invoices, preparing payment documents, and ensuring timely payments to suppliers, along with maintaining accurate records and filing.<br><br>' +
-      'In my role as a Purchasing Officer at SWISS-BELHOTEL JAYAPURA in Papua from August 2018 to July 2020, I managed the procurement process, negotiating prices, coordinating with users for specifications, and maintaining positive relationships with suppliers.<br><br>' +
-      'Earlier in my career, I played a key role as the Manager at CAFÉ CARSTENSZ in Jayapura from 2013 to 2017. In this venture, I successfully established and operated the café, overseeing various aspects such as finance, operations, maintenance, and human resources.<br><br>' +
-      'These diverse roles have equipped me with a comprehensive skill set, ranging from corporate governance and customer relations to property administration, accounts payable, and procurement, showcasing my ability to adapt and excel in various professional environments.',
+      'My name is Maureen Graciela. I am currently pursuing my education at Binus University, focusing on a field relevant to my experiences and interests. Previously, I obtained an Associate Degree in Office Administration from the College of Communication Sciences and Tarakanita Secretarial School in 2021. The combination of formal education and practical experience has provided me with a solid foundation to develop my professional career in the fields of administration, management, and communication.<br><br>' +
+      'My professional career has been focused on administrative and management functions, with specific expertise in corporate secretarial duties, business administration, and data analysis. Currently, I serve as the Corporate Secretary at PT Remala Abadi since 2024. Prior to this role, I worked as a Personal Assistant at PT Remala Abadi in 2023.',
   },
 ];
 
@@ -29,11 +26,12 @@ const SekretarisPerusahaan = () => {
     <>
       {profiles.map((profile, index) => (
         <div className="col-profile d-flex mt-5" data-aos="fade-left" key={index}>
-          <div className="col-6 profile-box"></div>
+          <div className="col-6 profile-box">{profile.image && <img src={profile.image} alt={profile.name} />}</div>
           <div className="mx-4">
-            <div className="nameDivision">
-              <h6></h6>
-              <p></p>
+            <div className="identityDivision">
+              <h6>{profile.name}</h6>
+              <p>{profile.role}</p>
+              <p dangerouslySetInnerHTML={{ __html: profile.description }} />
             </div>
           </div>
         </div>
