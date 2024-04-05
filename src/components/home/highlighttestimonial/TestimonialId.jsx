@@ -87,7 +87,7 @@ const Testimonial = () => {
       <div className="testimonialHeaders" data-aos="fade-left">
         <h3>TESTIMONI PELANGGAN</h3>
         <h4>Apa yang mereka katakan tentang kami?</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque numquam quae ea atque tempore labore facere excepturi expedita beatae ipsam.</p>
+        {/* <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque numquam quae ea atque tempore labore facere excepturi expedita beatae ipsam.</p> */}
       </div>
     </div>
   );
