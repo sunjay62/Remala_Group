@@ -69,7 +69,7 @@ const AboutId = () => {
             {/* <button className={`btnMenuAbout ${activeButton === 'articles-of-association' ? 'clicked' : ''}`} onClick={() => handleButtonClick('articles-of-association')}>
             Anggaran Dasar
           </button> */}
-            <button className={`btnMenuAbout ${activeButton === 'award' ? 'clicked' : ''}`} onClick={() => handleButtonClick('award')}>
+            <button className={`btnMenuAbout ${activeButton === 'awards' ? 'clicked' : ''}`} onClick={() => handleButtonClick('awards')}>
               Penghargaan
             </button>
           </div>

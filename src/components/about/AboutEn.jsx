@@ -69,7 +69,7 @@ const AboutEn = () => {
             {/* <button className={`btnMenuAbout ${activeButton === 'articles-of-association' ? 'clicked' : ''}`} onClick={() => handleButtonClick('articles-of-association')}>
             Articles of Association
           </button> */}
-            <button className={`btnMenuAbout ${activeButton === 'award' ? 'clicked' : ''}`} onClick={() => handleButtonClick('award')}>
+            <button className={`btnMenuAbout ${activeButton === 'awards' ? 'clicked' : ''}`} onClick={() => handleButtonClick('awards')}>
               Awards
             </button>
           </div>

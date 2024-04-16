@@ -193,7 +193,7 @@ const NavbarId = () => {
                 </Link> */}
                 <Link
                   className="dropdown-links"
-                  to="/aboutus/award"
+                  to="/aboutus/awards"
                   onClick={() => {
                     handleSubMenuItemClick();
                   }}
