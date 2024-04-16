@@ -9,13 +9,21 @@ const dataMutiEn = [
       'Internet Service Provisioning that includes Broadband Internet Service (Internet Service Provider/ISP), Local Link Service, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Provisioning of Connectivity/Installation of Business to Business Fiber Optics',
   },
   {
-    id: 1,
-    url: 'iso-14001',
-    image: require('../../../../../assets/iso/EMS-00452.jpg'),
-    title: 'SNI ISO 14001:2015',
-    description: 'Environmental Management System - Requirements with guidance for use.',
+    id: 4,
+    url: 'iso-9001',
+    image: require('../../../../../assets/iso/QSC-02073.jpg'),
+    title: 'SNI ISO 9001:2015',
+    description: 'Quality Management System - Requirements.',
     scope:
       'Environmental Aspect and Impact Control in Internet Service Provisioning Services covering Broadband Internet services (Internet Service Provider/ISP), Local Link Services, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Business-to-Business Fiber Optic Connectivity/Installation Provisioning.',
+  },
+  {
+    id: 5,
+    url: 'iso-37001',
+    image: require('../../../../../assets/iso/SAB-00147.jpg'),
+    title: 'SNI ISO 37001:2016',
+    description: 'Anti-Bribery Management System.',
+    scope: 'Implementation of anti-corruption management system in HRGA & Legal Division, Purchasing, Finance Accounting Tax',
   },
   {
     id: 2,
@@ -36,21 +44,13 @@ const dataMutiEn = [
       'Environmental Aspect and Impact Control in Internet Service Provisioning Services covering Broadband Internet services (Internet Service Provider/ISP), Local Link Services, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Business-to-Business Fiber Optic Connectivity/Installation Provisioning.',
   },
   {
-    id: 4,
-    url: 'iso-9001',
-    image: require('../../../../../assets/iso/QSC-02073.jpg'),
-    title: 'SNI ISO 9001:2015',
-    description: 'Quality Management System - Requirements.',
+    id: 1,
+    url: 'iso-14001',
+    image: require('../../../../../assets/iso/EMS-00452.jpg'),
+    title: 'SNI ISO 14001:2015',
+    description: 'Environmental Management System - Requirements with guidance for use.',
     scope:
       'Environmental Aspect and Impact Control in Internet Service Provisioning Services covering Broadband Internet services (Internet Service Provider/ISP), Local Link Services, Managed Services (setting IP CAM, VOIP, WiFi Device), Server Collocation, as well as Business-to-Business Fiber Optic Connectivity/Installation Provisioning.',
-  },
-  {
-    id: 5,
-    url: 'iso-37001',
-    image: require('../../../../../assets/iso/SAB-00147.jpg'),
-    title: 'SNI ISO 37001:2016',
-    description: 'Anti-Bribery Management System.',
-    scope: 'Implementation of anti-corruption management system in HRGA & Legal Division, Purchasing, Finance Accounting Tax',
   },
   {
     id: 6,

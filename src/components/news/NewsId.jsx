@@ -19,7 +19,7 @@ const News = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
   const newsPerPage = 5;
-  const [filterType, setFilterType] = useState(''); // 'older' or 'newer'
+  const [filterType, setFilterType] = useState('newer'); // 'older' or 'newer'
   const navigate = useNavigate(); // Use navigate hook
   const isIdPath = window.location.pathname.startsWith('/en');
 
@@ -27,9 +27,14 @@ const News = () => {
     AOS.init({
       duration: 1300,
     });
-  }, []);
 
-  const [filteredNews, setFilteredNews] = useState(dataNewsId);
+    // Sort the data initially based on filterType
+    const sortedNews = filterType === 'older' ? [...dataNewsId].sort((a, b) => parseDate(a.date) - parseDate(b.date)) : [...dataNewsId].sort((a, b) => parseDate(b.date) - parseDate(a.date));
+
+    setFilteredNews(sortedNews);
+  }, [filterType]); // Run this effect whenever filterType changes
+
+  const [filteredNews, setFilteredNews] = useState([]);
 
   const indexOfLastNews = currentPage * newsPerPage;
   const indexOfFirstNews = indexOfLastNews - newsPerPage;

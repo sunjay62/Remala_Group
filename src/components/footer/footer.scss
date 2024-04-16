@@ -71,6 +71,15 @@
 
     .awards {
       width: 33%;
+      cursor: pointer;
+      transition: all ease-in-out 0.3s;
+
+      &:hover {
+        border-radius: 50%;
+        box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.66);
+        -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.66);
+        -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.66);
+      }
     }
   }
 }

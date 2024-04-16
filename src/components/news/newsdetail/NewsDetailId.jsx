@@ -154,7 +154,8 @@ const NewsDetail = () => {
         {(selectedNews.paragraph5 || []).map((paragraph, index) => (
           <div key={index}>
             <h6>{paragraph.title}</h6>
-            <p>{paragraph.description1}</p>
+            <p>{paragraph.description}</p>
+            <p>{paragraph.description}</p>
             <div className="containerChillImg">
               {(paragraph.images || []).map((image, imgIndex) => (
                 <img key={imgIndex} src={image} alt="#" className="chillImg" />

@@ -208,7 +208,8 @@ const dataNewsId = [
     title: 'PT. Remala Abadi Tbk Sertifikasi ISO 27001:2022 Sucofindo.',
     titleDetail: 'Meningkatkan Kepercayaan Pelanggan Melalui Proteksi Keamanan Informasi: Kisah Sukses PT. Remala Abadi Tbk Dalam Memperoleh Sertifikasi ISO 27001',
     date: 'Selasa, 20 Februari 2024',
-    descriptionDetail: 'Meningkatkan Kepercayaan Pelanggan Melalui Proteksi Keamanan Informasi: Kisah Sukses PT. Remala Abadi Tbk Dalam Memperoleh Sertifikasi ISO 27001',
+    descriptionDetail:
+      'Dalam era digital yang berkembang pesat, keamanan informasi menjadi salah satu aspek krusial bagi perusahaan, terutama bagi penyedia layanan internet seperti PT Remala Abadi Tbk (Remala). Sebagai pelopor dalam industri ISP (Internet Service Provider) sejak tahun 2004, Remala telah menetapkan standar baru dalam perlindungan data dan informasi pelanggan.',
     date: 'Selasa, 20 Februari 2024',
     description:
       'Dalam era digital yang berkembang pesat, keamanan informasi menjadi salah satu aspek krusial bagi perusahaan, terutama bagi penyedia layanan internet seperti PT Remala Abadi Tbk (Remala). Sebagai pelopor dalam industri ISP (Internet Service Provider) sejak tahun 2004, Remala telah menetapkan standar baru dalam perlindungan data dan informasi pelanggan. ',
@@ -250,38 +251,119 @@ const dataNewsId = [
     title: 'PT. Remala Abadi Tbk Sertifikasi ISO 37001:2016 Sucofindo.',
     titleDetail: 'PT. Remala Abadi Tbk Raih Sertifikasi ISO 37001:2016 Dalam Perang Melawan Penyuapan',
     date: 'Selasa, 20 Februari 2024',
-    descriptionDetail: 'Meningkatkan Kepercayaan Pelanggan Melalui Proteksi Keamanan Informasi: Kisah Sukses PT. Remala Abadi Tbk Dalam Memperoleh Sertifikasi ISO 27001',
+    descriptionDetail:
+      'PT Remala Abadi Tbk (Remala) telah memperoleh Sertifikasi ISO 37001:2016 Sistem Manajemen Anti Penyuapan dari Sucofindo, sebuah pencapaian penting dalam perjalanan mereka untuk memerangi praktik penyuapan. Sertifikasi ini menandai komitmen Remala dalam membangun, mengimplementasikan, menilai, dan meningkatkan Sistem Manajemen Anti Penyuapan (SMAP) mereka.',
     date: 'Selasa, 20 Februari 2024',
     description:
-      'PT Remala Abadi Tbk (Remala) telah memperoleh Sertifikasi ISO 37001:2016 Sistem Manajemen Anti Penyuapan dari Sucofindo, sebuah pencapaian penting dalam perjalanan mereka untuk memerangi praktik penyuapan. Sertifikasi ini menandai komitmen Remala dalam membangun, mengimplementasikan, menilai, dan meningkatkan Sistem Manajemen Anti Penyuapan (SMAP) mereka.',
+      'PT Remala Abadi Tbk (Remala) telah memperoleh Sertifikasi ISO 37001:2016 Sistem Manajemen Anti Penyuapan dari Sucofindo, sebuah pencapaian penting dalam perjalanan mereka untuk memerangi praktik penyuapan. Sertifikasi ini menandai komitmen Remala dalam meningkatkan Sistem Manajemen Anti Penyuapan (SMAP) mereka.',
     paragraph1: [
       {
         description:
-          'Langkah ini tidak hanya menandai komitmen Remala terhadap keunggulan dalam layanan mereka, tetapi juga menegaskan fokus mereka pada keamanan informasi. CEO Remala, Richard Kartawijaya, menjelaskan bahwa proses sertifikasi ISO 27001 adalah langkah penting yang memiliki dampak besar terhadap kesuksesan perusahaan. Dengan pengakuan ini, Remala siap memperluas bisnisnya ke tingkat yang lebih besar.',
+          'Dalam era di mana transparansi dan integritas menjadi semakin penting bagi perusahaan, langkah Remala menuju sertifikasi ISO 37001 mencerminkan kesungguhan mereka dalam menjunjung tinggi standar bisnis yang adil dan etis. Richard Kartawijaya, CEO Remala, menegaskan bahwa proses sertifikasi ISO 37001 adalah langkah penting yang memperkuat kesuksesan perusahaan dalam jangka panjang.',
       },
     ],
     paragraph2: [
       {
         description:
-          'Sertifikasi ISO 27001 membuktikan bahwa Remala memprioritaskan perlindungan aset informasi, baik milik perusahaan maupun pelanggan. Dengan fokus pada kebijakan keamanan informasi yang jelas, Remala memastikan tim mereka mematuhi praktik terbaik dalam melindungi informasi sensitif. Hal ini mencakup pengaturan akses, pelatihan, dan penanganan insiden keamanan secara cepat dan efektif.',
+          'Sertifikasi ini tidak hanya menegaskan komitmen Remala terhadap keunggulannya, tetapi juga menunjukkan kepada para pemangku kepentingan bahwa perusahaan ini siap untuk berperang melawan praktik korupsi. Dengan adopsi ISO 37001, Remala mengimplementasikan sistem manajemen yang membantu dalam pencegahan, deteksi, dan respons terhadap tindakan penyuapan.',
       },
     ],
     paragraph3: [
       {
         description:
-          'Keberhasilan Remala dalam memperoleh sertifikasi ISO 27001 bukan hanya sekadar pencapaian internal, tetapi juga mencerminkan respons positif terhadap tantangan yang dihadapi oleh dunia bisnis di Indonesia, terutama terkait dengan keamanan cyber. Dalam menghadapi tantangan ini, Remala menunjukkan komitmen yang kuat dalam membangun solusi yang berkelanjutan bagi masyarakat.',
+          'Selain itu, sertifikasi ISO 37001 juga memperkuat posisi Remala di pasar bisnis Indonesia yang semakin fokus pada penolakan terhadap segala bentuk korupsi. Dengan melibatkan semua anggota tim dalam memastikan kepatuhan terhadap kebijakan anti penyuapan, Remala menegaskan komitmennya untuk memberikan pelayanan optimal bagi masyarakat.',
       },
     ],
     paragraph4: [
       {
         description:
-          'Pencapaian ini tidak hanya merupakan milik Remala, tetapi juga prestasi bersama bagi semua pemangku kepentingan, termasuk pelanggan dan mitra bisnis. Dengan meningkatkan proteksi keamanan informasi, Remala tidak hanya memperkuat kepercayaan pelanggan, tetapi juga membuktikan komitmen mereka untuk menjadi pemimpin dalam industri teknologi informasi di Indonesia.',
+          'Richard juga menekankan bahwa standar ISO 37001 bukan hanya sebuah sertifikasi, tetapi juga merupakan alat tambahan yang efektif dalam memitigasi, mendeteksi, dan menindaklanjuti resiko yang ada secara terstruktur dan efektif. Ini menunjukkan bahwa Remala tidak hanya puas dengan pencapaian ini, tetapi juga bertekad untuk terus meningkatkan upaya mereka dalam memerangi penyuapan.',
       },
     ],
     paragraph5: [
       {
         description:
-          'Sebagai ajakan untuk merayakan pencapaian yang menginspirasi ini, Richard Kartawijaya mengajak semua pihak untuk terus bergerak maju menuju kesuksesan yang lebih besar. Melalui proteksi keamanan informasi yang kuat dan komitmen yang tidak pernah surut, PT Remala Abadi Tbk membuktikan bahwa mereka adalah mitra yang dapat diandalkan dan dapat diandalkan dalam era digital yang terus berkembang.',
+          'Dengan demikian, sertifikasi ISO 37001 bukanlah akhir dari perjalanan Remala dalam memerangi penyuapan, tetapi merupakan awal yang kuat untuk mewujudkan visi mereka untuk menjadi perusahaan yang bersih, transparan, dan berintegritas.',
+      },
+    ],
+  },
+  {
+    id: 7,
+    url: 'iso-45001:2018',
+    image: require('../image/iso/iso45001.jpg'),
+    title: 'PT. Remala Abadi Tbk Sertifikasi ISO 45001:2018 Sucofindo.',
+    titleDetail: 'Komitmen PT. Remala Abadi Tbk Terhadap Kesehatan dan Keselamatan Kerja: Sukses Menerima Sertifikasi ISO 45001 Dari Sucofindo',
+    date: 'Selasa, 20 Februari 2024',
+    descriptionDetail:
+      'PT Remala Abadi Tbk (Remala) telah menegaskan komitmennya terhadap kesehatan dan keselamatan kerja (K3) dengan meraih sertifikasi ISO 45001:2018 Sistem Manajemen Kesehatan dan Keselamatan Kerja dari Sucofindo.Langkah ini tidak hanya menandai pencapaian besar perusahaan dalam mengutamakan keamanan dan kesejahteraan karyawan, tetapi juga menegaskan komitmen mereka untuk meningkatkan kinerja dan keberlanjutan perusahaan.',
+    date: 'Selasa, 20 Februari 2024',
+    description:
+      'PT Remala Abadi Tbk (Remala) telah menegaskan komitmennya terhadap kesehatan dan keselamatan kerja (K3) dengan meraih sertifikasi ISO 45001:2018 Sistem Manajemen Kesehatan dan Keselamatan Kerja dari Sucofindo, Langkah ini menegaskan komitmen mereka untuk meningkatkan kinerja dan keberlanjutan perusahaan.',
+    paragraph1: [
+      {
+        description:
+          'Dalam pernyataan Richard Kartawijaya, CEO PT. Remala Abadi.Tbk, ia menjelaskan pentingnya sertifikasi ISO 45001 sebagai langkah krusial yang akan memberikan dampak positif pada kesehatan dan keselamatan kerja karyawan. Dengan pengakuan ini, Remala siap untuk mengembangkan bisnisnya ke tingkat yang lebih tinggi.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'Penerimaan sertifikasi ISO pada tanggal 20 Februari 2024, yang diberikan oleh Sucofindo yang terakreditasi oleh KAN (Komite Akreditasi Nasional), mencakup aspek-aspek penting seperti Sistem Manajemen Kesehatan dan Keselamatan Kerja. Remala melalui ISO 45001 berkomitmen untuk menciptakan lingkungan kerja yang aman dan sehat bagi semua individu di dalam organisasi. Mereka memastikan perlindungan terhadap potensi risiko dan cedera dengan mengajak seluruh anggota tim untuk berkontribusi secara proaktif dalam identifikasi dan pengelolaan risiko K3.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Melalui sertifikasi ISO 45001, Remala tidak hanya menjawab tantangan terkait komitmen terhadap peningkatan kinerja K3, tetapi juga menegaskan pendekatannya yang proaktif dalam meminimalkan risiko. Langkah-langkah ini menandai keberhasilan perusahaan dalam memprioritaskan kesejahteraan karyawan dan menetapkan standar tinggi untuk industri lainnya untuk mengikuti jejak mereka.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Dengan demikian, Remala Abadi Tbk terus membuktikan dirinya sebagai pelopor dalam memastikan kesehatan, keselamatan, dan kesejahteraan kerja, sementara juga memberikan inspirasi bagi perusahaan lain untuk mengutamakan aspek yang sama dalam operasional mereka.',
+      },
+    ],
+  },
+  {
+    id: 8,
+    url: 'iso-14001:2015',
+    image: require('../image/iso/iso14001.jpg'),
+    title: 'PT. Remala Abadi Tbk Sertifikasi ISO 14001:2015 Sucofindo.',
+    titleDetail: 'Pentingnya Penerapan ISO 14001:2015 Sistem Manajemen Lingkungan di PT. Remala Abadi Tbk',
+    date: 'Selasa, 20 Februari 2024',
+    descriptionDetail:
+      'PT Remala Abadi Tbk (Remala) adalah salah satu perusahaan yang bergerak di bidang ISP (Internet Service Provider), menyediakan layanan internet yang kian mendominasi kehidupan modern. Namun, kesuksesan industri teknologi ini tidak boleh membayangi dampak lingkungan yang mungkin dihasilkan dari limbah elektronik, seperti kabel dan peralatan pendukung internet lainnya.',
+    date: 'Selasa, 20 Februari 2024',
+    description:
+      'PT Remala Abadi Tbk (Remala) adalah salah satu perusahaan yang bergerak di bidang ISP (Internet Service Provider), menyediakan layanan internet yang kian mendominasi kehidupan modern. Namun, kesuksesan industri teknologi ini tidak boleh membayangi dampak lingkungan yang mungkin dihasilkan dari limbah elektronik.',
+    paragraph1: [
+      {
+        description:
+          'Menyadari potensi ancaman pencemaran lingkungan yang mungkin ditimbulkan oleh aktivitasnya, Remala telah melakukan langkah proaktif dengan menerapkan ISO 14001:2015 Sistem Manajemen Lingkungan. Langkah ini menjadi sangat penting untuk memastikan bahwa kegiatan bisnis yang dijalankan tidak hanya memperhitungkan keuntungan finansial, tetapi juga memperhatikan dampaknya terhadap lingkungan.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'Richard Kartawijaya, Chief Executive Officer (CEO) PT. Remala Abadi.Tbk, menegaskan pentingnya penerapan Sistem Manajemen Lingkungan (SML) dalam setiap aspek operasional perusahaan. "Perusahaan perlu menerapkan Sistem Manajemen Lingkungan yang berarti harus melakukan perencanaan pengendalian dan menerapkan pengendalian dalam semua aktivitas dalam organisasi yang memiliki potensi merugikan lingkungan," ujarnya.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Pada tanggal 20 Februari 2024, Remala menerima sertifikasi ISO dari Sucofindo, lembaga terakreditasi KAN (Komite Akreditasi Nasional), yang mencakup ISO 14001:2015, Sistem Manajemen Lingkungan. Ini menunjukkan komitmen Remala dalam mengelola dan meminimalkan dampak lingkungan dari operasinya.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Dalam kerangka ISO 14001, Remala menunjukkan kepedulian terhadap lingkungan hidup dan mengarahkan organisasinya menuju keberlanjutan lingkungan. Mereka berkomitmen untuk meminimalkan dampak lingkungan dan menjadi panutan dalam penerapan praktik ramah lingkungan. Kolaborasi lintas departemen ditingkatkan untuk mengidentifikasi peluang perbaikan lingkungan dan memastikan tanggung jawab sosial dan lingkungan terintegrasi dalam setiap keputusan. "Melalui Sertifikasi ISO 14001, Remala menjawab tantangan terkini dalam dunia bisnis di Indonesia yang fokus pada lingkungan hidup. Remala memperlihatkan komitmen yang kuat dalam membangun solusi yang berkelanjutan bagi masyarakat," tambah Richard.',
+      },
+    ],
+    paragraph5: [
+      {
+        description:
+          'Dalam rangka merayakan pencapaian ini, Remala mengajak semua pihak untuk bersama-sama merayakan langkah inspiratif ini dan terus bergerak maju menuju kesuksesan yang lebih besar. Penerapan ISO 14001:2015 Sistem Manajemen Lingkungan bukan hanya merupakan langkah wajib bagi perusahaan, tetapi juga merupakan investasi jangka panjang untuk menjaga keberlanjutan lingkungan bagi generasi mendatang.',
       },
     ],
   },

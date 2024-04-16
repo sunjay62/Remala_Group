@@ -209,7 +209,8 @@ const dataNewsEn = [
     title: 'PT. Remala Abadi Tbk ISO 27001:2022 Certification Sucofindo.',
     titleDetail: 'Building Customer Trust Through Information Security Protection: The Success Story of PT. Remala Abadi Tbk in Obtaining ISO 27001 Certification',
     date: 'Tuesday, February 20, 2024',
-    descriptionDetail: 'Building Customer Trust Through Information Security Protection: The Success Story of PT. Remala Abadi Tbk in Obtaining ISO 27001 Certification',
+    descriptionDetail:
+      'In the rapidly evolving digital era, information security has become a crucial aspect for companies, especially for internet service providers like PT Remala Abadi Tbk (Remala). As a pioneer in the ISP (Internet Service Provider) industry since 2004, Remala has set new standards in protecting customer data and information.',
     date: 'Tuesday, February 20, 2024',
     description:
       'In the rapidly evolving digital era, information security has become a crucial aspect for companies, especially for internet service providers like PT Remala Abadi Tbk (Remala). As a pioneer in the ISP (Internet Service Provider) industry since 2004, Remala has set new standards in protecting customer data and information.',
@@ -244,6 +245,127 @@ const dataNewsEn = [
       },
     ],
   },
+  {
+    id: 6,
+    url: 'iso-37001:2016',
+    image: require('../image/iso/iso37001.jpg'),
+    title: 'PT. Remala Abadi Tbk ISO 37001:2016 Certification from Sucofindo.',
+    titleDetail: 'PT. Remala Abadi Tbk Achieves ISO 37001:2016 Certification in the Fight Against Bribery',
+    date: 'Tuesday, February 20, 2024',
+    descriptionDetail:
+      'PT Remala Abadi Tbk (Remala) has obtained the ISO 37001:2016 Anti-Bribery Management System certification from Sucofindo, a significant milestone in their journey to combat bribery practices. This certification marks Remala Abadi commitment to establish, implement, evaluate, and enhance their Anti-Bribery Management System (ABMS).',
+    date: 'Tuesday, February 20, 2024',
+    description:
+      'PT Remala Abadi Tbk (Remala) has obtained the ISO 37001:2016 Anti-Bribery Management System certification from Sucofindo, a significant achievement in their endeavor to combat bribery practices. This certification underscores Remala Abadi commitment to enhance their Anti-Bribery Management System (ABMS).',
+    paragraph1: [
+      {
+        description:
+          'In an era where transparency and integrity are increasingly crucial for companies, Remala Abadi steps towards ISO 37001 certification reflect their seriousness in upholding fair and ethical business standards. Richard Kartawijaya, CEO of Remala, emphasizes that the ISO 37001 certification process is a crucial step that strengthens the company Abadi long-term success.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'This certification not only reaffirms Remala Abadi commitment to its excellence but also demonstrates to stakeholders that the company is prepared to combat corruption practices. By adopting ISO 37001, Remala implements a management system that assists in the prevention, detection, and response to bribery actions.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Furthermore, the ISO 37001 certification also strengthens Remala Abadi position in the Indonesian business market, which is increasingly focused on rejecting all forms of corruption. By engaging all team members in ensuring compliance with anti-bribery policies, Remala reaffirms its commitment to providing optimal services to the public.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Richard also emphasizes that the ISO 37001 standard is not just a certification but also an effective additional tool in mitigating, detecting, and responding to existing risks in a structured and effective manner. This indicates that Remala is not only satisfied with this achievement but is also determined to continuously enhance their efforts in combating bribery.',
+      },
+    ],
+    paragraph5: [
+      {
+        description: 'Thus, the ISO 37001 certification is not the end of Remala Abadi journey in combating bribery but rather a strong beginning to realize their vision of becoming a clean, transparent, and integrity-driven company.',
+      },
+    ],
+  },
+  {
+    id: 7,
+    url: 'iso-45001:2018',
+    image: require('../image/iso/iso45001.jpg'),
+    title: 'PT. Remala Abadi Tbk ISO 45001:2018 Certification from Sucofindo.',
+    titleDetail: "PT. Remala Abadi Tbk's Commitment to Occupational Health and Safety: Successfully Achieving ISO 45001 Certification from Sucofindo",
+    date: 'Tuesday, February 20, 2024',
+    descriptionDetail:
+      'PT Remala Abadi Tbk (Remala) has reaffirmed its commitment to occupational health and safety (OHS) by achieving ISO 45001:2018 Occupational Health and Safety Management System certification from Sucofindo. This step not only marks a significant achievement for the company in prioritizing the safety and well-being of its employees but also reaffirms their commitment to improving corporate performance and sustainability.',
+    description:
+      'PT Remala Abadi Tbk (Remala) has reaffirmed its commitment to occupational health and safety (OHS) by achieving ISO 45001:2018 Occupational Health and Safety Management System certification from Sucofindo. This step reaffirms their commitment to improving corporate performance and sustainability.',
+    paragraph1: [
+      {
+        description:
+          'In a statement by Richard Kartawijaya, CEO of PT. Remala Abadi.Tbk, he explained the importance of ISO 45001 certification as a crucial step that will have a positive impact on the health and safety of employees. With this recognition, Remala is ready to take its business to the next level.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'The receipt of ISO certification on February 20, 2024, awarded by Sucofindo accredited by the National Accreditation Committee (KAN), covers important aspects such as Occupational Health and Safety Management Systems. Through ISO 45001, Remala is committed to creating a safe and healthy work environment for all individuals within the organization. They ensure protection against potential risks and injuries by encouraging all team members to proactively contribute to the identification and management of OHS risks.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Through ISO 45001 certification, Remala not only addresses challenges related to commitments to improving OHS performance but also reaffirms its proactive approach to minimizing risks. These measures mark the success of the company in prioritizing employee well-being and setting high standards for other industries to follow suit.',
+      },
+    ],
+    paragraph4: [
+      {
+        description: 'Thus, Remala Abadi Tbk continues to prove itself as a pioneer in ensuring workplace health, safety, and well-being, while also inspiring other companies to prioritize the same aspects in their operations.',
+      },
+    ],
+  },
+  {
+    id: 8,
+    url: 'iso-14001:2015',
+    image: require('../image/iso/iso14001.jpg'),
+    title: 'PT. Remala Abadi Tbk ISO 14001:2015 Certification by Sucofindo.',
+    titleDetail: 'The Importance of Implementing ISO 14001:2015 Environmental Management System at PT. Remala Abadi Tbk',
+    date: 'Tuesday, February 20, 2024',
+    descriptionDetail:
+      'PT Remala Abadi Tbk (Remala) is one of the companies engaged in the ISP (Internet Service Provider) sector, providing internet services that increasingly dominate modern life. However, the success of this technology industry must not overshadow the environmental impact that may arise from electronic waste, such as cables and other internet supporting equipment.',
+    date: 'Tuesday, February 20, 2024',
+    description:
+      'PT Remala Abadi Tbk (Remala) is one of the companies engaged in the ISP (Internet Service Provider) sector, providing internet services that increasingly dominate modern life. However, the success of this technology industry must not overshadow the environmental impact that may arise from electronic waste.',
+    paragraph1: [
+      {
+        description:
+          'Realizing the potential threat of environmental pollution that may be caused by its activities, Remala has taken proactive steps by implementing the ISO 14001:2015 Environmental Management System. This step is crucial to ensure that the business activities undertaken not only consider financial gains but also take into account their impact on the environment.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'Richard Kartawijaya, Chief Executive Officer (CEO) of PT. Remala Abadi.Tbk, emphasizes the importance of implementing Environmental Management System (EMS) in every aspect of the company operations. "Companies need to implement an Environmental Management System which means they must plan control and implement control in all activities within the organization that have the potential to harm the environment," he said.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'On February 20, 2024, Remala received ISO certification from Sucofindo, an accredited institution by the National Accreditation Committee (KAN), which covers ISO 14001:2015, Environmental Management System. This demonstrates Remala Abadi commitment to managing and minimizing the environmental impacts of its operations.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Within the framework of ISO 14001, Remala demonstrates concern for the environment and directs its organization towards environmental sustainability. They are committed to minimizing environmental impact and being a role model in the implementation of environmentally friendly practices. Cross-department collaboration is enhanced to identify environmental improvement opportunities and ensure social and environmental responsibilities are integrated into every decision. "Through ISO 14001 Certification, Remala responds to current challenges in the business world in Indonesia focusing on the environment. Remala demonstrates a strong commitment to building sustainable solutions for society," added Richard.',
+      },
+    ],
+    paragraph5: [
+      {
+        description:
+          'In celebration of this achievement, Remala invites all parties to celebrate this inspirational step together and continue to move forward towards greater success. Implementing ISO 14001:2015 Environmental Management System is not only a mandatory step for companies but also a long-term investment in preserving environmental sustainability for future generations.',
+      },
+    ],
+  },
+
   // {
   //   id: 3,
   //   url: 'title-3',
