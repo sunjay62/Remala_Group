@@ -165,7 +165,7 @@ const NavbarId = () => {
                 </Link>
                 <Link
                   className="dropdown-links"
-                  to="/aboutus/organization-strucktur"
+                  to="/aboutus/organization-structure"
                   onClick={() => {
                     handleSubMenuItemClick();
                   }}
@@ -174,7 +174,7 @@ const NavbarId = () => {
                 </Link>
                 <Link
                   className="dropdown-links"
-                  to="/aboutus/group-strucktur"
+                  to="/aboutus/group-structure"
                   onClick={() => {
                     handleSubMenuItemClick();
                   }}

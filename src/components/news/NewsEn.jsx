@@ -18,7 +18,7 @@ const { Option } = AutoComplete;
 const News = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [searchQuery, setSearchQuery] = useState('');
-  const newsPerPage = 3;
+  const newsPerPage = 5;
   const [filterType, setFilterType] = useState(''); // 'older' or 'newer'
   const navigate = useNavigate(); // Use navigate hook
   const isIdPath = window.location.pathname.startsWith('/en');

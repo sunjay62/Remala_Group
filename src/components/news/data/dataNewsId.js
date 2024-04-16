@@ -117,6 +117,174 @@ const dataNewsId = [
       },
     ],
   },
+  {
+    id: 3,
+    url: 'ims',
+    image: require('../image/iso/ims.jpeg'),
+    title: 'Sistem Manajemen Terintegrasi (IMS) PT. Remala Abadi Tbk.',
+    titleDetail: 'Remala Abadi : Mengukir sejarah baru dalam dunia manajemen dengan menerapkan Sistem Manajemen Terintegrasi (IMS).',
+    date: 'Selasa, 20 Februari 2024',
+    descriptionDetail:
+      'PT. Remala Abadi Tbk. mengukir sejarah baru dalam dunia manajemen dengan menerapkan Sistem Manajemen Terintegrasi (IMS) yang mencakup standar ISO 9001:2015, ISO 14001:2015, dan ISO 45001:2018. Langkah ini menandai komitmen perusahaan untuk meningkatkan kualitas, menjaga lingkungan, serta meningkatkan kesehatan dan keselamatan kerja.',
+    description:
+      'PT. Remala Abadi Tbk. mengukir sejarah baru dalam dunia manajemen dengan menerapkan Sistem Manajemen Terintegrasi (IMS) yang mencakup standar ISO 9001:2015, ISO 14001:2015, dan ISO 45001:2018. Langkah ini menandai komitmen perusahaan untuk meningkatkan kualitas, menjaga lingkungan, serta meningkatkan kesehatan dan keselamatan kerja.',
+    paragraph1: [
+      {
+        description:
+          'Dalam event IDM SMSECO, pelaku-pelaku bisnis inovasi digital turut membuka booth ini adalah bentuk langkah inovatif yang memungkinkan pengunjung untuk mencari informasi dan membandingkan kualitas dan pelayanan yang terbaik secara tatap muka. Remala Abadi turut pula meramaikan event ini dengan membuka booth, yang merupakan kesempatan baik untuk berinteraksi langsung dengan calon pelanggan atau UMKM yang ingin bekerja sama dan memperkenalkan layanan internet terbaik yang dimiliki. Selain itu, dengan mengadopsi ISO 14001:2015, perusahaan ini bertekad untuk melindungi lingkungan dengan mengidentifikasi dan mengurangi dampak negatif dari operasinya. Ini mencakup pengurangan limbah, efisiensi penggunaan sumber daya, dan mempromosikan praktik bisnis yang ramah lingkungan.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'Tidak ketinggalan, standar ISO 45001:2018 memastikan bahwa PT. Remala Abadi Tbk. memprioritaskan kesejahteraan dan keselamatan karyawan mereka. Melalui sistem manajemen kesehatan dan keselamatan kerja yang terintegrasi, perusahaan ini bertujuan untuk mengurangi risiko kecelakaan dan cedera di tempat kerja. Tentu saja, langkah ini tidak hanya menguntungkan PT. Remala Abadi Tbk., tetapi juga memiliki dampak positif yang luas. Berikut adalah beberapa manfaat yang dapat diharapkan dari penerapan IMS ini:',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Peningkatan Efisiensi: Dengan mengintegrasikan semua sistem manajemen ke dalam satu, perusahaan dapat mengurangi tumpang tindih dan duplikasi upaya, sehingga meningkatkan efisiensi operasional secara keseluruhan.  Peningkatan Kepuasan Pelanggan: Standar ISO 9001:2015 membantu memastikan bahwa produk dan layanan yang diberikan oleh PT. Remala Abadi Tbk. sesuai dengan harapan pelanggan, yang pada akhirnya meningkatkan kepuasan pelanggan.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Pemeliharaan Lingkungan yang Bersih: Dengan menerapkan ISO 14001:2015, perusahaan ini akan secara proaktif memantau dan mengurangi dampak lingkungan dari aktivitas operasional mereka, membantu memelihara lingkungan yang bersih dan sehat bagi generasi mendatang.Peningkatan Keselamatan dan Kesehatan Kerja: Melalui standar ISO 45001:2018, PT. Remala Abadi Tbk. menempatkan kesejahteraan karyawan sebagai prioritas, mengurangi risiko kecelakaan dan cedera di tempat kerja, yang pada gilirannya dapat meningkatkan produktivitas dan loyalitas karyawan.',
+      },
+    ],
+    paragraph5: [
+      {
+        description:
+          'Reputasi Perusahaan yang Ditingkatkan: Dengan memegang sertifikasi ISO yang diakui secara internasional, PT. Remala Abadi Tbk. dapat memperkuat reputasi mereka sebagai perusahaan yang bertanggung jawab dan berkualitas tinggi di mata pelanggan, mitra bisnis, dan masyarakat luas.Penerapan IMS ini tidak hanya merupakan pencapaian besar bagi PT. Remala Abadi Tbk., tetapi juga merupakan contoh bagaimana bisnis dapat menjadi agen perubahan positif dalam masyarakat. Dengan komitmen terus-menerus untuk meningkatkan kualitas, menjaga lingkungan, dan memprioritaskan kesejahteraan karyawan, perusahaan ini tidak hanya berinvestasi dalam kesuksesan jangka pendek mereka sendiri, tetapi juga dalam keberlanjutan jangka panjang planet ini.',
+      },
+    ],
+  },
+  {
+    id: 4,
+    url: 'iso-9001:2015',
+    image: require('../image/iso/iso9001.jpeg'),
+    title: 'PT. Remala Abadi Tbk Sertifikasi ISO 9001:2015 Sucofindo.',
+    titleDetail: 'PT. Remala Abadi Tbk Raih Sertifikasi ISO 9001:2015 Dari Sucofindo: Komitmen Terhadap Mutu dan Pelayanan Yang Lebih Baik.',
+    date: 'Selasa, 20 Februari 2024',
+    descriptionDetail:
+      'PT Remala Abadi Tbk (Remala) telah meraih prestasi gemilang dengan berhasil memperoleh sertifikasi ISO 9001:2015 dari Sucofindo, yang merupakan akreditasi KAN (Komite Akreditasi Nasional). Sertifikasi ini mencakup implementasi Sistem Manajemen Mutu, menegaskan komitmen Remala dalam meningkatkan kualitas layanan dan keberlanjutan perusahaan.',
+    description:
+      'PT Remala Abadi Tbk (Remala) telah meraih prestasi gemilang dengan berhasil memperoleh sertifikasi ISO 9001:2015 dari Sucofindo, yang merupakan akreditasi KAN (Komite Akreditasi Nasional). Sertifikasi ini mencakup implementasi Sistem Manajemen Mutu, menegaskan komitmen Remala dalam meningkatkan kualitas layanan dan keberlanjutan perusahaan.',
+    paragraph1: [
+      {
+        description:
+          'Sebagai langkah strategis untuk mendukung rencana perluasan pasar, Remala telah menetapkan perbaikan kualitas layanan dan keberlanjutan perusahaan sebagai prioritas utama. Dengan meningkatkan komitmen dan proses manajemen secara menyeluruh, Remala menunjukkan dedikasi yang kuat untuk memenuhi standar internasional dan memastikan kepuasan pelanggan serta masyarakat.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'Richard Kartawijaya, Chief Executive Officer (CEO) PT. Remala Abadi.Tbk, menyatakan, "Prestasi ini tidak hanya mencerminkan komitmen Remala dalam memperbaiki manajemen mutu secara menyeluruh dan pelayanan kepada pelanggan, tetapi juga menegaskan bahwa proses bisnis dan mekanisme pelayanan yang ada di Remala telah dilakukan sesuai dengan standar dan proses yang berlaku.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Sertifikasi ISO 9001:2015 menandai pencapaian penting bagi Remala, karena menciptakan budaya organisasi yang berfokus pada mutu. Dalam konteks ISO 9001, Remala telah memimpin dengan memberikan contoh dan memberikan arahan yang jelas kepada setiap anggota tim, memastikan bahwa mutu terintegrasi dalam setiap aspek operasional perusahaan. Ini mencakup persyaratan-persyaratan yang harus dipenuhi sebuah perusahaan atau organisasi dalam membentuk suatu Sistem Manajemen Mutu yang efektif.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Dengan mendapatkan sertifikasi ini, Remala menunjukkan bahwa sistem manajemen mutu yang diterapkan telah mencapai standar kualitas yang tinggi. Lebih dari sekadar sebuah pengakuan, sertifikasi ISO 9001:2015 menunjukkan komitmen Remala untuk terus meningkatkan kualitas layanan kepada masyarakat, menciptakan nilai tambah yang berkelanjutan dalam setiap interaksi dengan pelanggan.',
+      },
+    ],
+    paragraph5: [
+      {
+        description:
+          'Melalui upaya ini, Remala tidak hanya memperkuat posisinya sebagai pemimpin di industri ini, tetapi juga memberikan inspirasi bagi perusahaan lain untuk mengejar standar mutu yang lebih tinggi. Dengan fokus pada inovasi, keunggulan operasional, dan kepuasan pelanggan, Remala Abadi Tbk terus menetapkan standar baru dalam industri, membawa manfaat positif bagi seluruh ekosistem bisnis.',
+      },
+    ],
+  },
+  {
+    id: 5,
+    url: 'iso-27001:2022',
+    image: require('../image/iso/iso27001.jpeg'),
+    title: 'PT. Remala Abadi Tbk Sertifikasi ISO 27001:2022 Sucofindo.',
+    titleDetail: 'Meningkatkan Kepercayaan Pelanggan Melalui Proteksi Keamanan Informasi: Kisah Sukses PT. Remala Abadi Tbk Dalam Memperoleh Sertifikasi ISO 27001',
+    date: 'Selasa, 20 Februari 2024',
+    descriptionDetail: 'Meningkatkan Kepercayaan Pelanggan Melalui Proteksi Keamanan Informasi: Kisah Sukses PT. Remala Abadi Tbk Dalam Memperoleh Sertifikasi ISO 27001',
+    date: 'Selasa, 20 Februari 2024',
+    description:
+      'Dalam era digital yang berkembang pesat, keamanan informasi menjadi salah satu aspek krusial bagi perusahaan, terutama bagi penyedia layanan internet seperti PT Remala Abadi Tbk (Remala). Sebagai pelopor dalam industri ISP (Internet Service Provider) sejak tahun 2004, Remala telah menetapkan standar baru dalam perlindungan data dan informasi pelanggan. ',
+    paragraph1: [
+      {
+        description:
+          'Langkah ini tidak hanya menandai komitmen Remala terhadap keunggulan dalam layanan mereka, tetapi juga menegaskan fokus mereka pada keamanan informasi. CEO Remala, Richard Kartawijaya, menjelaskan bahwa proses sertifikasi ISO 27001 adalah langkah penting yang memiliki dampak besar terhadap kesuksesan perusahaan. Dengan pengakuan ini, Remala siap memperluas bisnisnya ke tingkat yang lebih besar.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'Sertifikasi ISO 27001 membuktikan bahwa Remala memprioritaskan perlindungan aset informasi, baik milik perusahaan maupun pelanggan. Dengan fokus pada kebijakan keamanan informasi yang jelas, Remala memastikan tim mereka mematuhi praktik terbaik dalam melindungi informasi sensitif. Hal ini mencakup pengaturan akses, pelatihan, dan penanganan insiden keamanan secara cepat dan efektif.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Keberhasilan Remala dalam memperoleh sertifikasi ISO 27001 bukan hanya sekadar pencapaian internal, tetapi juga mencerminkan respons positif terhadap tantangan yang dihadapi oleh dunia bisnis di Indonesia, terutama terkait dengan keamanan cyber. Dalam menghadapi tantangan ini, Remala menunjukkan komitmen yang kuat dalam membangun solusi yang berkelanjutan bagi masyarakat.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Pencapaian ini tidak hanya merupakan milik Remala, tetapi juga prestasi bersama bagi semua pemangku kepentingan, termasuk pelanggan dan mitra bisnis. Dengan meningkatkan proteksi keamanan informasi, Remala tidak hanya memperkuat kepercayaan pelanggan, tetapi juga membuktikan komitmen mereka untuk menjadi pemimpin dalam industri teknologi informasi di Indonesia.',
+      },
+    ],
+    paragraph5: [
+      {
+        description:
+          'Sebagai ajakan untuk merayakan pencapaian yang menginspirasi ini, Richard Kartawijaya mengajak semua pihak untuk terus bergerak maju menuju kesuksesan yang lebih besar. Melalui proteksi keamanan informasi yang kuat dan komitmen yang tidak pernah surut, PT Remala Abadi Tbk membuktikan bahwa mereka adalah mitra yang dapat diandalkan dan dapat diandalkan dalam era digital yang terus berkembang.',
+      },
+    ],
+  },
+  {
+    id: 6,
+    url: 'iso-37001:2016',
+    image: require('../image/iso/iso37001.jpg'),
+    title: 'PT. Remala Abadi Tbk Sertifikasi ISO 37001:2016 Sucofindo.',
+    titleDetail: 'PT. Remala Abadi Tbk Raih Sertifikasi ISO 37001:2016 Dalam Perang Melawan Penyuapan',
+    date: 'Selasa, 20 Februari 2024',
+    descriptionDetail: 'Meningkatkan Kepercayaan Pelanggan Melalui Proteksi Keamanan Informasi: Kisah Sukses PT. Remala Abadi Tbk Dalam Memperoleh Sertifikasi ISO 27001',
+    date: 'Selasa, 20 Februari 2024',
+    description:
+      'PT Remala Abadi Tbk (Remala) telah memperoleh Sertifikasi ISO 37001:2016 Sistem Manajemen Anti Penyuapan dari Sucofindo, sebuah pencapaian penting dalam perjalanan mereka untuk memerangi praktik penyuapan. Sertifikasi ini menandai komitmen Remala dalam membangun, mengimplementasikan, menilai, dan meningkatkan Sistem Manajemen Anti Penyuapan (SMAP) mereka.',
+    paragraph1: [
+      {
+        description:
+          'Langkah ini tidak hanya menandai komitmen Remala terhadap keunggulan dalam layanan mereka, tetapi juga menegaskan fokus mereka pada keamanan informasi. CEO Remala, Richard Kartawijaya, menjelaskan bahwa proses sertifikasi ISO 27001 adalah langkah penting yang memiliki dampak besar terhadap kesuksesan perusahaan. Dengan pengakuan ini, Remala siap memperluas bisnisnya ke tingkat yang lebih besar.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'Sertifikasi ISO 27001 membuktikan bahwa Remala memprioritaskan perlindungan aset informasi, baik milik perusahaan maupun pelanggan. Dengan fokus pada kebijakan keamanan informasi yang jelas, Remala memastikan tim mereka mematuhi praktik terbaik dalam melindungi informasi sensitif. Hal ini mencakup pengaturan akses, pelatihan, dan penanganan insiden keamanan secara cepat dan efektif.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'Keberhasilan Remala dalam memperoleh sertifikasi ISO 27001 bukan hanya sekadar pencapaian internal, tetapi juga mencerminkan respons positif terhadap tantangan yang dihadapi oleh dunia bisnis di Indonesia, terutama terkait dengan keamanan cyber. Dalam menghadapi tantangan ini, Remala menunjukkan komitmen yang kuat dalam membangun solusi yang berkelanjutan bagi masyarakat.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Pencapaian ini tidak hanya merupakan milik Remala, tetapi juga prestasi bersama bagi semua pemangku kepentingan, termasuk pelanggan dan mitra bisnis. Dengan meningkatkan proteksi keamanan informasi, Remala tidak hanya memperkuat kepercayaan pelanggan, tetapi juga membuktikan komitmen mereka untuk menjadi pemimpin dalam industri teknologi informasi di Indonesia.',
+      },
+    ],
+    paragraph5: [
+      {
+        description:
+          'Sebagai ajakan untuk merayakan pencapaian yang menginspirasi ini, Richard Kartawijaya mengajak semua pihak untuk terus bergerak maju menuju kesuksesan yang lebih besar. Melalui proteksi keamanan informasi yang kuat dan komitmen yang tidak pernah surut, PT Remala Abadi Tbk membuktikan bahwa mereka adalah mitra yang dapat diandalkan dan dapat diandalkan dalam era digital yang terus berkembang.',
+      },
+    ],
+  },
   // {
   //   id: 3,
   //   url: 'title-3',

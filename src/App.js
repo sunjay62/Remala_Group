@@ -90,7 +90,7 @@ function App() {
           {isIdPath ? <Route element={<HomeEn />} path="/en" /> : <Route element={<HomeId />} path="/" />}
           {isIdPath ? (
             <Route element={<AboutEn />} path="/en/aboutus">
-              <Route element={<StrukturOrganisasiEn />} path="organization-strucktur">
+              <Route element={<StrukturOrganisasiEn />} path="organization-structure">
                 <Route element={<DewanKomisarisEn />} path="board-of-commissioners" />
                 <Route element={<JajaranDireksiEn />} path="board-of-director" />
                 <Route element={<SekretarisPerusahaanEn />} path="corporate-secretary" />
@@ -98,14 +98,14 @@ function App() {
                 <Route element={<KomiteNominasiEn />} path="nomination-committee" />
                 <Route element={<KomiteEvaluasiEn />} path="evaluation-committee" />
               </Route>
-              <Route element={<StrukturGroupEn />} path="group-strucktur" />
+              <Route element={<StrukturGroupEn />} path="group-structure" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
-              <Route element={<PenghargaanEn />} path="award" />
+              <Route element={<PenghargaanEn />} path="awards" />
               <Route element={<ProfileEn />} path="profile" />
             </Route>
           ) : (
             <Route element={<AboutId />} path="/aboutus">
-              <Route element={<StrukturOrganisasiId />} path="organization-strucktur">
+              <Route element={<StrukturOrganisasiId />} path="organization-structure">
                 <Route element={<DewanKomisarisId />} path="board-of-commissioners" />
                 <Route element={<JajaranDireksiId />} path="board-of-director" />
                 <Route element={<SekretarisPerusahaanId />} path="corporate-secretary" />
@@ -113,21 +113,21 @@ function App() {
                 <Route element={<KomiteNominasiId />} path="nomination-committee" />
                 <Route element={<KomiteEvaluasiId />} path="evaluation-committee" />
               </Route>
-              <Route element={<StrukturGroupId />} path="group-strucktur" />
+              <Route element={<StrukturGroupId />} path="group-structure" />
               <Route element={<AnggaranDasar />} path="articles-of-association" />
-              <Route element={<PenghargaanId />} path="award" />
+              <Route element={<PenghargaanId />} path="awards" />
               <Route element={<ProfileId />} path="profile" />
             </Route>
           )}
           {isIdPath ? (
             <Route element={<GovernanceEn />} path="/en/governance-corporate">
-              <Route element={<PrinsipStrukturEn />} path="principle-strucktur" />
+              <Route element={<PrinsipStrukturEn />} path="principle-structure" />
               <Route element={<ManajemenMutuEn />} path="quality-management" />
               <Route element={<KodeEtikEn />} path="code-ethics" />
             </Route>
           ) : (
             <Route element={<GovernanceId />} path="/governance-corporate">
-              <Route element={<PrinsipStrukturId />} path="principle-strucktur" />
+              <Route element={<PrinsipStrukturId />} path="principle-structure" />
               <Route element={<ManajemenMutuId />} path="quality-management" />
               <Route element={<KodeEtikId />} path="code-ethics" />
             </Route>

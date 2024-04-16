@@ -26,7 +26,7 @@
 //   },
 //   {
 //     title: 'Tata Kelola',
-//     url: '/governance-corporate/principle-strucktur',
+//     url: '/governance-corporate/principle-structure',
 //     cName: 'nav-links',
 //   },
 //   {

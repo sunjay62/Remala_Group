@@ -60,10 +60,10 @@ const AboutEn = () => {
             <button className={`btnMenuAbout ${activeButton === 'profile' ? 'clicked' : ''}`} onClick={() => handleButtonClick('profile')}>
               Profile
             </button>
-            <button className={`btnMenuAbout ${activeButton === 'organization-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('organization-strucktur')}>
+            <button className={`btnMenuAbout ${activeButton === 'organization-structure' ? 'clicked' : ''}`} onClick={() => handleButtonClick('organization-structure')}>
               Organizational Structure
             </button>
-            <button className={`btnMenuAbout ${activeButton === 'group-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('group-strucktur')}>
+            <button className={`btnMenuAbout ${activeButton === 'group-structure' ? 'clicked' : ''}`} onClick={() => handleButtonClick('group-structure')}>
               Group Structure
             </button>
             {/* <button className={`btnMenuAbout ${activeButton === 'articles-of-association' ? 'clicked' : ''}`} onClick={() => handleButtonClick('articles-of-association')}>

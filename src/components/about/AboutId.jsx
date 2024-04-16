@@ -60,10 +60,10 @@ const AboutId = () => {
             <button className={`btnMenuAbout ${activeButton === 'profile' ? 'clicked' : ''}`} onClick={() => handleButtonClick('profile')}>
               Profil
             </button>
-            <button className={`btnMenuAbout ${activeButton === 'organization-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('organization-strucktur')}>
+            <button className={`btnMenuAbout ${activeButton === 'organization-structure' ? 'clicked' : ''}`} onClick={() => handleButtonClick('organization-structure')}>
               Struktur Organisasi
             </button>
-            <button className={`btnMenuAbout ${activeButton === 'group-strucktur' ? 'clicked' : ''}`} onClick={() => handleButtonClick('group-strucktur')}>
+            <button className={`btnMenuAbout ${activeButton === 'group-structure' ? 'clicked' : ''}`} onClick={() => handleButtonClick('group-structure')}>
               Struktur Group
             </button>
             {/* <button className={`btnMenuAbout ${activeButton === 'articles-of-association' ? 'clicked' : ''}`} onClick={() => handleButtonClick('articles-of-association')}>

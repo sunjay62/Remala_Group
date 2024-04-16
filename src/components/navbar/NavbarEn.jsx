@@ -165,7 +165,7 @@ const NavbarEn = () => {
                 </Link>
                 <Link
                   className="dropdown-links"
-                  to="/en/aboutus/organization-strucktur"
+                  to="/en/aboutus/organization-structure"
                   onClick={() => {
                     handleSubMenuItemClick();
                   }}
@@ -174,7 +174,7 @@ const NavbarEn = () => {
                 </Link>
                 <Link
                   className="dropdown-links"
-                  to="/en/aboutus/group-strucktur"
+                  to="/en/aboutus/group-structure"
                   onClick={() => {
                     handleSubMenuItemClick();
                   }}

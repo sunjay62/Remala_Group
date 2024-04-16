@@ -26,7 +26,7 @@ const Menuitem = () => {
       <div className="containerMenuItem">
         <div className="item-home" data-aos="fade-right">
           <div className="col-md-1 col-5">
-            <Link to="/aboutus/organization-strucktur/board-of-commissioners">
+            <Link to="/aboutus/organization-structure/board-of-commissioners">
               <div className="boxitem-home col-12">
                 <img src={imgBoc} alt="BOC" />
               </div>
@@ -34,7 +34,7 @@ const Menuitem = () => {
             <p className="text-center">Dewan Komisaris</p>
           </div>
           <div className=" col-md-1 col-5">
-            <Link to="/aboutus/organization-strucktur/board-of-director">
+            <Link to="/aboutus/organization-structure/board-of-director">
               <div className="boxitem-home col-12">
                 <img src={imgBod} alt="BOD" />
               </div>

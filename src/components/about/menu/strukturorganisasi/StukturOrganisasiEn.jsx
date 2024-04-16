@@ -14,7 +14,7 @@ const StrukturOrganisasi = () => {
 
   const handleButtonClick = (componentName) => {
     setActiveButton(componentName);
-    navigate(`/en/aboutus/organization-strucktur/${componentName.toLowerCase()}`);
+    navigate(`/en/aboutus/organization-structure/${componentName.toLowerCase()}`);
   };
 
   return (
