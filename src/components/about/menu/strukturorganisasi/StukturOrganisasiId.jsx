@@ -27,7 +27,7 @@ const StrukturOrganisasi = () => {
           <div className={`btnOrganisasi ${activeButton === 'board-of-director' ? 'clicked' : ''}`} onClick={() => handleButtonClick('board-of-director')}>
             Jajaran Direksi
           </div>
-          <div className={`btnOrganisasi ${activeButton === 'corporate-secretary' ? 'clicked' : ''}`} onClick={() => handleButtonClick('corporate-secretary')}>
+          {/* <div className={`btnOrganisasi ${activeButton === 'corporate-secretary' ? 'clicked' : ''}`} onClick={() => handleButtonClick('corporate-secretary')}>
             Sekretaris Perusahaan
           </div>
           <div className={`btnOrganisasi ${activeButton === 'audit-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('audit-committee')}>
@@ -35,7 +35,7 @@ const StrukturOrganisasi = () => {
           </div>
           <div className={`btnOrganisasi ${activeButton === 'nomination-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('nomination-committee')}>
             Komite Nominasi dan Remunerasi
-          </div>
+          </div> */}
           {/* <div className={`btnOrganisasi ${activeButton === 'evaluation-committee' ? 'clicked' : ''}`} onClick={() => handleButtonClick('evaluation-committee')}>
             Komite Evaluasi, Monitoring Perencanaan dan Resiko
           </div> */}
