@@ -35,10 +35,22 @@ const Profile = () => {
           </p>
           <p>Adapun group perusahaan kami saat ini meliputi beberapa perusahaan : </p>
           <ol>
-            <li>Fiber Media Indonesia</li>
-            <li>PC 24 Cyber Indonesia </li>
-            <li>Solusi Aplikasi Andalan Semesta </li>
-            <li>Akselerasi Informasi Indonesia</li>
+            <li className="containerLi">
+              <span className="singkatan">PT AII</span> <span>: PT Akselerasi Informasi Indonesia</span>
+            </li>
+            <li className="containerLi">
+              <span className="singkatan">PT FMI</span> <span>: PT Fiber Media Indonesia</span>
+            </li>
+            <li className="containerLi">
+              <span className="singkatan">PT JFI</span> <span>: PT Jaringan Fiber Indonesia</span>
+            </li>
+            <li className="containerLi">
+              <span className="singkatan">PT PCCI</span>
+              <span>: PT PC 24 Cyber Indonesia</span>
+            </li>
+            <li className="containerLi">
+              <span className="singkatan">PT SAAS</span> <span>: PT Solusi Aplikasi Andalan Semesta</span>
+            </li>
           </ol>
         </div>
 

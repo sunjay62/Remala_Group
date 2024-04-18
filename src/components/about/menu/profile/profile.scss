@@ -9,6 +9,15 @@
   padding: 25px 50px 25px 50px;
 }
 
+.containerLi {
+  width: 40%;
+  display: flex;
+
+  .singkatan {
+    width: 30%;
+  }
+}
+
 .company-profile-text .text-center {
   margin-bottom: 25px;
 }
