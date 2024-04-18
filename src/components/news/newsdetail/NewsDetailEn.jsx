@@ -99,7 +99,6 @@ const NewsDetail = () => {
         <img src={selectedNews.image} alt={selectedNews.title} className="heroImageNews" />
         <h5>{selectedNews.date}</h5>
         <p>{selectedNews?.descriptionDetail}</p>
-        <br />
         {(selectedNews.paragraph1 || []).map((paragraph, index) => (
           <div key={index}>
             <h6>{paragraph.title}</h6>
@@ -111,7 +110,6 @@ const NewsDetail = () => {
             </div>
           </div>
         ))}
-        <br />
         {(selectedNews.paragraph2 || []).map((paragraph, index) => (
           <div key={index}>
             <h6>{paragraph.title}</h6>
@@ -123,7 +121,6 @@ const NewsDetail = () => {
             </div>
           </div>
         ))}
-        <br />
         {(selectedNews.paragraph3 || []).map((paragraph, index) => (
           <div key={index}>
             <h6>{paragraph.title}</h6>
@@ -135,7 +132,6 @@ const NewsDetail = () => {
             </div>
           </div>
         ))}
-        <br />
         {(selectedNews.paragraph4 || []).map((paragraph, index) => (
           <div key={index}>
             <h6>{paragraph.title}</h6>
@@ -146,11 +142,9 @@ const NewsDetail = () => {
                 <img key={imgIndex} src={image} alt="#" className="chillImg" />
               ))}
             </div>
-            <br />
             <p>{paragraph.description2}</p>
           </div>
         ))}
-        <br />
         {(selectedNews.paragraph5 || []).map((paragraph, index) => (
           <div key={index}>
             <h6>{paragraph.title}</h6>
@@ -161,11 +155,9 @@ const NewsDetail = () => {
                 <img key={imgIndex} src={image} alt="#" className="chillImg" />
               ))}
             </div>
-            <br />
             <p>{paragraph.description2}</p>
           </div>
         ))}
-        <br />
       </div>
       <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
     </div>

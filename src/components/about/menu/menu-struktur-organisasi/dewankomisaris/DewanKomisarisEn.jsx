@@ -11,14 +11,14 @@ const profiles = [
     image: Verah,
     role: 'President Commissioner',
     description:
-      "My name is Verah Wahyudi Singgih Wong. I earned my Bachelor's degree in Financial Management from the University of Surabaya in the years 1997-2001.<br /><br />Throughout my career, I have held various roles, contributing to my growth and expertise. Presently, I serve as the President Commissioner of the company. Prior to this, I held the position of Finance Director at PT. Remala Abadi from 2006 to 2022. In the years 2002 to 2005, I served as a Finance Controller at PT. Wings Surya in Surabaya. Additionally, from 2000 to 2002, I worked as a Tour Planning Staff at Orient Express Travel in Surabaya.",
+      "Verah Wahyudi Singgih Wong studied Financial Management and earned his Bachelor's degree in Financial Management from the University of Surabaya in 2001.<br /><br />Verah Wahyudi Singgih Wong holds the position of President Commissioner of the company, where Verah leads with exceptional strategic vision and wisdom. Previously, Verah had led as Finance Director at PT Remala Abadi for 16 years (2006 - 2022). He also served as Finance Controller at PT. Wing Surya Surabaya (2002 - 2005).",
   },
   {
     name: 'Alamsyah Saragih',
     image: Alamsyah,
     role: 'Independent Commissioner',
     description:
-      "My name is Ahmad Alamsyah Saragih, S.E. I obtained my Bachelor's degree in Economics from Universitas Padjadjaran, Bandung, in the years 1988-1992.<br /><br />Throughout my career, I have held significant roles contributing to various sectors. Presently, I serve as an Independent Commissioner for the company. Additionally, since 2021, I have been working as a GCG Advisor for the INDONESIAN BATTERY INDUSTRY.<br /><br />My past roles include serving as a member of OMBUDSMAN REPUBLIK INDONESIA from 2016 to 2021, where I contributed in various capacities such as Economic Sector II Member (2016-2018), Economic Sector I Member (2018-2021), and Special Examination Field Member (2017-2020). Prior to that, I was involved in the Komisi Informasi Pusat Republik Indonesia from 2009 to 2013, where I served as the Chairman from 2009 to 2011 and as a Member from 2011 to 2013.<br /><br />Before my involvement in public service, I worked as a Local Governance Specialist at The World Bank, Jakarta, from 2002 to 2007.",
+      "Ahmad Alamsyah Saragih, S.E., studied Economics at Padjadjaran University then earned his Bachelor of Economics degree from Padjadjaran University Bandung in 1992.<br /><br />Ahmad Alamsyah Saragih serves as the Company's Independent Commissioner. In addition, Alamsyah is also active as GCG Advisor at INDONESIA BATTERY INDUSTRIES since 2021, Previously, Alamsyah has held various important roles at OMBUDSMAN REPUBLIK INDONESIA (2016 - 2021), where Alamsyah was involved in various capacities, including Member of Economics and Member of Special Examinations. Alamsyah has been involved in the Central Information Commission of the Republic of Indonesia (2009 - 2013), where he has served as Chairman and Member. He has also accumulated valuable experience as a Local Governance Specialist at the World Bank Jakarta (2002 - 2007).",
   },
 ];
 

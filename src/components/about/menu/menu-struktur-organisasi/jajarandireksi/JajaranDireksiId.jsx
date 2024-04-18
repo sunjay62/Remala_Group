@@ -10,14 +10,14 @@ const profiles = [
     image: Richard,
     role: 'Direktur Utama',
     description:
-      'Nama saya Richard Kartawijaya, Saya menempuh pendidikan Magister Bisnis Pemasaran di Universitas Esa Unggul, menyelesaikan studi pada tahun 1989-1993. Sebelumnya saya meraih gelar Sarjana Teknik Elektro dari Universitas Katolik Atmajaya pada tahun 1978-1982.<br /><br />Saat ini saya menjabat sebagai Chief Executive Officer (CEO) di PT. Remala Abadi, dimana saya menjabat sebagai Chief Executive Officer sejak tahun 2022 dan sebagai Chief Executive Director sejak tahun 2023. Selain itu, saya adalah Pemilik BEATUS Home Living, peran yang saya pegang sejak tahun 2020.<br /><br />Dalam peran saya sebelumnya, saya menjabat sebagai CEO & Presiden Direktur di PT. Graha Teknologi Nusantara pada tahun 2015 hingga 2017, dan sebagai CEO di PT. Link Net, Tbk dari tahun 2013 hingga 2015. Sebelumnya saya menjabat sebagai CEO di PT. Ander Cakra Buana dari tahun 2009 hingga 2013.',
+      'Richard Kartawijaya menempuh pendidikan Magister Bisnis Pemasaran di Universitas Esa Unggul pada tahun 1993, setelah sebelumnya meraih gelar Sarjana Teknik Elektro dari Universitas Katolik Atmajaya pada tahun 1982.<br /><br />Richard Kartawijaya menjabat sebagai Chief Executive Officer (CEO) di PT. Remala Abadi sejak tahun 2022, dan kemudian menjabat sebagai Chief Executive Director sejak tahun 2023. Selain itu, Richard juga aktif sebagai Pemilik di BEATUS Home Living sejak tahun 2020, Sebelum, Richard pernah menjabat sebagai CEO & Presiden Direktur di PT. Graha Teknologi Nusantara (2015 – 2017), Sebagai CEO di PT. Link Net, Tbk dari tahun (2013 – 2015). Serta memimpin PT. Ander Cakra Buana dari tahun (2009 – 2013).',
   },
   {
     name: 'Samuel Adi Mulia',
     image: Samuel,
     role: 'Direktur Keuangan',
     description:
-      'Nama saya Samuel Adi Mulia, Saya memperoleh gelar Sarjana Akuntansi dari Universitas Trisakti, menyelesaikan studi pada tahun 1989-1993.<br /><br />Dalam perjalanan profesional saya, saya telah mengumpulkan pengalaman berharga dalam berbagai peran. Saat ini saya menjabat sebagai Direktur Keuangan di PT. Remala Abadi, posisi yang saya jabat sejak tahun 2023. Sebelumnya saya bekerja sebagai Internal Control Manager (Function Strategic & Cost Control Manager) di PT. Satria Antaran Prima Tbk dari tahun 2019 hingga 2020. Selama ini, tanggung jawab saya termasuk mengawasi inisiatif strategis dan pengendalian biaya. Pada tahun 2017 hingga 2019, saya menjabat sebagai Direktur Keuangan di kedua PT. Klaai Dendan Lestari dan PT. Pat Petulai Energi. Selanjutnya pada tahun 2012 hingga 2017, saya menjabat sebagai Direktur Keuangan di PT. Intan Baruprana Finance Tbk.',
+      'Samuel Adi Mulia menempuh Pendidikan dibidang Keuangan di Universitas Trisakti kemudian meraih gelar Sarjana Akuntansi dari Universitas Trisakti pada tahun 1993.<br /><br />Samuel Adi Mulia menjabat sebagai Direktur Keuangan di PT. Remala Abadi sejak tahun 2023. Sebelumnya, Samuel pernah bertanggung jawab sebagai Internal Control Manager (Function Strategic & Cost Control Manager) di PT. Satria Antaran Prima Tbk (2019 - 2020), Direktur Keuangan di PT. Klaai Dendan Lestari dan PT. Pat Petulai Energi (2017 – 2019) serta PT. Intan Baruprana Finance Tbk (2012 – 2017).',
   },
 ];
 

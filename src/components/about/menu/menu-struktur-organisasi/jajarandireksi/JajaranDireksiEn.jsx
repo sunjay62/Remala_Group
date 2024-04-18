@@ -10,14 +10,14 @@ const profiles = [
     image: Richard,
     role: 'Chief Executive Officer',
     description:
-      "My name is Richard Kartawijaya, I pursued my Master's degree in Marketing Business at Universitas Esa Unggul, completing my studies in the years 1989-1993. Prior to that, I earned my Bachelor's degree in Electrical Engineering from Universitas Katolik Atmajaya in the years 1978-1982.<br /><br />Currently, I hold the position of Chief Executive Officer (CEO) at PT. Remala Abadi, where I have been serving as the Chief Executive Officer since 2022 and as the Chief Executive Director since 2023. Additionally, I am the Owner of BEATUS Home Living, a role I have held since 2020.<br /><br />In my previous roles, I served as the CEO & President Director at PT. Graha Teknologi Nusantara from 2015 to 2017, and as the CEO at PT. Link Net, Tbk from 2013 to 2015. Before that, I held the position of CEO at PT. Ander Cakra Buana from 2009 to 2013.",
+      "Richard Kartawijaya earned his Master's degree in Business Marketing at Esa Unggul University in 1993, having previously earned his Bachelor's degree in Electrical Engineering from Atmajaya Catholic University in 1982.<br /><br />Richard Kartawijaya has served as Chief Executive Officer (CEO) of PT Remala Abadi since 2022, and then as Chief Executive Director since 2023. In addition, Richard has also been active as an Owner at BEATUS Home Living since 2020, Prior to that, Richard served as CEO & President Director at PT Graha Teknologi Nusantara (2015 - 2017), as CEO at PT Link Net, Tbk from (2013 - 2015). As well as leading PT Ander Cakra Buana from (2009 - 2013).",
   },
   {
     name: 'Samuel Adi Mulia',
     image: Samuel,
     role: 'Chief Financial Officer',
     description:
-      "My name is Samuel Adi Mulia, I earned my Bachelor's degree in Accounting from Universitas Trisakti, completing my studies in the years 1989-1993.<br /><br />In my professional journey, I have garnered valuable experience in various roles. Presently, I serve as the Finance Director at PT. Remala Abadi, a position I have held since 2023. Prior to this, I worked as the Internal Control Manager (Function Strategic & Cost Control Manager) at PT. Satria Antaran Prima Tbk from 2019 to 2020. During this time, my responsibilities included overseeing strategic and cost control initiatives. In the years 2017 to 2019, I assumed the role of Finance Director at both PT. Klaai Dendan Lestari and PT. Pat Petulai Energi. Furthermore, from 2012 to 2017, I held the position of Finance Director at PT. Intan Baruprana Finance Tbk.",
+      'Samuel Adi Mulia studied Finance at Trisakti University and then earned his Bachelor of Accounting degree from Trisakti University in 1993.<br /><br />Samuel Adi Mulia has served as Finance Director at PT Remala Abadi since 2023. Previously, Samuel was responsible as Internal Control Manager (Function Strategic & Cost Control Manager) at PT Satria Antaran Prima Tbk (2019 - 2020), Finance Director at PT Klaai Dendan Lestari and PT Pat Petulai Energi (2017 - 2019) and PT Intan Baruprana Finance Tbk (2012 - 2017).',
   },
 ];
 
