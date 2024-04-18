@@ -74,11 +74,22 @@
 
 @media screen and (max-width: 860px) {
   .containerProfile {
-    padding: 10px;
+    padding: 5px;
   }
 
   .company-profile-text {
     width: 100%;
+  }
+
+  .containerLi {
+    margin-left: -30px;
+    width: 120%;
+    margin-bottom: 15px;
+    flex-direction: column;
+
+    .singkatan {
+      width: 50%;
+    }
   }
 
   .key-features {
