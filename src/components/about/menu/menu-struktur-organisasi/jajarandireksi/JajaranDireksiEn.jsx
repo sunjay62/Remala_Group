@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Richard from '../../../../../assets/fotoprofile/richard.png';
-import Samuel from '../../../../../assets/fotoprofile/samuel.png';
+import Samuel from '../../../../../assets/fotoprofile/samuelnew.png';
 
 const profiles = [
   {

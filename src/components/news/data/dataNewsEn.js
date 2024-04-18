@@ -120,7 +120,7 @@ const dataNewsEn = [
   {
     id: 3,
     url: 'ims',
-    image: require('../image/iso/ims.jpeg'),
+    image: require('../image/iso/ims.jpg'),
     title: 'Integrated Management System (IMS) at PT. Remala Abadi Tbk.',
     titleDetail: 'Remala Abadi: Carving a new history in management by implementing the Integrated Management System (IMS).',
     date: 'Tuesday, February 20, 2024',
@@ -163,7 +163,7 @@ const dataNewsEn = [
   {
     id: 4,
     url: 'iso-9001:2015',
-    image: require('../image/iso/iso9001.jpeg'),
+    image: require('../image/iso/iso9001.jpg'),
     title: 'PT. Remala Abadi Tbk ISO 9001:2015 Certification from Sucofindo.',
     titleDetail: 'PT. Remala Abadi Tbk Achieves ISO 9001:2015 Certification From Sucofindo: Commitment to Better Quality and Service.',
     date: 'Tuesday, February 20, 2024',
@@ -205,7 +205,7 @@ const dataNewsEn = [
   {
     id: 5,
     url: 'iso-27001:2022',
-    image: require('../image/iso/iso27001.jpeg'),
+    image: require('../image/iso/iso27001.jpg'),
     title: 'PT. Remala Abadi Tbk ISO 27001:2022 Certification Sucofindo.',
     titleDetail: 'Building Customer Trust Through Information Security Protection: The Success Story of PT. Remala Abadi Tbk in Obtaining ISO 27001 Certification',
     date: 'Tuesday, February 20, 2024',

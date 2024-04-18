@@ -120,7 +120,7 @@ const dataNewsId = [
   {
     id: 3,
     url: 'ims',
-    image: require('../image/iso/ims.jpeg'),
+    image: require('../image/iso/ims.jpg'),
     title: 'Sistem Manajemen Terintegrasi (IMS) PT. Remala Abadi Tbk.',
     titleDetail: 'Remala Abadi : Mengukir sejarah baru dalam dunia manajemen dengan menerapkan Sistem Manajemen Terintegrasi (IMS).',
     date: 'Selasa, 20 Februari 2024',
@@ -162,7 +162,7 @@ const dataNewsId = [
   {
     id: 4,
     url: 'iso-9001:2015',
-    image: require('../image/iso/iso9001.jpeg'),
+    image: require('../image/iso/iso9001.jpg'),
     title: 'PT. Remala Abadi Tbk Sertifikasi ISO 9001:2015 Sucofindo.',
     titleDetail: 'PT. Remala Abadi Tbk Raih Sertifikasi ISO 9001:2015 Dari Sucofindo: Komitmen Terhadap Mutu dan Pelayanan Yang Lebih Baik.',
     date: 'Selasa, 20 Februari 2024',
@@ -204,7 +204,7 @@ const dataNewsId = [
   {
     id: 5,
     url: 'iso-27001:2022',
-    image: require('../image/iso/iso27001.jpeg'),
+    image: require('../image/iso/iso27001.jpg'),
     title: 'PT. Remala Abadi Tbk Sertifikasi ISO 27001:2022 Sucofindo.',
     titleDetail: 'Meningkatkan Kepercayaan Pelanggan Melalui Proteksi Keamanan Informasi: Kisah Sukses PT. Remala Abadi Tbk Dalam Memperoleh Sertifikasi ISO 27001',
     date: 'Selasa, 20 Februari 2024',

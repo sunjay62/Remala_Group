@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Verah from '../../../../../assets/fotoprofile/verah-wahyudi.png';
-import Alamsyah from '../../../../../assets/fotoprofile/alamsyah.png';
+import Verah from '../../../../../assets/fotoprofile/veranew.png';
+import Alamsyah from '../../../../../assets/fotoprofile/alamysahnew.png';
 import './dewankomisaris.scss';
 
 const profiles = [
