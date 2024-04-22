@@ -278,7 +278,7 @@ const NavbarEn = () => {
             </Link>
 
             <Link
-              to="#"
+              to="/en/career"
               className="nav-links"
               onClick={() => {
                 scrollToTop();

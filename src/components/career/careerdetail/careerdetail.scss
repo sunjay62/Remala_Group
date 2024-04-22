@@ -1,0 +1,56 @@
+.modalContainer {
+  padding: 15px 0;
+  margin-bottom: 15px;
+
+  h5 {
+    font-weight: 600;
+  }
+}
+
+.containerLoker {
+  padding: 15px;
+
+  .headLoker {
+    background: rgb(151, 203, 255);
+    background: linear-gradient(90deg, rgb(153, 204, 255) 2%, rgb(26, 148, 255) 96%);
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #fff;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+  }
+
+  .btnContainerJob {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+
+    .btnApply {
+      padding: 15px 25px;
+      border: 2px solid rgb(66, 142, 255);
+      background: none;
+      font-size: 1.1rem;
+      border-radius: 50px;
+      transition: all ease-in-out 0.2s;
+
+      &:hover {
+        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+        background-color: rgb(66, 142, 255);
+        color: #fff;
+      }
+    }
+  }
+}
+
+.ant-modal-close {
+  display: none;
+}
