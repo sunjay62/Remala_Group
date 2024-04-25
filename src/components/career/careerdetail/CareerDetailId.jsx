@@ -1,34 +1,58 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import { Modal } from 'antd';
+import './careerdetail.scss';
+import dataCareerId from '../data/dataCareerId';
 
-function CareerDetailId() {
-  const [books, setBooks] = useState([]);
-  const [isLoaded, setIsLoaded] = useState(false);
-  const [content, setContent] = useState('');
-  const [open, setOpen] = useState(false);
+const CareerDetailEn = ({ selectedLoker, open, setOpen }) => {
+  const [careerData, setCareerData] = useState(null);
 
-  // useEffect(() => {
-  //   axios
-  //     .get('https://sunanjaya.my.id/wordpress_F/wp-json/wp/v2/career/25')
-  //     .then((res) => {
-  //       setBooks(res.data);
-  //       // Mendapatkan content dari objek pertama dalam array
-  //       if (res.data.length > 0) {
-  //         setContent(res.data[0].content.rendered);
-  //       }
-  //       setIsLoaded(true);
-  //     })
-  //     .catch((err) => console.log(err));
-  // }, []);
+  useEffect(() => {
+    if (selectedLoker) {
+      const selectedCareer = dataCareerId.find((career) => career.id === selectedLoker);
+      setCareerData(selectedCareer);
+    }
+  }, [selectedLoker]);
 
   return (
-    <>
+    <div>
       <Modal className="modalContainer" centered open={open} onOk={() => setOpen(false)} onCancel={() => setOpen(false)} footer={null} width={1000}>
-        <div dangerouslySetInnerHTML={{ __html: content }} />
+        {careerData && (
+          <div className="containerLoker">
+            <h1 className="headLoker">{careerData.name}</h1>
+            <div className="roleContainer">
+              <h5>Tentang Posisi</h5>
+              <p>{careerData.role}</p>
+            </div>
+            <div className="willDoContainer">
+              <h5>Apa yang akan anda kerjakan</h5>
+              <ul>
+                {careerData.willdo.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="requirementContainer">
+              <h5>Apa yang akan anda butuhkan</h5>
+              <ul>
+                {careerData.requirement.map((item, index) => (
+                  <li key={index}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="teamContainer">
+              <h5>Tentang Team</h5>
+              <p>{careerData.team}</p>
+            </div>
+            <div className="btnContainerJob">
+              <button className="btnApply">
+                <span>Lamar Pekerjaan Ini</span>
+              </button>
+            </div>
+          </div>
+        )}
       </Modal>
-    </>
+    </div>
   );
-}
+};
 
-export default CareerDetailId;
+export default CareerDetailEn;

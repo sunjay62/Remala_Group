@@ -7,6 +7,7 @@ import awards14001 from '../../assets/iso/ISO-14001.png';
 import awards27001 from '../../assets/iso/ISO-27001.png';
 import awards37001 from '../../assets/iso/ISO-37001.png';
 import awards45001 from '../../assets/iso/ISO-45001.png';
+import awards20000 from '../../assets/iso/ISO-20000.jpeg';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -40,6 +41,10 @@ const FooterEn = () => {
     navigate(`/en/news/8/iso-14001:2015`);
   };
 
+  const handleTo20000 = () => {
+    navigate(`/news/9/iso-20000-1:2018`);
+  };
+
   return (
     <>
       <div className="mainFooter stickyFooter">
@@ -57,6 +62,7 @@ const FooterEn = () => {
                 <img src={awards45001} alt="Remala" className="awards" onClick={handleTo45001} />
                 <img src={awards14001} alt="Remala" className="awards" onClick={handleTo14001} />
               </div>
+              <img src={awards20000} alt="iso20000" className="logoAcs" onClick={handleTo20000} />
             </div>
             <div className="twoLeft">
               <h6>

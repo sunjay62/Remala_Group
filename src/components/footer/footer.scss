@@ -105,8 +105,16 @@
   gap: 10px;
 }
 
-.footerRight .logoFooter {
-  width: 42%;
+.logoAcs {
+  width: 120%;
+  border-radius: 3px;
+  filter: drop-shadow(0px 0px 2px rgb(255, 255, 255));
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+
+  &:hover {
+    filter: drop-shadow(0px 0px 4px rgb(255, 255, 255));
+  }
 }
 
 .footerRight .rightTop {

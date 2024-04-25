@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './career.scss';
 import 'aos/dist/aos.css';
 import { Pagination, AutoComplete, Button, Select } from 'antd';
@@ -6,9 +6,8 @@ import FooterId from '../footer/FooterId';
 import FooterEn from '../footer/FooterEn';
 import metaThumbnail from '../data/images/meta/homeimage.png';
 import MetaDecorator from '../Util/MetaDecorator';
-import dataCareerId from './data/dataCareerId';
-import CareerDetailId from './careerdetail/CareerDetailId';
-import axios from 'axios';
+import dataCareerEn from './data/dataCareerEn';
+import CareerDetailEn from './careerdetail/CareerDetailEn';
 
 const career = require('../data/json/career.json');
 
@@ -16,25 +15,25 @@ const Career = () => {
   const isIdPath = window.location.pathname.startsWith('/en');
   const [selectedDepartment, setSelectedDepartment] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState(null);
-  const [selectedLoker, setSelectedLoker] = useState('');
   const [searchValue, setSearchValue] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const [selectedLoker, setSelectedLoker] = useState('');
   const [open, setOpen] = useState(false);
-  const [currentPage, setCurrentPage] = useState(1); // Menyimpan halaman saat ini
-  const pageSize = 10; // Jumlah item yang ingin ditampilkan per halaman
+  const pageSize = 10;
 
   const handleDepartmentChange = (value) => {
     setSelectedDepartment(value);
-    setCurrentPage(1); // Reset halaman saat departemen berubah
+    setCurrentPage(1);
   };
 
   const handleLocationChange = (value) => {
     setSelectedLocation(value);
-    setCurrentPage(1); // Reset halaman saat lokasi berubah
+    setCurrentPage(1);
   };
 
   const handleSearchChange = (value) => {
     setSearchValue(value);
-    setCurrentPage(1); // Reset halaman saat pencarian berubah
+    setCurrentPage(1);
   };
 
   const handleBodyClick = (id) => {
@@ -42,18 +41,18 @@ const Career = () => {
     setOpen(true);
   };
 
-  const uniqueDepartments = [...new Set(dataCareerId.map((career) => career.department))];
-  const uniqueLocations = [...new Set(dataCareerId.map((career) => career.location))];
+  const uniqueDepartments = [...new Set(dataCareerEn.map((career) => career.department))];
+  const uniqueLocations = [...new Set(dataCareerEn.map((career) => career.location))];
 
-  const departmentOptions = [{ value: null, label: 'Semua Departemen' }, ...uniqueDepartments.map((department) => ({ value: department, label: department }))];
-  const locationOptions = [{ value: null, label: 'Semua Lokasi' }, ...uniqueLocations.map((location) => ({ value: location, label: location }))];
+  const departmentOptions = [{ value: null, label: 'All Department' }, ...uniqueDepartments.map((department) => ({ value: department, label: department }))];
+  const locationOptions = [{ value: null, label: 'All Location' }, ...uniqueLocations.map((location) => ({ value: location, label: location }))];
 
   const sortedDepartmentOptions = [departmentOptions[0], ...departmentOptions.slice(1).sort((a, b) => a.label.localeCompare(b.label))];
 
   const sortedLocationOptions = [locationOptions[0], ...locationOptions.slice(1).sort((a, b) => a.label.localeCompare(b.label))];
 
   // Filter data berdasarkan pilihan pengguna
-  const filteredCareers = dataCareerId.filter((career) => {
+  const filteredCareers = dataCareerEn.filter((career) => {
     return (!selectedDepartment || career.department === selectedDepartment) && (!selectedLocation || career.location === selectedLocation);
   });
 
@@ -76,24 +75,18 @@ const Career = () => {
         <div className="career-content d-flex align-items-center justify-content-center">
           <div className="content-text">
             <h1 className="textHero" data-aos="fade-up">
-              Jadilah Selangkah Lebih Dekat <br /> untuk Mencapai Tujuan Anda.
+              Be One Step Closer <br /> to Achieving Your Goals.
             </h1>
           </div>
         </div>
         <div className="bottomCareer">
           <div className="filter-search">
             <div className="filterTop">
-              <AutoComplete
-                className="autoComplete"
-                placeholder="Cari Pekerjaan Impian Anda..."
-                onChange={handleSearchChange}
-                value={searchValue}
-                options={[]} // Kosongkan opsi karena hanya ingin mencari tanpa menampilkan dropdown
-              />
+              <AutoComplete className="autoComplete" placeholder="Find Your Dream Job..." onChange={handleSearchChange} value={searchValue} options={[]} />
               <Select
                 showSearch
                 className="selectOption"
-                placeholder="Select Departemen"
+                placeholder="Select Department"
                 optionFilterProp="children"
                 onChange={handleDepartmentChange}
                 value={selectedDepartment}
@@ -104,7 +97,7 @@ const Career = () => {
               <Select
                 showSearch
                 className="selectOption"
-                placeholder="Select Lokasi"
+                placeholder="Select Location"
                 optionFilterProp="children"
                 onChange={handleLocationChange}
                 value={selectedLocation}
@@ -117,23 +110,22 @@ const Career = () => {
           <div className="middle">
             <div className="middleTitle">
               <p>
-                {totalDisplayedData} pekerjaan yang tersedia {selectedDepartment ? `di departemen ${selectedDepartment}` : ''} {selectedLocation ? `di lokasi ${selectedLocation}` : ''}.
+                {totalDisplayedData} jobs available {selectedDepartment ? `in department ${selectedDepartment}` : ''} {selectedLocation ? `in location ${selectedLocation}` : ''}.
               </p>
             </div>
             <div className="middleBody" style={{ display: totalDisplayedData === 0 ? 'none' : 'block' }}>
               <div className="top">
-                <p className="nameCareer">Nama Posisi</p>
-                <p className="departmentCareer">Departemen</p>
-                <p className="locationCareer">Lokasi</p>
+                <p className="nameCareer">Name Position</p>
+                <p className="departmentCareer">Department</p>
+                <p className="locationCareer">Location</p>
               </div>
-              {totalDisplayedData > 0 &&
-                filteredPositions.slice(startIndex, endIndex).map((career, index) => (
-                  <div className="body" key={index} onClick={() => handleBodyClick(career.id)}>
-                    <p className="nameCareer">{career.name}</p>
-                    <p className="departmentCareer">{career.department}</p>
-                    <p className="locationCareer">{career.location}</p>
-                  </div>
-                ))}
+              {filteredPositions.slice(startIndex, endIndex).map((career, index) => (
+                <div className="body" key={index} onClick={() => handleBodyClick(career.id)}>
+                  <p className="nameCareer">{career.name}</p>
+                  <p className="departmentCareer">{career.department}</p>
+                  <p className="locationCareer">{career.location}</p>
+                </div>
+              ))}
             </div>
           </div>
           <div className="pagination" style={{ display: totalDisplayedData === 0 ? 'none' : 'block' }}>
@@ -142,7 +134,7 @@ const Career = () => {
         </div>
         <div className="footer">{isIdPath ? <FooterEn /> : <FooterId />}</div>
       </div>
-      <CareerDetailId selectedLoker={selectedLoker} open={open} setOpen={setOpen} />
+      <CareerDetailEn selectedLoker={selectedLoker} open={open} setOpen={setOpen} />
     </div>
   );
 };

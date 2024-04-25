@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './career.scss';
 import 'aos/dist/aos.css';
 import { Pagination, AutoComplete, Button, Select } from 'antd';
@@ -8,7 +8,6 @@ import metaThumbnail from '../data/images/meta/homeimage.png';
 import MetaDecorator from '../Util/MetaDecorator';
 import dataCareerId from './data/dataCareerId';
 import CareerDetailId from './careerdetail/CareerDetailId';
-import axios from 'axios';
 
 const career = require('../data/json/career.json');
 
@@ -68,19 +67,6 @@ const Career = () => {
   // Menghitung indeks awal dan akhir dari data yang akan ditampilkan
   const startIndex = (currentPage - 1) * pageSize;
   const endIndex = Math.min(startIndex + pageSize, totalDisplayedData);
-
-  useEffect(() => {
-    try {
-      axios
-        .get('https://sunanjaya.my.id/wordpress_F/wp-json/wp/v2/career')
-        .then((res) => {
-          console.log(res);
-        })
-        .catch((err) => console.log(err));
-    } catch (error) {
-      console.error('Terjadi kesalahan:', error);
-    }
-  }, []);
 
   return (
     <div>

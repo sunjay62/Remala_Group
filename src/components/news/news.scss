@@ -102,6 +102,14 @@
   }
 }
 
+.loading-spinner-news {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  height: 90vh;
+}
+
 @media screen and (max-width: 860px) {
   .bottomNews {
     padding: 0;

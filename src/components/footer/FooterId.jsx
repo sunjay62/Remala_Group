@@ -7,6 +7,7 @@ import awards14001 from '../../assets/iso/ISO-14001.png';
 import awards27001 from '../../assets/iso/ISO-27001.png';
 import awards37001 from '../../assets/iso/ISO-37001.png';
 import awards45001 from '../../assets/iso/ISO-45001.png';
+import awards20000 from '../../assets/iso/ISO-20000.jpeg';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import YouTubeIcon from '@mui/icons-material/YouTube';
@@ -40,6 +41,10 @@ const FooterId = () => {
     navigate(`/news/8/iso-14001:2015`);
   };
 
+  const handleTo20000 = () => {
+    navigate(`/news/9/iso-20000-1:2018`);
+  };
+
   return (
     <>
       <div className="mainFooter stickyFooter">
@@ -48,15 +53,16 @@ const FooterId = () => {
             <div className="firstLeft">
               <img src={logo} alt="Remala" className="logoFooter" />
               <div className="awardsImage">
-                <img src={awardsIntegrasi} alt="Remala" className="awards" onClick={handleToIntegrasi} />
-                <img src={awards9001} alt="Remala" className="awards" onClick={handleTo9001} />
-                <img src={awards37001} alt="Remala" className="awards" onClick={handleTo37001} />
+                <img src={awardsIntegrasi} alt="isointegrasi" className="awards" onClick={handleToIntegrasi} />
+                <img src={awards9001} alt="iso9001" className="awards" onClick={handleTo9001} />
+                <img src={awards37001} alt="iso37001" className="awards" onClick={handleTo37001} />
               </div>
               <div className="awardsImage">
-                <img src={awards27001} alt="Remala" className="awards" onClick={handleTo27001} />
-                <img src={awards45001} alt="Remala" className="awards" onClick={handleTo45001} />
-                <img src={awards14001} alt="Remala" className="awards" onClick={handleTo14001} />
+                <img src={awards27001} alt="iso27001" className="awards" onClick={handleTo27001} />
+                <img src={awards45001} alt="iso45001" className="awards" onClick={handleTo45001} />
+                <img src={awards14001} alt="iso14001" className="awards" onClick={handleTo14001} />
               </div>
+              <img src={awards20000} alt="iso20000" className="logoAcs" onClick={handleTo20000} />
             </div>
             <div className="twoLeft">
               <h6>

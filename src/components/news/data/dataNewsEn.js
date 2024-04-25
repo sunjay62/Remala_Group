@@ -365,6 +365,49 @@ const dataNewsEn = [
       },
     ],
   },
+  {
+    id: 9,
+    url: 'iso-20000-1:2018',
+    image: require('../image/iso/iso20000.jpg'),
+    title: 'PT. Remala Abadi Tbk ISO 20000-1:2018 Certification by Sucofindo.',
+    titleDetail: 'Delivering Premium Internet Services with ISO 20000-1:2018 Standard',
+    date: 'Tuesday, October 25, 2023',
+    descriptionDetail:
+      'PT. Remala Abadi Tbk (Remala) is one of the leading companies in Indonesia engaged in providing Internet Service Provider (ISP) services. With a commitment to providing high-quality internet services to customers, Remala has successfully obtained ISO 20000-1:2018 Certification, an international standard for information technology service management.',
+    date: 'Tuesday, October 25, 2023',
+    description:
+      'PT. Remala Abadi Tbk (Remala) is one of the leading companies in Indonesia engaged in providing Internet Service Provider (ISP) services. With a commitment to providing high-quality internet services to customers, Remala has successfully obtained ISO 20000-1:2018 Certification.',
+    paragraph1: [
+      {
+        description:
+          'On October 25, 2023, Remala received the ISO Certification from ACS Indonesia, which includes ISO 20000-1:2018, Service Management System. This demonstrates Remala Abadi commitment to providing quality internet services.',
+      },
+    ],
+    paragraph2: [
+      {
+        description:
+          'The ISO 20000-1:2018 Certification reaffirms Remala commitment to providing reliable, secure, and high-quality internet services to customers. This standard regulates various procedures and best practices in information technology service management, including risk management, performance monitoring, and sustainable service development.',
+      },
+    ],
+    paragraph3: [
+      {
+        description:
+          'With ISO 20000-1:2018 Certification, Remala Abadi demonstrates to customers that the company has a structured and standardized information technology service management system. This provides confidence to customers that the internet services provided by Remala meet rigorous international standards.',
+      },
+    ],
+    paragraph4: [
+      {
+        description:
+          'Richard Kartawijaya, Chief Executive Officer (CEO) of PT. Remala Abadi Tbk, said, "ISO 20000-1:2018 Certification also helps Remala improve operational efficiency, reduce risks, and increase customer satisfaction." With the adoption of this international standard, the company can continue to develop its internet services in line with market demands and the evolving information technology landscape.',
+      },
+    ],
+    paragraph5: [
+      {
+        description:
+          'Thus, Remala not only becomes a leading Internet Service Provider in Indonesia but also a company committed to providing premium internet services with high-quality standards recognized internationally through ISO 20000-1:2018 certification.',
+      },
+    ],
+  },
 
   // {
   //   id: 3,
@@ -440,7 +483,7 @@ const dataNewsEn = [
   //   url: 'title-6',
   //   image: 'https://placehold.co/600x400/png',
   //   title: 'TITLE 6',
-  //   date: 'Sabtu, 25 November 2023',
+  //   date: abtu, 25 November 2023',
   //   description:
   //     'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam accusamus vel laudantium quaerat dolores, rerum facere dolore quam veritatis, reprehenderit dignissimos quod neque ut soluta eligendi quisquam repellendus. Consectetur a cupiditate asperiores sed, 6.',
   //   paragraphs: [

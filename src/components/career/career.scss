@@ -61,6 +61,7 @@
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
       margin-top: 50px;
+      overflow-x: auto;
 
       .top {
         display: flex;
@@ -131,6 +132,13 @@
   }
 }
 
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
 @media screen and (max-width: 860px) {
   .content-text {
     .textHero {
@@ -142,21 +150,96 @@
     padding: 0;
 
     .filter-search {
-      border: 2px solid red;
-      display: flex;
-
       .autoComplete {
         width: 150px;
       }
 
       .filterTop {
-        gap: 5px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .autoComplete,
+        .selectOption {
+          width: 100%;
+        }
       }
 
       .page {
         color: gray;
         font-weight: 600;
         font-size: 1.1rem;
+      }
+    }
+
+    .middle {
+      padding: 25px;
+
+      .middleBody {
+        background-color: rgb(245, 245, 245);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin-top: 50px;
+        overflow-x: auto;
+
+        .top {
+          display: flex;
+          background: rgb(0, 91, 185);
+          background: linear-gradient(90deg, rgba(0, 91, 185, 1) 2%, rgba(0, 138, 255, 1) 96%);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          align-items: center;
+          gap: 25px;
+          padding: 10px 10px 10px 15px;
+          color: #fff;
+          font-weight: 600;
+          font-size: 1.2rem;
+
+          .nameCareer {
+            width: 50%;
+            margin: 0 auto;
+          }
+
+          .departmentCareer {
+            margin: 0 auto;
+            width: 50%;
+          }
+
+          .locationCareer {
+            margin: 0 auto;
+            width: 50%;
+          }
+        }
+
+        .body {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          transition: all ease-in-out 0.1s;
+          padding: 25px 10px 25px 15px;
+          border-bottom: 1px solid rgba(128, 128, 128, 0.226);
+
+          &:hover {
+            background-color: rgb(233, 233, 233);
+            cursor: pointer;
+          }
+
+          .nameCareer {
+            width: 50%;
+            margin: 0 auto;
+            font-weight: 600;
+          }
+
+          .departmentCareer {
+            margin: 0 auto;
+            width: 50%;
+          }
+
+          .locationCareer {
+            margin: 0 auto;
+            width: 50%;
+          }
+        }
       }
     }
 
