@@ -26,12 +26,11 @@ const SimpleSlider = () => {
           slidesPerView={slidesPerView}
           spaceBetween={10}
           autoplay={{
-            delay: 3000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
         >
           {swiperDataEn.map((slide) => (
             <SwiperSlide key={slide.id}>

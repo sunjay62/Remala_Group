@@ -10,7 +10,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const SimpleSlider = () => {
   const slidesPerView = window.innerWidth > 860 ? 4 : 1;
-  const navigate = useNavigate(); // Use navigate hook
+  const navigate = useNavigate();
 
   const handleReadMore = (id, url) => {
     const encodedurl = encodeURIComponent(url);
@@ -26,12 +26,11 @@ const SimpleSlider = () => {
           slidesPerView={slidesPerView}
           spaceBetween={10}
           autoplay={{
-            delay: 3000,
+            delay: 2500,
             disableOnInteraction: false,
           }}
           navigation={true}
           modules={[Autoplay, Pagination, Navigation]}
-          className="mySwiper"
         >
           {swiperDataId.map((slide) => (
             <SwiperSlide key={slide.id}>

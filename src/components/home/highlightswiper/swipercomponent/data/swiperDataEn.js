@@ -40,9 +40,9 @@ const swiperData = [
     image: require('../image/iso/iso14001.jpg'),
   },
   {
-    id: 8,
-    url: 'iso-14001:2015',
-    image: require('../image/iso/iso14001.jpg'),
+    id: 9,
+    url: 'iso-20000-1:2018',
+    image: require('../image/iso/iso-200001.jpg'),
   },
 ];
 
